@@ -19,7 +19,7 @@ export default function HeroStats() {
               more likely to have prediabetes at 45
             </div>
             <div className="text-zinc-500 text-sm mt-1">
-              South Asian men vs. white peers<sup className="text-[10px]">1</sup>
+              South Asian men vs. White peers<sup className="text-[10px]">1</sup>
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@ export default function HeroStats() {
               higher prediabetes risk at 45
             </div>
             <div className="text-zinc-500 text-sm mt-1">
-              South Asian women vs. white peers<sup className="text-[10px]">1</sup>
+              South Asian women vs. White peers<sup className="text-[10px]">1</sup>
             </div>
           </div>
         </div>
