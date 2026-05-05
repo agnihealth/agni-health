@@ -11,7 +11,7 @@ export default function Home() {
       <nav className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
         <Link href="/" className="flex items-center">
           <Image 
-            src="/logo-v2.png" 
+            src="/logo-dark.png" 
             alt="Agni Health" 
             width={160} 
             height={40} 
@@ -394,7 +394,7 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <div>
               <Image 
-                src="/logo-v2.png" 
+                src="/logo-dark.png" 
                 alt="Agni Health" 
                 width={120} 
                 height={30} 
