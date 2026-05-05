@@ -205,7 +205,7 @@ export default function Home() {
                     src="/dr-japa.jpg"
                     alt="Dr. Sohan Japa"
                     fill
-                    className="object-cover object-top"
+                    className="object-cover object-center"
                     sizes="220px"
                   />
                 </div>
