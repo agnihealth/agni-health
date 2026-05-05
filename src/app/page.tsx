@@ -19,11 +19,17 @@ export default function Home() {
           />
         </Link>
         <div className="flex items-center gap-8">
-          <Link href="#about" className="text-zinc-400 hover:text-white transition-colors text-sm">
-            About
-          </Link>
           <Link href="#approach" className="text-zinc-400 hover:text-white transition-colors text-sm">
-            Our Approach
+            How It Works
+          </Link>
+          <Link href="#pricing" className="text-zinc-400 hover:text-white transition-colors text-sm">
+            Pricing
+          </Link>
+          <Link href="#faq" className="text-zinc-400 hover:text-white transition-colors text-sm">
+            FAQ
+          </Link>
+          <Link href="#about" className="text-zinc-400 hover:text-white transition-colors text-sm">
+            Dr. Japa
           </Link>
           <TrackedLink 
             href="/start" 
