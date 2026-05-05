@@ -13,9 +13,9 @@ export default function Home() {
           <Image 
             src="/logo-transparent.png" 
             alt="Agni Health" 
-            width={320} 
-            height={80} 
-            className="h-12 sm:h-16 md:h-20 w-auto"
+            width={400} 
+            height={100} 
+            className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto"
           />
         </Link>
         <div className="flex items-center gap-8">
