@@ -13,9 +13,9 @@ export default function Home() {
           <Image 
             src="/logo-transparent.png" 
             alt="Agni Health" 
-            width={240} 
-            height={60} 
-            className="h-14 w-auto"
+            width={320} 
+            height={80} 
+            className="h-12 sm:h-16 md:h-20 w-auto"
           />
         </Link>
         <div className="flex items-center gap-8">
@@ -396,9 +396,9 @@ export default function Home() {
               <Image 
                 src="/logo-transparent.png" 
                 alt="Agni Health" 
-                width={180} 
-                height={45} 
-                className="h-12 w-auto mb-2"
+                width={240} 
+                height={60} 
+                className="h-10 sm:h-14 md:h-16 w-auto mb-2"
               />
               <div className="text-sm text-zinc-500">
                 © 2026 Agni Health. All rights reserved.
