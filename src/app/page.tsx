@@ -243,31 +243,39 @@ export default function Home() {
               </h2>
               <div className="space-y-4 text-zinc-400 leading-relaxed">
                 <p>
-                  I'm a board-certified internal medicine physician who started Agni Health 
-                  because I was tired of watching South Asian patients fall through the cracks 
-                  of a healthcare system that wasn't built for them.
+                  I trained at Stanford Medicine and completed my residency at Brigham and 
+                  Women's Hospital (Harvard). Six years into practice, I started Agni Health 
+                  because I kept seeing South Asian patients fall through the cracks of a 
+                  healthcare system that wasn't built for them.
                 </p>
                 <p>
-                  Growing up in a South Asian family, I saw the pattern everywhere: relatives 
-                  with "normal" BMIs developing diabetes, standard dietary advice that ignored 
-                  our food culture, and risk thresholds that missed the mark by years.
+                  I also lived it myself. A few years ago, I was at 27% body fat—"normal" by 
+                  standard charts, but I knew the research. For South Asian men, that's metabolic 
+                  danger territory. I dropped to 12% body fat through diet and exercise alone. 
+                  No medications, no shortcuts—just protocols calibrated for how our bodies 
+                  actually work.
                 </p>
                 <p>
-                  At Agni Health, I combine evidence-based medicine with protocols calibrated 
-                  specifically for South Asian metabolic patterns. No rushed 10-minute visits. 
-                  No one-size-fits-all advice. Just physician-led care that actually gets your biology.
+                  That's what I bring to Agni Health: evidence-based medicine combined with 
+                  the lived experience of optimizing South Asian metabolism. No rushed visits. 
+                  No generic advice. Just physician-led care that actually gets your biology.
                 </p>
               </div>
               <div className="mt-8 pt-6 border-t border-zinc-800">
                 <div className="flex items-center gap-6 text-sm">
                   <div>
-                    <div className="text-white font-medium">Board Certified</div>
-                    <div className="text-zinc-500">Internal Medicine</div>
+                    <div className="text-white font-medium">Stanford Medicine</div>
+                    <div className="text-zinc-500">MD</div>
                   </div>
                   <div className="w-px h-10 bg-zinc-800" />
                   <div>
-                    <div className="text-white font-medium">Licensed</div>
-                    <div className="text-zinc-500">CA · LA · MA</div>
+                    <div className="text-white font-medium">Brigham / Harvard</div>
+                    <div className="text-zinc-500">Residency</div>
+                  </div>
+                  <div className="w-px h-10 bg-zinc-800" />
+                  <div>
+                    <div className="text-white font-medium">Board Certified</div>
+                    <div className="text-zinc-500">Internal Medicine</div>
                   </div>
                 </div>
               </div>
