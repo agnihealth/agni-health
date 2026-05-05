@@ -224,14 +224,14 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <div className="max-w-xs mx-auto">
-                <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-[#0d1c30]">
+              <div className="max-w-[220px] mx-auto">
+                <div className="aspect-square rounded-full overflow-hidden ring-4 ring-[#d4a088]/40 bg-[#0d1c30]">
                   <Image
                     src="/dr-japa.jpg"
                     alt="Dr. Sohan Japa"
                     fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 320px"
+                    className="object-cover object-top"
+                    sizes="220px"
                   />
                 </div>
               </div>
