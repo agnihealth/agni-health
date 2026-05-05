@@ -365,6 +365,61 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section id="faq" className="py-24 bg-[#0d1c30]">
+        <div className="max-w-3xl mx-auto px-8">
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Frequently asked <span className="text-[#d4a088]">questions</span>
+          </h2>
+          <div className="space-y-6">
+            {[
+              {
+                q: "Do you accept insurance?",
+                a: "We are a self-pay practice and do not bill insurance directly. Upon request, we can provide a superbill for potential reimbursement through your FSA or HSA. Many patients find that direct-pay care is actually more cost-effective than navigating high-deductible plans."
+              },
+              {
+                q: "Are the labs included in my membership?",
+                a: "Your membership includes the physician's interpretation and ordering of your lab panel. Lab draw costs vary — we work with Quest and LabCorp, and many patients have these covered by insurance. For self-pay patients, out-of-pocket lab costs typically range from $100–300 for the comprehensive initial panel. We'll give you a clear estimate before ordering."
+              },
+              {
+                q: "Can I cancel anytime?",
+                a: "Yes. There's no long-term contract. Your membership is billed monthly and you can cancel with 30 days' notice at any time. No penalties, no runaround."
+              },
+              {
+                q: "Why does the first month cost more?",
+                a: "The $299 first month covers your comprehensive initial lab panel and a 30-minute consultation with Dr. Japa to review your results and build your care plan. Ongoing months are $199 and include follow-up visits, async messaging, and lab monitoring."
+              },
+              {
+                q: "How quickly can I get an appointment?",
+                a: "Most new patients are seen within 1–2 weeks of signing up. After your initial visit, follow-up visits are scheduled quarterly, with unlimited async messaging between appointments."
+              },
+              {
+                q: "What if I need a prescription?",
+                a: "Dr. Japa can prescribe medications as clinically appropriate. Prescriptions are sent directly to your pharmacy and are not included in the membership fee — they're billed separately through your pharmacy, just like any other prescription."
+              },
+              {
+                q: "What states are you licensed in?",
+                a: "We're currently accepting patients in California, Louisiana, and Massachusetts. We're expanding to additional states — join the waitlist if you're outside these states."
+              },
+              {
+                q: "Is this covered under my FSA or HSA?",
+                a: "Telehealth memberships with a licensed physician are generally FSA/HSA-eligible. We recommend confirming with your plan administrator, but most patients are able to use pre-tax dollars for their membership."
+              },
+            ].map(({ q, a }, i) => (
+              <details key={i} className="group border border-zinc-700 rounded-xl overflow-hidden">
+                <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none hover:bg-zinc-800/40 transition-colors">
+                  <span className="font-medium text-white pr-4">{q}</span>
+                  <svg className="w-5 h-5 text-zinc-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-6 pt-2 text-zinc-400 leading-relaxed">{a}</div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section id="book" className="py-24 bg-gradient-to-b from-[#0a1628] to-[#0d1c30]">
         <div className="max-w-3xl mx-auto px-8 text-center">
