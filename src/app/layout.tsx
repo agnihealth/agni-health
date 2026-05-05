@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Plus_Jakarta_Sans, Playfair_Display } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import { AnalyticsProvider } from "./components/Analytics";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -42,7 +44,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${plusJakarta.variable} ${playfair.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <AnalyticsProvider>
+          {children}
+        </AnalyticsProvider>
+        <Analytics />
+      </body>
     </html>
   );
 }
