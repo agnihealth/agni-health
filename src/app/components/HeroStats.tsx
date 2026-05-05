@@ -47,11 +47,24 @@ export default function HeroStats() {
             </div>
           </div>
         </div>
+
+        <div className="flex items-start gap-5">
+          <div className="text-5xl font-bold text-[#d4a088] leading-none tabular-nums min-w-[3.5rem]">6 yrs</div>
+          <div>
+            <div className="text-white font-medium leading-snug">
+              earlier first heart attack
+            </div>
+            <div className="text-zinc-500 text-sm mt-1">
+              South Asians vs. global average (53 vs. 58.8)<sup className="text-[10px]">3</sup>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="text-zinc-600 text-[11px] space-y-1 border-t border-zinc-800 pt-4 leading-relaxed">
         <p><sup>1</sup> MASALA Study Investigators. <em>J Am Heart Assoc.</em> 2026. doi:10.1161/JAHA.124.041221</p>
         <p><sup>2</sup> WHO Expert Consultation. <em>Lancet.</em> 2004;363(9403):157–163</p>
+        <p><sup>3</sup> Joshi P, et al. <em>JAMA.</em> 2007;297(3):286–294. PMID: 17227980</p>
       </div>
     </div>
   );
