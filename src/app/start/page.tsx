@@ -27,8 +27,8 @@ export default function StartPage() {
   const questions = [
     {
       key: "southAsian" as const,
-      question: "Are you a South Asian male?",
-      subtext: "Indian, Pakistani, Bangladeshi, Sri Lankan, Nepali, or similar heritage",
+      question: "Are you of South Asian heritage?",
+      subtext: "Indian, Pakistani, Bangladeshi, Sri Lankan, Nepali, or similar background",
     },
     {
       key: "metabolicConcern" as const,
@@ -109,7 +109,7 @@ export default function StartPage() {
             {answers.inState === "no" 
               ? "We're currently only licensed in California, Louisiana, and Massachusetts. We're expanding soon."
               : answers.southAsian === "no"
-              ? "Our practice specializes in metabolic health for South Asian men. We may not be the best fit for your needs right now."
+              ? "Our practice specializes in metabolic health for South Asian patients. We may not be the best fit for your needs right now."
               : "Our practice focuses on metabolic conditions like prediabetes, diabetes, and weight management. We may not be the best fit for your needs right now."}
           </p>
 
