@@ -3,44 +3,13 @@ import Image from "next/image";
 import { Suspense } from "react";
 import HeroImage from "./components/HeroImage";
 import TrackedLink from "./components/TrackedLink";
+import NavBar from "./components/NavBar";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#0a1628] text-white font-[family-name:var(--font-jakarta)]">
       {/* Nav */}
-      <nav className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
-        <Link href="/" className="flex items-center">
-          <Image 
-            src="/logo-transparent.png" 
-            alt="Agni Health" 
-            width={400} 
-            height={100} 
-            className="h-32 sm:h-40 md:h-48 lg:h-56 w-auto"
-          />
-        </Link>
-        <div className="flex items-center gap-8">
-          <Link href="#approach" className="text-zinc-400 hover:text-white transition-colors text-sm">
-            How It Works
-          </Link>
-          <Link href="#pricing" className="text-zinc-400 hover:text-white transition-colors text-sm">
-            Pricing
-          </Link>
-          <Link href="#faq" className="text-zinc-400 hover:text-white transition-colors text-sm">
-            FAQ
-          </Link>
-          <Link href="#about" className="text-zinc-400 hover:text-white transition-colors text-sm">
-            Dr. Japa
-          </Link>
-          <TrackedLink 
-            href="/start" 
-            eventName="cta_click"
-            eventProperties={{ location: 'nav', button: 'book_consultation' }}
-            className="bg-[#d4a088] text-[#0a1628] px-5 py-2.5 rounded text-sm font-medium hover:bg-[#c4906c] transition-colors"
-          >
-            Book Consultation
-          </TrackedLink>
-        </div>
-      </nav>
+      <NavBar />
 
       {/* Hero */}
       <main className="max-w-7xl mx-auto px-8 pt-16 pb-24">
