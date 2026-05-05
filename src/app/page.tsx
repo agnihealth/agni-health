@@ -15,7 +15,7 @@ export default function Home() {
             alt="Agni Health" 
             width={400} 
             height={100} 
-            className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto"
+            className="h-32 sm:h-40 md:h-48 lg:h-56 w-auto"
           />
         </Link>
         <div className="flex items-center gap-8">
