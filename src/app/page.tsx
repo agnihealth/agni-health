@@ -29,7 +29,7 @@ export default function Home() {
             href="/start" 
             eventName="cta_click"
             eventProperties={{ location: 'nav', button: 'book_consultation' }}
-            className="bg-[#d4a088] text-[#0a1628] px-5 py-2.5 rounded text-sm font-medium hover:bg-[#e0b098] transition-colors"
+            className="bg-[#d4a088] text-[#0a1628] px-5 py-2.5 rounded text-sm font-medium hover:bg-[#c4906c] transition-colors"
           >
             Book Consultation
           </TrackedLink>
@@ -63,7 +63,7 @@ export default function Home() {
                 href="/start"
                 eventName="cta_click"
                 eventProperties={{ location: 'hero', button: 'start_consultation' }}
-                className="bg-[#d4a088] text-[#0a1628] px-8 py-4 rounded text-base font-medium hover:bg-[#e0b098] transition-colors"
+                className="bg-[#d4a088] text-[#0a1628] px-8 py-4 rounded text-base font-medium hover:bg-[#c4906c] transition-colors"
               >
                 Start Your Consultation
               </TrackedLink>
@@ -356,7 +356,7 @@ export default function Home() {
                 href="/start"
                 eventName="cta_click"
                 eventProperties={{ location: 'pricing', button: 'get_started' }}
-                className="block w-full bg-[#d4a088] text-[#0a1628] px-8 py-4 rounded text-base font-medium hover:bg-[#e0b098] transition-colors text-center"
+                className="block w-full bg-[#d4a088] text-[#0a1628] px-8 py-4 rounded text-base font-medium hover:bg-[#c4906c] transition-colors text-center"
               >
                 Get Started
               </TrackedLink>
@@ -378,7 +378,7 @@ export default function Home() {
             href="/start"
             eventName="cta_click"
             eventProperties={{ location: 'bottom_cta', button: 'start_consultation' }}
-            className="inline-block bg-[#d4a088] text-[#0a1628] px-10 py-4 rounded text-lg font-medium hover:bg-[#e0b098] transition-colors"
+            className="inline-block bg-[#d4a088] text-[#0a1628] px-10 py-4 rounded text-lg font-medium hover:bg-[#c4906c] transition-colors"
           >
             Start Your Consultation
           </TrackedLink>
