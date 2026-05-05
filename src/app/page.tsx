@@ -257,7 +257,7 @@ export default function Home() {
                 <p>
                   I lived it too. Despite being a physician, I found myself at 27% body fat—"healthy" 
                   by standard charts, but I knew better. I dropped to 12% through diet and exercise 
-                  alone, using protocols calibrated for South Asian metabolism. No GLP-1s, no shortcuts.
+                  alone, using protocols calibrated for South Asian metabolism.
                 </p>
                 <p>
                   That's why I started Agni Health: to bring the same evidence-based, South Asian-specific 
