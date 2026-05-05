@@ -224,13 +224,16 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-[#1a2d4a]">
-                <Image
-                  src="/dr-japa.jpg"
-                  alt="Dr. Sohan Japa"
-                  fill
-                  className="object-cover"
-                />
+              <div className="max-w-xs mx-auto">
+                <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-[#0d1c30]">
+                  <Image
+                    src="/dr-japa.jpg"
+                    alt="Dr. Sohan Japa"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 320px"
+                  />
+                </div>
               </div>
             </div>
             
