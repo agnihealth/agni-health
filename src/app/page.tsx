@@ -168,7 +168,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-3">Physician-Led Care</h3>
               <p className="text-zinc-400 leading-relaxed">
                 Direct access to a board-certified internal medicine physician. 
-                No chatbot triage, no rushed follow-ups. Continuity matters.
+                No rushed follow-ups, no handoffs. Continuity matters.
               </p>
             </div>
           </div>
