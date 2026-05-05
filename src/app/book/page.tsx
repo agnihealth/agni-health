@@ -20,7 +20,7 @@ export default function Book() {
       <nav className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
         <Link href="/" className="flex items-center">
           <Image 
-            src="/logo-v2.png" 
+            src="/logo-transparent.png" 
             alt="Agni Health" 
             width={160} 
             height={40} 
