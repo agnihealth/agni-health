@@ -42,7 +42,7 @@ export default function Book() {
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold mb-4">Schedule Your Consultation</h1>
           <p className="text-zinc-400">
-            Select a time that works for you. Initial consultations are 60 minutes via video.
+            Select a time that works for you. Initial consultations are 30 minutes via video.
           </p>
         </div>
         

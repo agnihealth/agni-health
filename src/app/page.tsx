@@ -404,9 +404,12 @@ export default function Home() {
                 © 2026 Agni Health. All rights reserved.
               </div>
             </div>
-            <div className="text-right text-sm text-zinc-500">
+            <div className="text-right text-sm text-zinc-500 space-y-1">
               <p>Board-certified internal medicine</p>
               <p>Telehealth practice</p>
+              <p>
+                <Link href="/privacy" className="hover:text-zinc-300 transition-colors">Notice of Privacy Practices</Link>
+              </p>
             </div>
           </div>
         </div>
