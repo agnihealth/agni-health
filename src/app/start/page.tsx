@@ -27,7 +27,7 @@ export default function StartPage() {
   const questions = [
     {
       key: "southAsian" as const,
-      question: "Are you of South Asian descent?",
+      question: "Are you a South Asian male?",
       subtext: "Indian, Pakistani, Bangladeshi, Sri Lankan, Nepali, or similar heritage",
     },
     {
@@ -108,7 +108,9 @@ export default function StartPage() {
           <p className="text-zinc-400 text-lg mb-8">
             {answers.inState === "no" 
               ? "We're currently only licensed in California, Louisiana, and Massachusetts. We're expanding soon."
-              : "Our practice specializes in metabolic health for South Asian patients. We may not be the best fit for your needs right now."}
+              : answers.southAsian === "no"
+              ? "Our practice specializes in metabolic health for South Asian men. We may not be the best fit for your needs right now."
+              : "Our practice focuses on metabolic conditions like prediabetes, diabetes, and weight management. We may not be the best fit for your needs right now."}
           </p>
 
           {!emailSubmitted ? (
