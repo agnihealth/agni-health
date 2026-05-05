@@ -1,0 +1,58 @@
+export default function HeroStats() {
+  return (
+    <div className="aspect-[4/3] rounded-2xl bg-[#0d1c30] border border-zinc-800 p-8 flex flex-col justify-between">
+      <div>
+        <span className="text-[#d4a088] text-xs font-medium tracking-widest uppercase">
+          The data is clear
+        </span>
+        <h3 className="text-white text-lg font-semibold mt-2 leading-snug">
+          South Asian metabolic risk<br />
+          <span className="text-zinc-400 font-normal text-base">is not the same as everyone else&apos;s</span>
+        </h3>
+      </div>
+
+      <div className="space-y-7">
+        <div className="flex items-start gap-5">
+          <div className="text-5xl font-bold text-[#d4a088] leading-none tabular-nums min-w-[3.5rem]">8×</div>
+          <div>
+            <div className="text-white font-medium leading-snug">
+              more likely to have prediabetes at 45
+            </div>
+            <div className="text-zinc-500 text-sm mt-1">
+              South Asian men vs. white peers<sup className="text-[10px]">1</sup>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-5">
+          <div className="text-5xl font-bold text-[#d4a088] leading-none tabular-nums min-w-[3.5rem]">3×</div>
+          <div>
+            <div className="text-white font-medium leading-snug">
+              higher prediabetes risk at 45
+            </div>
+            <div className="text-zinc-500 text-sm mt-1">
+              South Asian women vs. white peers<sup className="text-[10px]">1</sup>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-5">
+          <div className="text-5xl font-bold text-[#d4a088] leading-none tabular-nums min-w-[3.5rem]">23</div>
+          <div>
+            <div className="text-white font-medium leading-snug">
+              BMI where metabolic risk begins
+            </div>
+            <div className="text-zinc-500 text-sm mt-1">
+              Standard guidelines say 25<sup className="text-[10px]">2</sup>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="text-zinc-600 text-[11px] space-y-1 border-t border-zinc-800 pt-4 leading-relaxed">
+        <p><sup>1</sup> MASALA Study Investigators. <em>J Am Heart Assoc.</em> 2026. doi:10.1161/JAHA.124.041221</p>
+        <p><sup>2</sup> WHO Expert Consultation. <em>Lancet.</em> 2004;363(9403):157–163</p>
+      </div>
+    </div>
+  );
+}

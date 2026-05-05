@@ -4,11 +4,16 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { trackExperiment } from "./Analytics";
+import HeroStats from "./HeroStats";
 
-const HERO_VARIANTS = [
-  { src: "/hero-v1-morning.png", alt: "Morning wellness routine" },
-  { src: "/hero-v2-outdoor.png", alt: "Active outdoor lifestyle" },
-  { src: "/hero-v3-kitchen.png", alt: "Healthy meal preparation" },
+type ImageVariant = { kind: 'image'; src: string; alt: string };
+type StatsVariant = { kind: 'stats' };
+type HeroVariant = ImageVariant | StatsVariant;
+
+const HERO_VARIANTS: HeroVariant[] = [
+  { kind: 'image', src: "/hero-v1-morning.png", alt: "Morning wellness routine" },
+  { kind: 'image', src: "/hero-v2-outdoor.png", alt: "Active outdoor lifestyle" },
+  { kind: 'stats' },
 ];
 
 export default function HeroImage() {
@@ -48,6 +53,10 @@ export default function HeroImage() {
 
   const hero = HERO_VARIANTS[variant];
 
+  if (hero.kind === 'stats') {
+    return <HeroStats />;
+  }
+
   return (
     <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
       <Image 
@@ -59,7 +68,6 @@ export default function HeroImage() {
       />
       {/* Gradient overlay for text readability if needed */}
       <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#0a1628]/30" />
-
     </div>
   );
 }

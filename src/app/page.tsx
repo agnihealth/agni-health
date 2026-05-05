@@ -82,15 +82,47 @@ export default function Home() {
       </main>
 
       {/* The Problem section */}
-      <section className="bg-[#0d1c30] py-20">
-        <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">
-            South Asians face <span className="text-[#d4a088]">2x the risk</span> of metabolic disease
-          </h2>
-          <p className="text-xl text-zinc-400 leading-relaxed">
-            Yet standard medical guidelines were built on studies that largely excluded us. 
-            Different insulin sensitivity. Different fat distribution. Different thresholds for risk. 
-            You deserve care that accounts for these differences—not generic advice that misses the mark.
+      <section className="bg-[#0d1c30] py-24">
+        <div className="max-w-4xl mx-auto px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-6">
+              The risk is real — and it starts <span className="text-[#d4a088]">earlier than you think</span>
+            </h2>
+            <p className="text-xl text-zinc-400 leading-relaxed max-w-3xl mx-auto">
+              A 2026 study of 2,700 U.S. adults found that South Asians accumulate cardiovascular risk factors
+              by their mid-40s — despite having healthier diets, lower alcohol use, and comparable exercise
+              habits than white, Black, Hispanic, and Chinese adults. The biology is different. The care needs to be too.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-10">
+            <div className="bg-[#0a1628] border border-zinc-800 rounded-xl p-6 text-center">
+              <div className="text-4xl font-bold text-[#d4a088] mb-2">~8×</div>
+              <div className="text-white font-medium mb-1">prediabetes risk at 45</div>
+              <div className="text-zinc-500 text-sm">South Asian men vs. white peers<sup className="text-[10px]">1</sup></div>
+              <div className="text-zinc-600 text-xs mt-2">30.7% vs. 3.9%</div>
+            </div>
+            <div className="bg-[#0a1628] border border-zinc-800 rounded-xl p-6 text-center">
+              <div className="text-4xl font-bold text-[#d4a088] mb-2">~3×</div>
+              <div className="text-white font-medium mb-1">prediabetes risk at 45</div>
+              <div className="text-zinc-500 text-sm">South Asian women vs. white peers<sup className="text-[10px]">1</sup></div>
+              <div className="text-zinc-600 text-xs mt-2">17.6% vs. 5.7%</div>
+            </div>
+            <div className="bg-[#0a1628] border border-zinc-800 rounded-xl p-6 text-center">
+              <div className="text-4xl font-bold text-[#d4a088] mb-2">2×</div>
+              <div className="text-white font-medium mb-1">T2D risk by 55</div>
+              <div className="text-zinc-500 text-sm">vs. white adults, same age<sup className="text-[10px]">1</sup></div>
+              <div className="text-zinc-600 text-xs mt-2">despite healthier behaviors</div>
+            </div>
+          </div>
+
+          <p className="text-zinc-500 text-sm text-center leading-relaxed max-w-3xl mx-auto">
+            Yet standard medical guidelines were built on studies that largely excluded South Asian populations.
+            Different insulin sensitivity. Different fat distribution. Different risk thresholds.
+            You deserve care calibrated to your biology — not generic advice built for someone else.
+          </p>
+          <p className="text-zinc-600 text-xs text-center mt-4">
+            <sup>1</sup> MASALA Study Investigators. <em>J Am Heart Assoc.</em> 2026. doi:10.1161/JAHA.124.041221
           </p>
         </div>
       </section>
@@ -326,8 +358,11 @@ export default function Home() {
                 </li>
               </ul>
               
+              <p className="text-zinc-500 text-sm mb-2">
+                For patients where it&apos;s clinically appropriate, we offer GLP-1 medication management as part of a comprehensive metabolic plan.
+              </p>
               <p className="text-zinc-500 text-sm mb-8">
-                Medications (including GLP-1s) not included and billed separately if prescribed.
+                Medications (including GLP-1s) not included in membership and billed separately if prescribed.
               </p>
               
               <TrackedLink 
@@ -353,6 +388,10 @@ export default function Home() {
           <div className="space-y-6">
             {[
               {
+                q: "Do you prescribe GLP-1 medications like semaglutide?",
+                a: "Yes — for patients where GLP-1 therapy is clinically appropriate, we can prescribe and manage it as part of your overall care plan. During your first visit, Dr. Japa will review your health history, labs, and goals to determine what's right for you. GLP-1s are one tool in a broader approach — we combine medication with nutrition and lifestyle guidance tailored to your biology."
+              },
+              {
                 q: "Do you accept insurance?",
                 a: "We are a self-pay practice and do not bill insurance directly. Upon request, we can provide a superbill for potential reimbursement through your FSA or HSA. Many patients find that direct-pay care is actually more cost-effective than navigating high-deductible plans."
               },
@@ -363,10 +402,6 @@ export default function Home() {
               {
                 q: "Can I cancel anytime?",
                 a: "Yes. There's no long-term contract. Your membership is billed monthly and you can cancel with 30 days' notice at any time. No penalties, no runaround."
-              },
-              {
-                q: "Why does the first month cost more?",
-                a: "The $299 first month covers your comprehensive initial lab panel and a 30-minute consultation with Dr. Japa to review your results and build your care plan. Ongoing months are $199 and include follow-up visits, async messaging, and lab monitoring."
               },
               {
                 q: "How quickly can I get an appointment?",
