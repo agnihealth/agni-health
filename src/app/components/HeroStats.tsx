@@ -13,10 +13,10 @@ export default function HeroStats() {
 
       <div className="space-y-7">
         <div className="flex items-start gap-5">
-          <div className="text-5xl font-bold text-[#d4a088] leading-none tabular-nums min-w-[3.5rem]">8×</div>
+          <div className="text-5xl font-bold text-[#d4a088] leading-none tabular-nums min-w-[3.5rem]">3×</div>
           <div>
             <div className="text-white font-medium leading-snug">
-higher prediabetes prevalence at 45
+              higher prediabetes risk
             </div>
             <div className="text-zinc-500 text-sm mt-1">
               South Asian men vs. White peers<sup className="text-[10px]">1</sup>
@@ -25,10 +25,10 @@ higher prediabetes prevalence at 45
         </div>
 
         <div className="flex items-start gap-5">
-          <div className="text-5xl font-bold text-[#d4a088] leading-none tabular-nums min-w-[3.5rem]">3×</div>
+          <div className="text-5xl font-bold text-[#d4a088] leading-none tabular-nums min-w-[3.5rem]">2.5×</div>
           <div>
             <div className="text-white font-medium leading-snug">
-              higher prediabetes risk at 45
+              higher prediabetes risk
             </div>
             <div className="text-zinc-500 text-sm mt-1">
               South Asian women vs. White peers<sup className="text-[10px]">1</sup>
