@@ -12,7 +12,7 @@ export default function Home() {
       <NavBar />
 
       {/* Hero */}
-      <main className="max-w-7xl mx-auto px-8 pt-16 pb-24">
+      <main className="max-w-7xl mx-auto px-8 pt-8 pb-24">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div className="inline-block">

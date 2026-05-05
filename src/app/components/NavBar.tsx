@@ -23,7 +23,7 @@ export default function NavBar() {
           alt="Agni Health"
           width={400}
           height={100}
-          className="h-32 sm:h-40 md:h-48 lg:h-56 w-auto"
+          className="h-10 w-auto"
         />
       </Link>
 
