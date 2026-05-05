@@ -245,7 +245,7 @@ export default function Home() {
                 <p>
                   I earned my MD at Stanford and trained in internal medicine at Brigham and 
                   Women's Hospital. Over the past decade, I've practiced at some of the country's 
-                  top academic medical centers—Mount Sinai, UCSF, the VA system—caring for 
+                  top academic medical centers—Mount Sinai, UCSF—caring for 
                   thousands of patients across New York and the Bay Area.
                 </p>
                 <p>
