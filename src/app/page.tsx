@@ -110,7 +110,7 @@ export default function Home() {
       <section className="bg-[#0d1c30] py-20">
         <div className="max-w-4xl mx-auto px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">
-            South Asians face <span className="text-[#d4a088]">4x the risk</span> of metabolic disease
+            South Asians face <span className="text-[#d4a088]">2x the risk</span> of metabolic disease
           </h2>
           <p className="text-xl text-zinc-400 leading-relaxed">
             Yet standard medical guidelines were built on studies that largely excluded us. 
