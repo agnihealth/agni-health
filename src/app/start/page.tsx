@@ -12,11 +12,9 @@ export default function StartPage() {
   const router = useRouter();
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<{
-    southAsian: Answer;
     metabolicConcern: Answer;
     inState: Answer;
   }>({
-    southAsian: null,
     metabolicConcern: null,
     inState: null,
   });
@@ -25,11 +23,6 @@ export default function StartPage() {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const questions = [
-    {
-      key: "southAsian" as const,
-      question: "Are you of South Asian heritage?",
-      subtext: "Indian, Pakistani, Bangladeshi, Sri Lankan, Nepali, or similar background",
-    },
     {
       key: "metabolicConcern" as const,
       question: "Are you concerned about or managing a metabolic condition?",
@@ -108,8 +101,6 @@ export default function StartPage() {
           <p className="text-zinc-400 text-lg mb-8">
             {answers.inState === "no" 
               ? "We're currently only licensed in California, Louisiana, and Massachusetts. We're expanding soon."
-              : answers.southAsian === "no"
-              ? "Our practice specializes in metabolic health for South Asian patients. We may not be the best fit for your needs right now."
               : "Our practice focuses on metabolic conditions like prediabetes, diabetes, and weight management. We may not be the best fit for your needs right now."}
           </p>
 
@@ -118,7 +109,7 @@ export default function StartPage() {
               <p className="text-zinc-500 text-sm mb-4">
                 {answers.inState === "no" 
                   ? "Join our waitlist to be notified when we expand to your state."
-                  : "Join our waitlist for updates."}
+                  : "Join our waitlist and we'll follow up when we're a good fit."}
               </p>
               <div className="flex gap-2">
                 <input
@@ -174,6 +165,13 @@ export default function StartPage() {
       </nav>
 
       <main className="max-w-xl mx-auto px-8 pt-16 pb-24">
+        {/* Specialty callout */}
+        <div className="mb-10 text-center">
+          <p className="text-zinc-500 text-sm">
+            Agni Health specializes in metabolic health for South Asian patients — a community with clinically documented higher cardiometabolic risk at lower BMI thresholds.
+          </p>
+        </div>
+
         {/* Progress bar */}
         <div className="mb-12">
           <div className="flex justify-between text-sm text-zinc-500 mb-2">
