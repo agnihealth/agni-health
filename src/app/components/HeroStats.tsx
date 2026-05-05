@@ -16,7 +16,7 @@ export default function HeroStats() {
           <div className="text-5xl font-bold text-[#d4a088] leading-none tabular-nums min-w-[3.5rem]">8×</div>
           <div>
             <div className="text-white font-medium leading-snug">
-              more likely to have prediabetes at 45
+higher prediabetes prevalence at 45
             </div>
             <div className="text-zinc-500 text-sm mt-1">
               South Asian men vs. White peers<sup className="text-[10px]">1</sup>
