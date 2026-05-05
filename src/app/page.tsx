@@ -201,7 +201,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-3">Personalized Protocol</h3>
               <p className="text-zinc-400">
                 Based on your results, we create a protocol covering nutrition, movement, 
-                sleep, stress, and medication if appropriate—all calibrated to your biology.
+                sleep, and medication if appropriate—all calibrated to your biology.
               </p>
             </div>
 
