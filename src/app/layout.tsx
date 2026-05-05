@@ -32,6 +32,28 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Agni Health | Metabolic Health for South Asians",
   description: "Physician-led metabolic health care designed for South Asian biology. Evidence-based protocols. Personalized to you.",
+  metadataBase: new URL("https://agnihealth.co"),
+  openGraph: {
+    title: "Agni Health | Metabolic Health for South Asians",
+    description: "Physician-led metabolic health care designed for South Asian biology. Evidence-based protocols. Personalized to you.",
+    url: "https://agnihealth.co",
+    siteName: "Agni Health",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Agni Health – Metabolic Health for South Asians",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Agni Health | Metabolic Health for South Asians",
+    description: "Physician-led metabolic health care designed for South Asian biology. Evidence-based protocols. Personalized to you.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({

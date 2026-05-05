@@ -59,10 +59,7 @@ export default function HeroImage() {
       />
       {/* Gradient overlay for text readability if needed */}
       <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#0a1628]/30" />
-      {/* Variant indicator (dev only - remove in prod) */}
-      <div className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
-        v{variant + 1}
-      </div>
+
     </div>
   );
 }
