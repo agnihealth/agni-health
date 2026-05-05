@@ -243,36 +243,44 @@ export default function Home() {
               </h2>
               <div className="space-y-4 text-zinc-400 leading-relaxed">
                 <p>
-                  I trained at Stanford Medicine and completed my residency at Brigham and 
-                  Women's Hospital (Harvard). Six years into practice, I started Agni Health 
-                  because I kept seeing South Asian patients fall through the cracks of a 
-                  healthcare system that wasn't built for them.
+                  I earned my MD at Stanford and trained in internal medicine at Brigham and 
+                  Women's Hospital. Over the past decade, I've practiced at some of the country's 
+                  top academic medical centers—Mount Sinai, UCSF, the VA system—caring for 
+                  thousands of patients across New York and the Bay Area.
                 </p>
                 <p>
-                  I also lived it myself. A few years ago, I was at 27% body fat—"normal" by 
-                  standard charts, but I knew the research. For South Asian men, that's metabolic 
-                  danger territory. I dropped to 12% body fat through diet and exercise alone. 
-                  No medications, no shortcuts—just protocols calibrated for how our bodies 
-                  actually work.
+                  But I kept noticing the same pattern: South Asian patients doing everything 
+                  "right" and still developing diabetes. "Normal" BMIs hiding dangerous metabolic 
+                  profiles. Standard guidelines missing the mark by years. Our biology is different, 
+                  and the research is clear—but mainstream medicine hasn't caught up.
                 </p>
                 <p>
-                  That's what I bring to Agni Health: evidence-based medicine combined with 
-                  the lived experience of optimizing South Asian metabolism. No rushed visits. 
-                  No generic advice. Just physician-led care that actually gets your biology.
+                  I lived it too. Despite being a physician, I found myself at 27% body fat—"healthy" 
+                  by standard charts, but I knew better. I dropped to 12% through diet and exercise 
+                  alone, using protocols calibrated for South Asian metabolism. No GLP-1s, no shortcuts.
+                </p>
+                <p>
+                  That's why I started Agni Health: to bring the same evidence-based, South Asian-specific 
+                  approach to patients who deserve care that actually understands their biology.
                 </p>
               </div>
               <div className="mt-8 pt-6 border-t border-zinc-800">
-                <div className="flex items-center gap-6 text-sm">
+                <div className="flex flex-wrap items-center gap-x-6 gap-y-4 text-sm">
                   <div>
-                    <div className="text-white font-medium">Stanford Medicine</div>
+                    <div className="text-white font-medium">Stanford</div>
                     <div className="text-zinc-500">MD</div>
                   </div>
-                  <div className="w-px h-10 bg-zinc-800" />
+                  <div className="w-px h-10 bg-zinc-800 hidden sm:block" />
                   <div>
-                    <div className="text-white font-medium">Brigham / Harvard</div>
+                    <div className="text-white font-medium">Harvard / Brigham</div>
                     <div className="text-zinc-500">Residency</div>
                   </div>
-                  <div className="w-px h-10 bg-zinc-800" />
+                  <div className="w-px h-10 bg-zinc-800 hidden sm:block" />
+                  <div>
+                    <div className="text-white font-medium">10+ Years</div>
+                    <div className="text-zinc-500">Clinical Experience</div>
+                  </div>
+                  <div className="w-px h-10 bg-zinc-800 hidden sm:block" />
                   <div>
                     <div className="text-white font-medium">Board Certified</div>
                     <div className="text-zinc-500">Internal Medicine</div>
