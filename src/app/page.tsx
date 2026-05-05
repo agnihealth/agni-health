@@ -219,8 +219,65 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About */}
+      <section id="about" className="py-24 bg-[#0d1c30]">
+        <div className="max-w-6xl mx-auto px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-[#1a2d4a]">
+                <Image
+                  src="/dr-japa.jpg"
+                  alt="Dr. Sohan Japa"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            
+            <div>
+              <span className="text-[#d4a088] text-sm font-medium tracking-wider uppercase">
+                Your Physician
+              </span>
+              <h2 className="text-4xl font-bold mt-4 mb-6">
+                Dr. Sohan Japa, MD
+              </h2>
+              <div className="space-y-4 text-zinc-400 leading-relaxed">
+                <p>
+                  I'm a board-certified internal medicine physician who started Agni Health 
+                  because I was tired of watching South Asian patients fall through the cracks 
+                  of a healthcare system that wasn't built for them.
+                </p>
+                <p>
+                  Growing up in a South Asian family, I saw the pattern everywhere: relatives 
+                  with "normal" BMIs developing diabetes, standard dietary advice that ignored 
+                  our food culture, and risk thresholds that missed the mark by years.
+                </p>
+                <p>
+                  At Agni Health, I combine evidence-based medicine with protocols calibrated 
+                  specifically for South Asian metabolic patterns. No rushed 10-minute visits. 
+                  No one-size-fits-all advice. Just physician-led care that actually gets your biology.
+                </p>
+              </div>
+              <div className="mt-8 pt-6 border-t border-zinc-800">
+                <div className="flex items-center gap-6 text-sm">
+                  <div>
+                    <div className="text-white font-medium">Board Certified</div>
+                    <div className="text-zinc-500">Internal Medicine</div>
+                  </div>
+                  <div className="w-px h-10 bg-zinc-800" />
+                  <div>
+                    <div className="text-white font-medium">Licensed</div>
+                    <div className="text-zinc-500">CA · LA · MA</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing */}
-      <section id="pricing" className="py-24 bg-[#0d1c30]">
+      <section id="pricing" className="py-24">
         <div className="max-w-4xl mx-auto px-8">
           <h2 className="text-3xl font-bold mb-6 text-center">
             Simple, <span className="text-[#d4a088]">transparent</span> pricing
