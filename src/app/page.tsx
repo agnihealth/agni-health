@@ -49,7 +49,7 @@ export default function Home() {
             <h1 className="text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
               Metabolic care built for
               <br />
-              <span className="text-white">South Asian biology.</span>
+              <span className="text-[#d4a088]">South Asian</span> biology.
             </h1>
             
             <p className="text-xl text-zinc-400 leading-relaxed max-w-lg">
