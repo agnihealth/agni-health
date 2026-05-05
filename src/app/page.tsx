@@ -305,7 +305,7 @@ export default function Home() {
           <div className="bg-[#0a1628] border border-zinc-800 rounded-2xl p-8 md:p-12 max-w-xl mx-auto">
             <div className="text-center">
               <div className="text-[#d4a088] text-sm font-medium tracking-wider uppercase mb-4">
-                12-Month Membership
+                Membership
               </div>
               <div className="flex items-baseline justify-center gap-2 mb-2">
                 <span className="text-5xl font-bold">$299</span>
@@ -360,6 +360,7 @@ export default function Home() {
               >
                 Get Started
               </TrackedLink>
+              <p className="text-zinc-500 text-xs mt-4">Billed monthly · Cancel anytime with 30 days&apos; notice</p>
             </div>
           </div>
         </div>
