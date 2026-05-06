@@ -303,7 +303,7 @@ export default function Home() {
 
       {/* Pricing */}
       <section id="pricing" className="py-24">
-        <div className="max-w-4xl mx-auto px-8">
+        <div className="max-w-6xl mx-auto px-8">
           <h2 className="text-3xl font-bold mb-6 text-center">
             Simple, <span className="text-[#d4a088]">transparent</span> pricing
           </h2>
@@ -312,38 +312,75 @@ export default function Home() {
           </p>
 
           {/* Initial Consultation */}
-          <div className="bg-[#0d1c30] border border-zinc-700 rounded-2xl px-8 py-6 max-w-2xl mx-auto mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div className="bg-[#0d1c30] border border-zinc-700 rounded-2xl px-8 py-6 max-w-2xl mx-auto mb-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
               <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-1">Step 1</div>
               <div className="text-white font-semibold text-lg">Initial Consultation</div>
               <div className="text-zinc-400 text-sm mt-1">30-minute video visit · One-time, no commitment</div>
             </div>
             <div className="flex items-baseline gap-1 sm:text-right shrink-0">
-              <span className="text-4xl font-bold text-white">$275</span>
+              <span className="text-4xl font-bold text-white">$350</span>
               <span className="text-zinc-400 text-sm">one-time</span>
             </div>
           </div>
 
           {/* Membership Cards */}
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-6">
-            {/* Annual — lead with this */}
-            <div className="bg-[#0a1628] border-2 border-[#d4a088] rounded-2xl p-8 relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                <span className="bg-[#d4a088] text-[#0a1628] text-xs font-semibold px-3 py-1 rounded-full">Best Value</span>
-              </div>
-              <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-4">Annual Membership</div>
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+
+            {/* Essential */}
+            <div className="bg-[#0a1628] border border-zinc-800 rounded-2xl p-8 flex flex-col">
+              <div className="text-zinc-400 text-xs font-medium tracking-wider uppercase mb-2">Essential</div>
               <div className="flex items-baseline gap-1 mb-1">
-                <span className="text-5xl font-bold">$174</span>
+                <span className="text-5xl font-bold">$300</span>
                 <span className="text-zinc-400">/mo</span>
               </div>
-              <div className="text-zinc-500 text-sm mb-6">Billed $2,088/yr · Save $300</div>
-              <ul className="space-y-3 mb-8">
+              <div className="text-zinc-500 text-sm mb-6">$3,600/yr · or $350/mo monthly</div>
+              <ul className="space-y-3 mb-8 flex-1">
                 {[
-                  "Quarterly 15-min follow-up visits",
-                  "Unlimited async physician messaging",
+                  "Quarterly 20-min follow-up visits",
+                  "Async physician messaging (48hr SLA)",
                   "Personalized metabolic protocol",
                   "Medication management & adjustments",
                   "Labs review & care plan updates",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-zinc-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-zinc-400 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <TrackedLink
+                href="/start"
+                eventName="cta_click"
+                eventProperties={{ location: 'pricing', button: 'essential' }}
+                className="block w-full border border-zinc-600 text-white px-6 py-3 rounded text-sm font-medium hover:border-zinc-400 transition-colors text-center"
+              >
+                Get Started
+              </TrackedLink>
+            </div>
+
+            {/* Intensive — featured */}
+            <div className="bg-[#0a1628] border-2 border-[#d4a088] rounded-2xl p-8 relative flex flex-col">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                <span className="bg-[#d4a088] text-[#0a1628] text-xs font-semibold px-3 py-1 rounded-full">Most Popular</span>
+              </div>
+              <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-2">Intensive</div>
+              <div className="flex items-baseline gap-1 mb-1">
+                <span className="text-5xl font-bold">$600</span>
+                <span className="text-zinc-400">/mo</span>
+              </div>
+              <div className="text-zinc-500 text-sm mb-6">$7,200/yr · or $700/mo monthly</div>
+              <ul className="space-y-3 mb-8 flex-1">
+                {[
+                  "Monthly 20-min follow-up visits",
+                  "Async physician messaging (24hr SLA)",
+                  "Personalized metabolic protocol",
+                  "Medication management & adjustments",
+                  "Labs review & care plan updates",
+                  "CGM integration & interpretation",
+                  "Annual 60-min metabolic deep-dive",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <svg className="w-5 h-5 text-[#d4a088] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -356,46 +393,48 @@ export default function Home() {
               <TrackedLink
                 href="/start"
                 eventName="cta_click"
-                eventProperties={{ location: 'pricing', button: 'annual_membership' }}
+                eventProperties={{ location: 'pricing', button: 'intensive' }}
                 className="block w-full bg-[#d4a088] text-[#0a1628] px-6 py-3 rounded text-sm font-medium hover:bg-[#c4906c] transition-colors text-center"
               >
                 Get Started
               </TrackedLink>
             </div>
 
-            {/* Monthly */}
-            <div className="bg-[#0a1628] border border-zinc-800 rounded-2xl p-8">
-              <div className="text-zinc-400 text-xs font-medium tracking-wider uppercase mb-4">Monthly Membership</div>
-              <div className="flex items-baseline gap-1 mb-1">
-                <span className="text-5xl font-bold">$199</span>
-                <span className="text-zinc-400">/mo</span>
+            {/* Executive — coming soon */}
+            <div className="bg-[#0a1628] border border-zinc-800 rounded-2xl p-8 relative flex flex-col opacity-70">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                <span className="bg-zinc-700 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-full">Coming Soon</span>
               </div>
-              <div className="text-zinc-500 text-sm mb-6">Month-to-month · Cancel anytime</div>
-              <ul className="space-y-3 mb-8">
+              <div className="text-zinc-500 text-xs font-medium tracking-wider uppercase mb-2">Executive</div>
+              <div className="flex items-baseline gap-1 mb-1">
+                <span className="text-5xl font-bold text-zinc-500">$15K</span>
+                <span className="text-zinc-600">/yr</span>
+              </div>
+              <div className="text-zinc-600 text-sm mb-6">White-glove metabolic care</div>
+              <ul className="space-y-3 mb-8 flex-1">
                 {[
-                  "Quarterly 15-min follow-up visits",
-                  "Unlimited async physician messaging",
-                  "Personalized metabolic protocol",
-                  "Medication management & adjustments",
-                  "Labs review & care plan updates",
+                  "Everything in Intensive",
+                  "Bi-weekly check-ins",
+                  "In-person visits",
+                  "Executive health panel coordination",
+                  "Direct physician access",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <svg className="w-5 h-5 text-zinc-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-zinc-700 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-zinc-400 text-sm">{item}</span>
+                    <span className="text-zinc-600 text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
-              <TrackedLink
-                href="/start"
-                eventName="cta_click"
-                eventProperties={{ location: 'pricing', button: 'monthly_membership' }}
-                className="block w-full border border-zinc-600 text-white px-6 py-3 rounded text-sm font-medium hover:border-zinc-400 transition-colors text-center"
+              <button
+                disabled
+                className="block w-full border border-zinc-700 text-zinc-600 px-6 py-3 rounded text-sm font-medium text-center cursor-not-allowed"
               >
-                Get Started
-              </TrackedLink>
+                Notify Me
+              </button>
             </div>
+
           </div>
 
           <p className="text-zinc-500 text-sm text-center max-w-xl mx-auto">
