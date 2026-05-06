@@ -231,7 +231,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
-              <div className="relative w-72 sm:w-96 rounded-2xl overflow-hidden shadow-2xl ring-2 ring-[#d4a088]/50">
+              <div className="relative w-72 sm:w-96 rounded-2xl overflow-hidden ring-2 ring-[#d4a088]/50 shadow-[0_20px_60px_-10px_rgba(212,160,136,0.25)]">
                 <Image
                   src="/dr-japa.png"
                   alt="Dr. Sohan Japa"
