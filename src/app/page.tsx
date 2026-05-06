@@ -106,7 +106,7 @@ export default function Home() {
             Population statistics do not predict individual health outcomes. All care is individualized.
           </p>
           <p className="text-zinc-600 text-xs text-center mt-2">
-            <sup>1</sup> MASALA Study Investigators. <em>J Am Heart Assoc.</em> 2026. doi:10.1161/JAHA.124.041221
+            <sup>1</sup> MASALA Study Investigators. <em>J Am Heart Assoc.</em> 2026. <a href="https://doi.org/10.1161/JAHA.124.041221" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#d4a088] transition-colors">doi:10.1161/JAHA.124.041221</a>
           </p>
         </div>
       </section>

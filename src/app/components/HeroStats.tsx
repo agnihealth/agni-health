@@ -46,7 +46,7 @@ export default function HeroStats() {
       </div>
 
       <div className="text-zinc-600 text-[11px] space-y-1 border-t border-zinc-800 pt-4 leading-relaxed">
-        <p><sup>1</sup> MASALA Study Investigators. <em>J Am Heart Assoc.</em> 2026. doi:10.1161/JAHA.124.041221</p>
+        <p><sup>1</sup> MASALA Study Investigators. <em>J Am Heart Assoc.</em> 2026. <a href="https://doi.org/10.1161/JAHA.124.041221" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#d4a088] transition-colors">doi:10.1161/JAHA.124.041221</a></p>
         <p><sup>2</sup> Joshi P, et al. <em>JAMA.</em> 2007;297(3):286–294. PMID: 17227980</p>
       </div>
     </div>
