@@ -315,7 +315,7 @@ export default function Home() {
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
               <p className="text-zinc-300 text-base sm:text-lg leading-relaxed italic">
-                &ldquo;I lived it too. Despite being a physician, I found myself at 27% body fat—&lsquo;healthy&rsquo; by 
+                &ldquo;I lived it too. Despite being a physician, I found myself at 26% body fat—&lsquo;healthy&rsquo; by 
                 standard charts, but I knew better. I dropped to 12% through protocols calibrated for South Asian 
                 metabolism. That&apos;s why I built Agni: care that actually understands your biology.&rdquo;
               </p>
@@ -367,7 +367,7 @@ export default function Home() {
                   and the research is clear—but mainstream medicine hasn't caught up.
                 </p>
                 <p>
-                  I lived it too. Despite being a physician, I found myself at 27% body fat—"healthy" 
+                  I lived it too. Despite being a physician, I found myself at 26% body fat—"healthy" 
                   by standard charts, but I knew better. I dropped to 12% through diet and exercise 
                   alone, using protocols calibrated for South Asian metabolism.
                 </p>
