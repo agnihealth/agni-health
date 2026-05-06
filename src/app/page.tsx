@@ -199,7 +199,7 @@ export default function Home() {
               </div>
             </div>
             
-            <p className="text-zinc-400 text-base text-center mt-10 max-w-2xl mx-auto">
+            <p className="text-[#d4a088] text-lg text-center mt-10 max-w-2xl mx-auto font-medium">
               Our goal isn&apos;t to be your doctor forever. Most patients achieve lasting metabolic 
               improvements in 1-3 years and can return to their primary care physician with a clear maintenance plan.
             </p>
