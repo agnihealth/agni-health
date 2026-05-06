@@ -233,7 +233,7 @@ export default function Home() {
             <div className="flex justify-center">
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden ring-4 ring-[#d4a088]/40 bg-[#0d1c30]">
                 <Image
-                  src="/dr-japa.jpg"
+                  src="/dr-japa.png"
                   alt="Dr. Sohan Japa"
                   fill
                   className="object-cover object-top"
