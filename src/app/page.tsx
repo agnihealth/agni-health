@@ -28,9 +28,7 @@ export default function Home() {
             </h1>
             
             <p className="text-base sm:text-xl text-zinc-400 leading-relaxed max-w-lg">
-              Your biology works differently. Your healthcare should too.
-              Evidence-based protocols calibrated for the metabolic patterns 
-              that affect South Asians—not generic guidelines built for someone else.
+              Evidence-based protocols built for South Asian metabolism—not generic guidelines designed for someone else.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 pt-4">
@@ -70,12 +68,12 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold mb-6">
-              The risk is real — and it starts <span className="text-[#d4a088]">earlier than you think</span>
+              The risk starts <span className="text-[#d4a088]">earlier than you think</span>
             </h2>
             <p className="text-base sm:text-xl text-zinc-400 leading-relaxed max-w-3xl mx-auto">
               A 2026 study of 2,700 U.S. adults found that South Asians accumulate cardiovascular risk factors
-              by their mid-40s — despite having healthier diets, lower alcohol use, and comparable exercise
-              habits than White, Black, Hispanic, and Chinese adults. The biology is different. The care needs to be too.
+              by their mid-40s—despite healthier diets, lower alcohol use, and comparable exercise
+              habits than White, Black, Hispanic, and Chinese adults.
             </p>
           </div>
 
@@ -101,9 +99,8 @@ export default function Home() {
           </div>
 
           <p className="text-zinc-500 text-sm text-center leading-relaxed max-w-3xl mx-auto">
-            Yet standard medical guidelines were built on studies that largely excluded South Asian populations.
+            Standard medical guidelines were built on studies that largely excluded South Asian populations.
             Different insulin sensitivity. Different fat distribution. Different risk thresholds.
-            You deserve care calibrated to your biology — not generic advice built for someone else.
           </p>
           <p className="text-zinc-500 text-xs text-center mt-3 italic">
             Population statistics do not predict individual health outcomes. All care is individualized.
@@ -120,10 +117,10 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-              Precision metabolic care, <span className="text-[#d4a088]">built for South Asian men</span>
+              Metabolic care <span className="text-[#d4a088]">built for South Asian men</span>
             </h2>
             <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-              Physician-led. Research-backed. Calibrated to your biology.
+              Physician-led. Research-backed.
             </p>
           </div>
           
@@ -163,8 +160,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Direct Physician Access</h3>
               <p className="text-zinc-400 leading-relaxed">
-                No PAs. No handoffs. Your board-certified physician manages your entire care 
-                with async messaging and 24-48hr response times.
+                No PAs. No handoffs. Your physician handles everything—async messaging, 24–48hr responses.
               </p>
             </div>
           </div>
@@ -190,7 +186,7 @@ export default function Home() {
                 <h4 className="text-lg font-semibold mb-3">Personalized Protocol</h4>
                 <p className="text-zinc-400 text-sm">
                   Based on your results, we create a protocol covering nutrition, movement, 
-                  sleep, and medication if appropriate—calibrated to your biology.
+                  sleep, and medication if appropriate.
                 </p>
               </div>
 
@@ -198,8 +194,7 @@ export default function Home() {
                 <div className="text-[#d4a088] font-mono text-sm tracking-wider mb-4">03</div>
                 <h4 className="text-lg font-semibold mb-3">Ongoing Support</h4>
                 <p className="text-zinc-400 text-sm">
-                  Async messaging, regular check-ins, and adjustments as your body responds. 
-                  This isn't a one-time visit—it's continuous care.
+                  Async messaging, regular check-ins, and adjustments as your body responds.
                 </p>
               </div>
             </div>
@@ -274,13 +269,7 @@ export default function Home() {
                   and the research is clear—but mainstream medicine hasn't caught up.
                 </p>
                 <p>
-                  I lived it too. Despite being a physician, I found myself at 26% body fat—"healthy" 
-                  by standard charts, but I knew better. I dropped to 12% through diet and exercise 
-                  alone, using protocols calibrated for South Asian metabolism.
-                </p>
-                <p>
-                  That's why I started Agni Health: to bring the same evidence-based, South Asian-specific 
-                  approach to patients who deserve care that actually understands their biology.
+                  That's why I started Agni Health.
                 </p>
               </div>
               <div className="mt-8 pt-6 border-t border-zinc-800">
@@ -464,11 +453,11 @@ export default function Home() {
             {[
               {
                 q: "Do you prescribe GLP-1 medications like semaglutide?",
-                a: "Yes — for patients where GLP-1 therapy is clinically appropriate, we prescribe FDA-approved medications only and manage them as part of your overall care plan. During your first visit, Dr. Japa will review your health history, labs, and goals to determine what's right for you. GLP-1s are one tool in a broader approach — we combine medication with nutrition and lifestyle guidance tailored to your biology."
+                a: "Yes—when clinically appropriate. We prescribe FDA-approved GLP-1s and manage them as part of your care plan. Dr. Japa will review your history and labs to determine fit."
               },
               {
                 q: "Do you accept insurance?",
-                a: "We are a self-pay practice and do not bill insurance directly. Upon request, we can provide a superbill for potential reimbursement through your FSA or HSA. Many patients find that direct-pay care is actually more cost-effective than navigating high-deductible plans."
+                a: "We are a self-pay practice and do not bill insurance directly. Upon request, we can provide a superbill for potential reimbursement through your FSA or HSA."
               },
               {
                 q: "Are the labs included in my membership?",
@@ -576,10 +565,7 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Ready for care that gets your biology?
           </h2>
-          <p className="text-base sm:text-xl text-zinc-400 mb-8 sm:mb-10">
-            Schedule a consultation to discuss your metabolic health goals.
-          </p>
-          <p className="text-[#d4a088] text-sm font-medium mb-6">Limited spots — next availability in 1–2 weeks.</p>
+          <p className="text-[#d4a088] text-sm font-medium mb-8 sm:mb-10">Limited spots — next availability in 1–2 weeks.</p>
           <TrackedLink 
             href="/start"
             eventName="cta_click"
