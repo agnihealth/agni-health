@@ -325,7 +325,6 @@ export default function Home() {
                 {[
                   "Quarterly 20-min video visits (board-certified MD)",
                   "SA-specific lab panel (HOMA-IR, ApoB, fasting insulin)",
-                  "Personalized metabolic protocol document",
                   "Medication management incl. GLP-1 if appropriate",
                   "Unlimited async physician messaging (48-hr response)",
                   "Ongoing labs review & care plan updates",
@@ -363,10 +362,9 @@ export default function Home() {
                 {[
                   "Monthly 20-min video visits (board-certified MD)",
                   "SA-specific lab panel (HOMA-IR, ApoB, fasting insulin)",
-                  "Personalized metabolic protocol document",
                   "Medication management incl. GLP-1 if appropriate",
                   "Unlimited async physician messaging (24-hr response)",
-                  "CGM setup, data review & clinical interpretation",
+                  "CGM data review & clinical interpretation",
                   "Annual 60-min metabolic deep-dive & goal reset",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
