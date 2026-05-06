@@ -597,6 +597,12 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <div className="mt-8 pt-6 border-t border-zinc-800 text-xs text-zinc-600 leading-relaxed">
+            <p>
+              The information provided on this website is for educational purposes only and is not intended as medical advice. 
+              Always consult with a qualified healthcare provider before making any health decisions. Individual results may vary.
+            </p>
+          </div>
         </div>
       </footer>
     </div>
