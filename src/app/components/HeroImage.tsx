@@ -11,8 +11,8 @@ type StatsVariant = { kind: 'stats' };
 type HeroVariant = ImageVariant | StatsVariant;
 
 const HERO_VARIANTS: HeroVariant[] = [
-  { kind: 'image', src: "/hero-v1-morning.png", alt: "Morning wellness routine" },
-  { kind: 'image', src: "/hero-v2-outdoor.png", alt: "Active outdoor lifestyle" },
+  { kind: 'image', src: "/hero-v3-kitchen.png", alt: "South Asian man in kitchen with masala dabba and lentils" },
+  { kind: 'image', src: "/hero-v2-outdoor.png", alt: "South Asian man walking outdoors in morning light" },
   { kind: 'stats' },
 ];
 
