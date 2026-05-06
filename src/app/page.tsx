@@ -308,74 +308,100 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-6 text-center">
             Simple, <span className="text-[#d4a088]">transparent</span> pricing
           </h2>
-          <p className="text-zinc-400 text-lg text-center mb-12 max-w-2xl mx-auto">
-            One membership. Complete metabolic care. No surprise bills.
+          <p className="text-zinc-400 text-lg text-center mb-4 max-w-2xl mx-auto">
+            Start with a consultation. Stay for the outcomes.
           </p>
-          
-          <div className="bg-[#0a1628] border border-zinc-800 rounded-2xl p-8 md:p-12 max-w-xl mx-auto">
-            <div className="text-center">
-              <div className="text-[#d4a088] text-sm font-medium tracking-wider uppercase mb-4">
-                Membership
+
+          {/* Initial Consultation */}
+          <div className="bg-[#0d1c30] border border-zinc-700 rounded-2xl px-8 py-6 max-w-2xl mx-auto mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-1">Step 1</div>
+              <div className="text-white font-semibold text-lg">Initial Consultation</div>
+              <div className="text-zinc-400 text-sm mt-1">30-minute video visit · One-time, no commitment</div>
+            </div>
+            <div className="flex items-baseline gap-1 sm:text-right shrink-0">
+              <span className="text-4xl font-bold text-white">$275</span>
+              <span className="text-zinc-400 text-sm">one-time</span>
+            </div>
+          </div>
+
+          {/* Membership Cards */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-6">
+            {/* Annual — lead with this */}
+            <div className="bg-[#0a1628] border-2 border-[#d4a088] rounded-2xl p-8 relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                <span className="bg-[#d4a088] text-[#0a1628] text-xs font-semibold px-3 py-1 rounded-full">Best Value</span>
               </div>
-              <div className="flex items-baseline justify-center gap-2 mb-2">
-                <span className="text-5xl font-bold">$299</span>
-                <span className="text-zinc-400">/first month</span>
+              <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-4">Annual Membership</div>
+              <div className="flex items-baseline gap-1 mb-1">
+                <span className="text-5xl font-bold">$149</span>
+                <span className="text-zinc-400">/mo</span>
               </div>
-              <div className="text-xl text-zinc-400 mb-6">
-                then <span className="text-white font-semibold">$199</span>/month
-              </div>
-              
-              <ul className="text-left space-y-3 mb-8">
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#d4a088] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-zinc-300">Initial consultation + comprehensive labs</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#d4a088] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-zinc-300">Personalized metabolic protocol</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#d4a088] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-zinc-300">Unlimited async messaging with your physician</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#d4a088] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-zinc-300">Monthly follow-up visits</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#d4a088] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-zinc-300">Ongoing protocol adjustments</span>
-                </li>
+              <div className="text-zinc-500 text-sm mb-6">Billed $1,788/yr · Save $600</div>
+              <ul className="space-y-3 mb-8">
+                {[
+                  "Monthly 15-min follow-up visits",
+                  "Unlimited async physician messaging",
+                  "Personalized metabolic protocol",
+                  "Medication management & adjustments",
+                  "Labs review & care plan updates",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#d4a088] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-zinc-300 text-sm">{item}</span>
+                  </li>
+                ))}
               </ul>
-              
-              <p className="text-zinc-500 text-sm mb-2">
-                For patients where it&apos;s clinically appropriate, we offer GLP-1 medication management as part of a comprehensive metabolic plan.
-              </p>
-              <p className="text-zinc-500 text-sm mb-8">
-                Medications (including GLP-1s) not included in membership and billed separately if prescribed.
-              </p>
-              
-              <TrackedLink 
+              <TrackedLink
                 href="/start"
                 eventName="cta_click"
-                eventProperties={{ location: 'pricing', button: 'get_started' }}
-                className="block w-full bg-[#d4a088] text-[#0a1628] px-8 py-4 rounded text-base font-medium hover:bg-[#c4906c] transition-colors text-center"
+                eventProperties={{ location: 'pricing', button: 'annual_membership' }}
+                className="block w-full bg-[#d4a088] text-[#0a1628] px-6 py-3 rounded text-sm font-medium hover:bg-[#c4906c] transition-colors text-center"
               >
                 Get Started
               </TrackedLink>
-              <p className="text-zinc-500 text-xs mt-4">Billed monthly · Cancel anytime with 30 days&apos; notice</p>
+            </div>
+
+            {/* Monthly */}
+            <div className="bg-[#0a1628] border border-zinc-800 rounded-2xl p-8">
+              <div className="text-zinc-400 text-xs font-medium tracking-wider uppercase mb-4">Monthly Membership</div>
+              <div className="flex items-baseline gap-1 mb-1">
+                <span className="text-5xl font-bold">$199</span>
+                <span className="text-zinc-400">/mo</span>
+              </div>
+              <div className="text-zinc-500 text-sm mb-6">Month-to-month · Cancel anytime</div>
+              <ul className="space-y-3 mb-8">
+                {[
+                  "Monthly 15-min follow-up visits",
+                  "Unlimited async physician messaging",
+                  "Personalized metabolic protocol",
+                  "Medication management & adjustments",
+                  "Labs review & care plan updates",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-zinc-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-zinc-400 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <TrackedLink
+                href="/start"
+                eventName="cta_click"
+                eventProperties={{ location: 'pricing', button: 'monthly_membership' }}
+                className="block w-full border border-zinc-600 text-white px-6 py-3 rounded text-sm font-medium hover:border-zinc-400 transition-colors text-center"
+              >
+                Get Started
+              </TrackedLink>
             </div>
           </div>
+
+          <p className="text-zinc-500 text-sm text-center max-w-xl mx-auto">
+            Medications (including GLP-1s) are billed separately through your pharmacy if prescribed. FSA/HSA eligible.
+          </p>
         </div>
       </section>
 
