@@ -230,17 +230,15 @@ export default function Home() {
       <section id="about" className="py-24 bg-[#0d1c30]">
         <div className="max-w-6xl mx-auto px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="max-w-[220px] mx-auto">
-                <div className="aspect-square rounded-full overflow-hidden ring-4 ring-[#d4a088]/40 bg-[#0d1c30]">
-                  <Image
-                    src="/dr-japa.jpg"
-                    alt="Dr. Sohan Japa"
-                    fill
-                    className="object-cover object-center"
-                    sizes="220px"
-                  />
-                </div>
+            <div className="flex justify-center">
+              <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden ring-4 ring-[#d4a088]/40 bg-[#0d1c30]">
+                <Image
+                  src="/dr-japa.jpg"
+                  alt="Dr. Sohan Japa"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 640px) 144px, 176px"
+                />
               </div>
             </div>
             
