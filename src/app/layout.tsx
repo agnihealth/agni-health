@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Plus_Jakarta_Sans, Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { AnalyticsProvider } from "./components/Analytics";
+import CookieBanner from "./components/CookieBanner";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -69,6 +70,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <AnalyticsProvider>
           {children}
+          <CookieBanner />
         </AnalyticsProvider>
         <Analytics />
       </body>
