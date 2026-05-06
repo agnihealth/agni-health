@@ -200,15 +200,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Credential Bar */}
-          <div className="text-center text-zinc-500 text-sm mb-10 sm:mb-12">
-            <span className="inline-flex items-center gap-3 flex-wrap justify-center">
-              <span>10+ Years Academic Practice</span>
-              <span className="text-zinc-700">·</span>
-              <span>Board Certified Internal Medicine</span>
-            </span>
-          </div>
-
           {/* Physician Quote */}
           <div className="max-w-2xl mx-auto">
             <div className="border border-zinc-800 rounded-xl p-8 bg-[#0d1c30]">
