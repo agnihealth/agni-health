@@ -80,9 +80,9 @@ export default function StartPage() {
             <Image 
               src="/logo-transparent.png" 
               alt="Agni Health" 
-              width={160} 
-              height={40} 
-              className="h-10 w-auto"
+              width={300} 
+              height={138} 
+              className="h-[75px] sm:h-[113px] md:h-[138px] w-auto"
             />
           </Link>
         </nav>
@@ -157,9 +157,9 @@ export default function StartPage() {
           <Image 
             src="/logo-transparent.png" 
             alt="Agni Health" 
-            width={160} 
-            height={40} 
-            className="h-10 w-auto"
+            width={300} 
+            height={138} 
+            className="h-[75px] sm:h-[113px] md:h-[138px] w-auto"
           />
         </Link>
       </nav>
