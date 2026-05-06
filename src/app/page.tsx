@@ -236,7 +236,7 @@ export default function Home() {
                   src="/dr-japa.jpg"
                   alt="Dr. Sohan Japa"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover scale-[0.65] origin-top"
                   sizes="(max-width: 640px) 256px, 320px"
                 />
               </div>
