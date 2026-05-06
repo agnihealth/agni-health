@@ -237,7 +237,7 @@ export default function Home() {
                   alt="Dr. Sohan Japa"
                   width={384}
                   height={480}
-                  quality={100}
+                  unoptimized
                   className="w-full h-auto object-cover object-top"
                 />
               </div>
