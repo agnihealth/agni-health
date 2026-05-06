@@ -243,21 +243,7 @@ export default function Home() {
           </div>
 
           {/* Three pillars */}
-          <div className="grid md:grid-cols-3 gap-8 mb-14">
-            <div className="bg-[#0d1c30] border border-zinc-800 rounded-xl p-8">
-              <div className="w-12 h-12 rounded-lg bg-[#d4a088]/10 flex items-center justify-center mb-6">
-                <svg className="w-6 h-6 text-[#d4a088]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Academic Medical Training</h3>
-              <p className="text-zinc-400 leading-relaxed text-sm">
-                Medical degree from Stanford. Residency in internal medicine at Brigham &amp; Women&apos;s Hospital (Harvard). 
-                Clinical faculty and practice at UCSF Medical Center and Mount Sinai—caring for thousands of patients 
-                with metabolic and cardiovascular disease.
-              </p>
-            </div>
-
+          <div className="grid md:grid-cols-2 gap-8 mb-14">
             <div className="bg-[#0d1c30] border border-zinc-800 rounded-xl p-8">
               <div className="w-12 h-12 rounded-lg bg-[#d4a088]/10 flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-[#d4a088]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
