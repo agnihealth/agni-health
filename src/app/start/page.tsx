@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -8,7 +8,7 @@ import { trackEvent } from "../components/Analytics";
 
 type Answer = "yes" | "no" | null;
 
-export default function StartPage() {
+function StartPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const tier = searchParams.get("tier");
@@ -327,5 +327,17 @@ export default function StartPage() {
         </Link>
       </main>
     </div>
+  );
+}
+
+export default function StartPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-[#0a1628] flex items-center justify-center">
+        <div className="text-white">Loading...</div>
+      </div>
+    }>
+      <StartPageContent />
+    </Suspense>
   );
 }
