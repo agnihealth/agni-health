@@ -16,14 +16,14 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between px-8 py-2 max-w-7xl mx-auto relative">
+    <nav className="flex items-center justify-between px-4 sm:px-8 py-2 max-w-7xl mx-auto relative">
       <Link href="/" className="flex items-center">
         <Image
           src="/logo-transparent.png"
           alt="Agni Health"
           width={400}
           height={100}
-          className="h-[150px] w-auto"
+          className="h-[60px] sm:h-[90px] md:h-[110px] w-auto"
         />
       </Link>
 

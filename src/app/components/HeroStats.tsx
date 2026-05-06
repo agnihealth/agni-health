@@ -5,10 +5,6 @@ export default function HeroStats() {
         <span className="text-[#d4a088] text-xs font-medium tracking-widest uppercase">
           The data is clear
         </span>
-        <h3 className="text-white text-lg font-semibold mt-2 leading-snug">
-          South Asian metabolic risk<br />
-          <span className="text-zinc-400 font-normal text-base">is not the same as everyone else&apos;s</span>
-        </h3>
       </div>
 
       <div className="space-y-7">
@@ -16,7 +12,7 @@ export default function HeroStats() {
           <div className="text-5xl font-bold text-[#d4a088] leading-none tabular-nums min-w-[3.5rem]">3×</div>
           <div>
             <div className="text-white font-medium leading-snug">
-              higher prediabetes risk
+              higher prediabetes prevalence
             </div>
             <div className="text-zinc-500 text-sm mt-1">
               South Asian men vs. White peers<sup className="text-[10px]">1</sup>
@@ -28,7 +24,7 @@ export default function HeroStats() {
           <div className="text-5xl font-bold text-[#d4a088] leading-none tabular-nums min-w-[3.5rem]">2.5×</div>
           <div>
             <div className="text-white font-medium leading-snug">
-              higher prediabetes risk
+              higher prediabetes prevalence
             </div>
             <div className="text-zinc-500 text-sm mt-1">
               South Asian women vs. White peers<sup className="text-[10px]">1</sup>
