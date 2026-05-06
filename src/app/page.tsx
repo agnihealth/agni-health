@@ -319,13 +319,17 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 mb-8">
 
             {/* Essential */}
-            <div className="bg-[#0a1628] border border-zinc-800 rounded-2xl p-8 flex flex-col">
-              <div className="text-zinc-400 text-xs font-medium tracking-wider uppercase mb-2">Essential</div>
+            <div className="bg-[#0a1628] border border-zinc-800 rounded-2xl p-8 flex flex-col relative">
+              <div className="absolute -top-3 left-6">
+                <span className="bg-zinc-700 text-zinc-200 text-xs font-semibold px-3 py-1 rounded-full">Founding Member Pricing</span>
+              </div>
+              <div className="text-zinc-400 text-xs font-medium tracking-wider uppercase mb-2 mt-2">Essential</div>
               <div className="flex items-baseline gap-1 mb-1">
                 <span className="text-5xl font-bold">$300</span>
                 <span className="text-zinc-400">/mo</span>
               </div>
-              <div className="text-zinc-500 text-sm mb-6">$3,600/yr · or $350/mo monthly</div>
+              <div className="text-zinc-500 text-sm mb-1">$3,600/yr · or $350/mo monthly</div>
+              <div className="text-[#d4a088] text-xs mb-6">First 25 members lock in this rate permanently.</div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
                   "Quarterly 20-min video visits (board-certified MD)",
@@ -354,7 +358,8 @@ export default function Home() {
 
             {/* Intensive — featured */}
             <div className="bg-[#0a1628] border-2 border-[#d4a088] rounded-2xl p-8 relative flex flex-col">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex gap-2 whitespace-nowrap">
+                <span className="bg-zinc-700 text-zinc-200 text-xs font-semibold px-3 py-1 rounded-full">Founding Member Pricing</span>
                 <span className="bg-[#d4a088] text-[#0a1628] text-xs font-semibold px-3 py-1 rounded-full">Most Popular</span>
               </div>
               <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-2">Intensive</div>
@@ -362,7 +367,8 @@ export default function Home() {
                 <span className="text-5xl font-bold">$600</span>
                 <span className="text-zinc-400">/mo</span>
               </div>
-              <div className="text-zinc-500 text-sm mb-6">$7,200/yr · or $700/mo monthly</div>
+              <div className="text-zinc-500 text-sm mb-1">$7,200/yr · or $700/mo monthly</div>
+              <div className="text-[#d4a088] text-xs mb-6">First 25 members lock in this rate permanently.</div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
                   "Monthly 20-min video visits (board-certified MD)",
