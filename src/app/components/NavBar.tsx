@@ -30,9 +30,9 @@ export default function NavBar() {
       {/* Desktop nav */}
       <div className="hidden md:flex items-center gap-8">
         {links.map(({ href, label }) => (
-          <Link key={href} href={href} className="text-zinc-400 hover:text-white transition-colors text-sm">
+          <a key={href} href={href} className="text-zinc-400 hover:text-white transition-colors text-sm">
             {label}
-          </Link>
+          </a>
         ))}
         <TrackedLink
           href="/start"
@@ -59,14 +59,14 @@ export default function NavBar() {
       {open && (
         <div className="absolute top-full left-0 right-0 bg-[#0a1628] border-t border-zinc-800 flex flex-col px-8 py-6 gap-5 z-50 md:hidden">
           {links.map(({ href, label }) => (
-            <Link
+            <a
               key={href}
               href={href}
               className="text-zinc-300 hover:text-white transition-colors text-base"
               onClick={() => setOpen(false)}
             >
               {label}
-            </Link>
+            </a>
           ))}
           <TrackedLink
             href="/start"
