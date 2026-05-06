@@ -12,7 +12,7 @@ export default function Home() {
       <NavBar />
 
       {/* Hero */}
-      <main className="max-w-7xl mx-auto px-8 pt-8 pb-24">
+      <main className="max-w-7xl mx-auto px-4 sm:px-8 pt-6 sm:pt-8 pb-16 sm:pb-24">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div className="inline-block">
@@ -21,19 +21,19 @@ export default function Home() {
               </span>
             </div>
             
-            <h1 className="text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
               Metabolic care built for
               <br />
               <span className="text-[#d4a088]">South Asian</span> biology.
             </h1>
             
-            <p className="text-xl text-zinc-400 leading-relaxed max-w-lg">
+            <p className="text-base sm:text-xl text-zinc-400 leading-relaxed max-w-lg">
               Your biology works differently. Your healthcare should too.
               Evidence-based protocols calibrated for the metabolic patterns 
               that affect South Asians—not generic guidelines built for someone else.
             </p>
 
-            <div className="flex items-center gap-6 pt-4">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 pt-4">
               <TrackedLink 
                 href="/start"
                 eventName="cta_click"
@@ -54,17 +54,17 @@ export default function Home() {
             </div>
 
             {/* Trust signals */}
-            <div className="flex items-center gap-8 pt-8 border-t border-zinc-800">
+            <div className="flex flex-wrap items-center gap-4 sm:gap-8 pt-8 border-t border-zinc-800">
               <div>
                 <div className="text-xl font-semibold text-white">Physician-led</div>
                 <div className="text-sm text-zinc-500">Direct MD care</div>
               </div>
-              <div className="w-px h-12 bg-zinc-800" />
+              <div className="hidden sm:block w-px h-12 bg-zinc-800" />
               <div>
                 <div className="text-xl font-semibold text-white">Board Certified</div>
                 <div className="text-sm text-zinc-500">Internal Medicine</div>
               </div>
-              <div className="w-px h-12 bg-zinc-800" />
+              <div className="hidden sm:block w-px h-12 bg-zinc-800" />
               <div>
                 <div className="text-xl font-semibold text-white">Telehealth</div>
                 <div className="text-sm text-zinc-500">CA · LA · MA</div>
@@ -82,13 +82,13 @@ export default function Home() {
       </main>
 
       {/* The Problem section */}
-      <section className="bg-[#0d1c30] py-24">
-        <div className="max-w-4xl mx-auto px-8">
+      <section className="bg-[#0d1c30] py-16 sm:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6">
               The risk is real — and it starts <span className="text-[#d4a088]">earlier than you think</span>
             </h2>
-            <p className="text-xl text-zinc-400 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-zinc-400 leading-relaxed max-w-3xl mx-auto">
               A 2026 study of 2,700 U.S. adults found that South Asians accumulate cardiovascular risk factors
               by their mid-40s — despite having healthier diets, lower alcohol use, and comparable exercise
               habits than White, Black, Hispanic, and Chinese adults. The biology is different. The care needs to be too.
@@ -128,10 +128,10 @@ export default function Home() {
       </section>
 
       {/* Features section */}
-      <section id="approach" className="py-24">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">
+      <section id="approach" className="py-16 sm:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4">
               A different approach to <span className="text-[#d4a088]">metabolic health</span>
             </h2>
             <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
@@ -183,9 +183,9 @@ export default function Home() {
       </section>
 
       {/* How it works */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-8">
-          <h2 className="text-3xl font-bold mb-16 text-center">
+      <section className="py-16 sm:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-10 sm:mb-16 text-center">
             How it <span className="text-[#d4a088]">works</span>
           </h2>
           
@@ -227,11 +227,11 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section id="about" className="py-24 bg-[#0d1c30]">
-        <div className="max-w-6xl mx-auto px-8">
+      <section id="about" className="py-16 sm:py-24 bg-[#0d1c30]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
-              <div className="relative w-72 sm:w-96 rounded-2xl overflow-hidden ring-2 ring-[#d4a088]/50 shadow-[0_20px_60px_-10px_rgba(212,160,136,0.25)]">
+              <div className="relative w-72 sm:w-96 rounded-2xl overflow-hidden ring-1 ring-zinc-700">
                 <Image
                   src="/dr-japa.png"
                   alt="Dr. Sohan Japa"
@@ -302,9 +302,9 @@ export default function Home() {
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="py-24">
-        <div className="max-w-6xl mx-auto px-8">
-          <h2 className="text-3xl font-bold mb-6 text-center">
+      <section id="pricing" className="py-16 sm:py-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
             Simple, <span className="text-[#d4a088]">transparent</span> pricing
           </h2>
           <p className="text-zinc-400 text-lg text-center mb-4 max-w-2xl mx-auto">
@@ -444,9 +444,9 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-24 bg-[#0d1c30]">
-        <div className="max-w-3xl mx-auto px-8">
-          <h2 className="text-4xl font-bold text-center mb-16">
+      <section id="faq" className="py-16 sm:py-24 bg-[#0d1c30]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 sm:mb-16">
             Frequently asked <span className="text-[#d4a088]">questions</span>
           </h2>
           <div className="space-y-6">
@@ -485,13 +485,13 @@ export default function Home() {
               },
             ].map(({ q, a }, i) => (
               <details key={i} className="group border border-zinc-700 rounded-xl overflow-hidden">
-                <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none hover:bg-zinc-800/40 transition-colors">
+                <summary className="flex items-center justify-between px-4 sm:px-6 py-4 sm:py-5 cursor-pointer list-none hover:bg-zinc-800/40 transition-colors">
                   <span className="font-medium text-white pr-4">{q}</span>
                   <svg className="w-5 h-5 text-zinc-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6 pt-2 text-zinc-400 leading-relaxed">{a}</div>
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2 text-zinc-400 leading-relaxed">{a}</div>
               </details>
             ))}
           </div>
@@ -499,12 +499,12 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section id="book" className="py-24 bg-gradient-to-b from-[#0a1628] to-[#0d1c30]">
-        <div className="max-w-3xl mx-auto px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">
+      <section id="book" className="py-16 sm:py-24 bg-gradient-to-b from-[#0a1628] to-[#0d1c30]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Ready for care that gets your biology?
           </h2>
-          <p className="text-xl text-zinc-400 mb-10">
+          <p className="text-base sm:text-xl text-zinc-400 mb-8 sm:mb-10">
             Schedule a consultation to discuss your metabolic health goals.
           </p>
           <TrackedLink 
@@ -524,7 +524,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-zinc-800 py-12">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
             <div>
               <Image 
                 src="/logo-transparent.png" 
@@ -537,7 +537,7 @@ export default function Home() {
                 © 2026 Agni Health. All rights reserved.
               </div>
             </div>
-            <div className="text-right text-sm text-zinc-500 space-y-1">
+            <div className="sm:text-right text-sm text-zinc-500 space-y-1">
               <p>Board-certified internal medicine</p>
               <p>Telehealth practice</p>
               <p>
