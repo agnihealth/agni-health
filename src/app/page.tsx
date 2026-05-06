@@ -200,8 +200,7 @@ export default function Home() {
             </div>
             
             <p className="text-[#d4a088] text-lg text-center mt-10 max-w-2xl mx-auto font-medium">
-              Our goal isn&apos;t to be your doctor forever. Most patients achieve lasting metabolic 
-              improvements in 1-3 years and can return to their primary care physician with a clear maintenance plan.
+              Our goal isn&apos;t to be your doctor forever. Most care plans are structured over 1–3 years before transitioning back to primary care with a clear maintenance plan.
             </p>
           </div>
 
@@ -214,6 +213,7 @@ export default function Home() {
                   standard charts, but I knew better. I dropped to 12% through protocols calibrated for South Asian 
                   metabolism. That&apos;s why I built Agni.&rdquo;
                 </p>
+                <p className="text-zinc-500 text-xs italic mb-4">Individual outcomes depend on clinical factors, adherence, and starting point.</p>
                 <footer className="text-zinc-500 text-sm">
                   — Dr. Sohan Japa, MD · Founder
                 </footer>
@@ -471,7 +471,7 @@ export default function Home() {
               },
               {
                 q: "Is this covered under my FSA or HSA?",
-                a: "Telehealth memberships with a licensed physician are generally FSA/HSA-eligible. We recommend confirming with your plan administrator, but most patients are able to use pre-tax dollars for their membership."
+                a: "Medical consultations and lab fees may be FSA/HSA-reimbursable. We provide a detailed superbill upon request — consult your plan administrator or tax advisor for your specific plan's eligibility rules."
               },
             ].map(({ q, a }, i) => (
               <details key={i} className="group border border-zinc-700 rounded-xl overflow-hidden">
