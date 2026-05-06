@@ -336,7 +336,7 @@ export default function Home() {
                   "Quarterly 20-min video visits (board-certified MD)",
                   "SA-specific lab panel (HOMA-IR, ApoB, fasting insulin)",
                   "Medication management incl. GLP-1 if appropriate",
-                  "Unlimited async physician messaging (48-hr response)",
+                  "Async physician messaging (48-hr response)",
                   "Ongoing labs review & care plan updates",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
@@ -375,7 +375,7 @@ export default function Home() {
                   "Monthly 20-min video visits (board-certified MD)",
                   "SA-specific lab panel (HOMA-IR, ApoB, fasting insulin)",
                   "Medication management incl. GLP-1 if appropriate",
-                  "Unlimited async physician messaging (24-hr response)",
+                  "Async physician messaging (24-hr response)",
                   "CGM data review & clinical interpretation",
                   "Annual 60-min metabolic deep-dive & goal reset",
                 ].map((item) => (
@@ -466,7 +466,7 @@ export default function Home() {
               },
               {
                 q: "How quickly can I get an appointment?",
-                a: "Most new patients are seen within 1–2 weeks of signing up. After your initial visit, follow-up visits are scheduled quarterly, with unlimited async messaging between appointments."
+                a: "Most new patients are seen within 1–2 weeks of signing up. After your initial visit, follow-up visits are scheduled quarterly, with async messaging between appointments."
               },
               {
                 q: "What if I need a prescription?",
