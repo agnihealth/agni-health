@@ -22,9 +22,9 @@ export default function Home() {
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
-              Metabolic care built for
+              Your doctor's normal
               <br />
-              <span className="text-[#d4a088]">South Asian</span> biology.
+              isn't <span className="text-[#d4a088]">your normal.</span>
             </h1>
             
             <p className="text-base sm:text-xl text-zinc-400 leading-relaxed max-w-lg">
@@ -67,7 +67,7 @@ export default function Home() {
               <div className="hidden sm:block w-px h-12 bg-zinc-800" />
               <div>
                 <div className="text-xl font-semibold text-white">Telehealth</div>
-                <div className="text-sm text-zinc-500">CA · LA · MA</div>
+                <div className="text-sm text-zinc-500">California · Louisiana · Massachusetts</div>
               </div>
             </div>
           </div>
@@ -121,7 +121,10 @@ export default function Home() {
             Different insulin sensitivity. Different fat distribution. Different risk thresholds.
             You deserve care calibrated to your biology — not generic advice built for someone else.
           </p>
-          <p className="text-zinc-600 text-xs text-center mt-4">
+          <p className="text-zinc-500 text-xs text-center mt-3 italic">
+            Population statistics do not predict individual health outcomes. All care is individualized.
+          </p>
+          <p className="text-zinc-600 text-xs text-center mt-2">
             <sup>1</sup> MASALA Study Investigators. <em>J Am Heart Assoc.</em> 2026. doi:10.1161/JAHA.124.041221
           </p>
         </div>
@@ -400,17 +403,17 @@ export default function Home() {
               </TrackedLink>
             </div>
 
-            {/* Executive — coming soon */}
-            <div className="bg-[#0a1628] border border-zinc-800 rounded-2xl p-8 relative flex flex-col opacity-70">
+            {/* Executive — waitlist */}
+            <div className="bg-[#0a1628] border border-zinc-800 rounded-2xl p-8 relative flex flex-col">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                <span className="bg-zinc-700 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-full">Coming Soon</span>
+                <span className="bg-[#d4a088]/20 text-[#d4a088] text-xs font-semibold px-3 py-1 rounded-full">Waitlist Open</span>
               </div>
-              <div className="text-zinc-500 text-xs font-medium tracking-wider uppercase mb-2">Executive</div>
+              <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-2">Executive</div>
               <div className="flex items-baseline gap-1 mb-1">
-                <span className="text-5xl font-bold text-zinc-500">$15K</span>
-                <span className="text-zinc-600">/yr</span>
+                <span className="text-5xl font-bold text-white">$15K</span>
+                <span className="text-zinc-400">/yr</span>
               </div>
-              <div className="text-zinc-600 text-sm mb-6">White-glove metabolic care</div>
+              <div className="text-zinc-400 text-sm mb-6">White-glove metabolic care</div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
                   "Everything in Intensive",
@@ -420,19 +423,21 @@ export default function Home() {
                   "Direct physician access",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <svg className="w-5 h-5 text-zinc-700 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a088]/50 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-zinc-600 text-sm">{item}</span>
+                    <span className="text-zinc-400 text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
-              <button
-                disabled
-                className="block w-full border border-zinc-700 text-zinc-600 px-6 py-3 rounded text-sm font-medium text-center cursor-not-allowed"
+              <TrackedLink
+                href="/start?tier=executive"
+                eventName="cta_click"
+                eventProperties={{ location: 'pricing', button: 'executive_waitlist' }}
+                className="block w-full border border-[#d4a088]/40 text-[#d4a088] px-6 py-3 rounded text-sm font-medium text-center hover:bg-[#d4a088]/10 transition-colors"
               >
-                Notify Me
-              </button>
+                Join Waitlist
+              </TrackedLink>
             </div>
 
           </div>
@@ -453,7 +458,7 @@ export default function Home() {
             {[
               {
                 q: "Do you prescribe GLP-1 medications like semaglutide?",
-                a: "Yes — for patients where GLP-1 therapy is clinically appropriate, we can prescribe and manage it as part of your overall care plan. During your first visit, Dr. Japa will review your health history, labs, and goals to determine what's right for you. GLP-1s are one tool in a broader approach — we combine medication with nutrition and lifestyle guidance tailored to your biology."
+                a: "Yes — for patients where GLP-1 therapy is clinically appropriate, we prescribe FDA-approved medications only and manage them as part of your overall care plan. During your first visit, Dr. Japa will review your health history, labs, and goals to determine what's right for you. GLP-1s are one tool in a broader approach — we combine medication with nutrition and lifestyle guidance tailored to your biology."
               },
               {
                 q: "Do you accept insurance?",
@@ -465,7 +470,7 @@ export default function Home() {
               },
               {
                 q: "Can I cancel anytime?",
-                a: "Yes. There's no long-term contract. Your membership is billed monthly and you can cancel with 30 days' notice at any time. No penalties, no runaround."
+                a: "Yes. There's no long-term contract. Your membership is billed monthly and you can cancel anytime, effective immediately. No penalties, no runaround."
               },
               {
                 q: "How quickly can I get an appointment?",
@@ -507,6 +512,7 @@ export default function Home() {
           <p className="text-base sm:text-xl text-zinc-400 mb-8 sm:mb-10">
             Schedule a consultation to discuss your metabolic health goals.
           </p>
+          <p className="text-[#d4a088] text-sm font-medium mb-6">Limited spots — next availability in 1–2 weeks.</p>
           <TrackedLink 
             href="/start"
             eventName="cta_click"
@@ -517,6 +523,12 @@ export default function Home() {
           </TrackedLink>
           <p className="text-zinc-500 text-sm mt-6">
             Currently accepting patients in California, Louisiana, and Massachusetts
+          </p>
+          <p className="text-zinc-600 text-sm mt-2">
+            Outside these states?{" "}
+            <a href="/start?waitlist=true" className="text-[#d4a088] hover:underline">
+              Join the waitlist — we&apos;re expanding soon.
+            </a>
           </p>
         </div>
       </section>
