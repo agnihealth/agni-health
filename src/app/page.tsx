@@ -203,10 +203,6 @@ export default function Home() {
           {/* Credential Bar */}
           <div className="text-center text-zinc-500 text-sm mb-10 sm:mb-12">
             <span className="inline-flex items-center gap-3 flex-wrap justify-center">
-              <span>Stanford MD</span>
-              <span className="text-zinc-700">·</span>
-              <span>Harvard Residency</span>
-              <span className="text-zinc-700">·</span>
               <span>10+ Years Academic Practice</span>
               <span className="text-zinc-700">·</span>
               <span>Board Certified Internal Medicine</span>
