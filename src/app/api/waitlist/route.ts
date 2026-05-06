@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { sendConversionEvent } from "@/lib/meta-conversions";
 
 const PAT = process.env.AIRTABLE_PAT!;
 const BASE_ID = process.env.AIRTABLE_BASE_ID!;
@@ -54,6 +55,23 @@ export async function POST(req: NextRequest) {
         { status: 500 }
       );
     }
+
+    // Send server-side conversion event to Meta
+    const forwardedFor = req.headers.get("x-forwarded-for");
+    const ipAddress = forwardedFor?.split(",")[0]?.trim();
+    const userAgent = req.headers.get("user-agent") || undefined;
+    const referer = req.headers.get("referer") || undefined;
+
+    await sendConversionEvent({
+      eventName: "Lead",
+      email,
+      sourceUrl: referer,
+      ipAddress,
+      userAgent,
+      customData: {
+        content_name: type === "executive" ? "waitlist_executive" : "waitlist_state",
+      },
+    });
 
     return NextResponse.json({ success: true });
   } catch (err) {
