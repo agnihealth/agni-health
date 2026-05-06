@@ -102,7 +102,7 @@ export default function Privacy() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">Complaints</h2>
             <p className="mb-4">If you believe your privacy rights have been violated, you may file a complaint with us or with the Secretary of the U.S. Department of Health and Human Services. We will not retaliate against you for filing a complaint.</p>
-            <p>To file a complaint with us, contact us at: <a href="mailto:sohan_ai@icloud.com" className="text-[#d4a088] hover:underline">sohan_ai@icloud.com</a></p>
+            <p>To file a complaint with us, contact us at: <a href="mailto:privacy@agnihealth.co" className="text-[#d4a088] hover:underline">privacy@agnihealth.co</a></p>
           </section>
 
           <section>
@@ -112,7 +112,7 @@ export default function Privacy() {
               <p>Agni Health / Sohan Japa MD LLC</p>
               <p>447 Sutter St Ste 506 - 1024</p>
               <p>San Francisco, CA 94108</p>
-              <p><a href="mailto:sohan_ai@icloud.com" className="text-[#d4a088] hover:underline">sohan_ai@icloud.com</a></p>
+              <p><a href="mailto:privacy@agnihealth.co" className="text-[#d4a088] hover:underline">privacy@agnihealth.co</a></p>
             </div>
           </section>
 
