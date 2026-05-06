@@ -98,19 +98,19 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             <div className="bg-[#0a1628] border border-zinc-800 rounded-xl p-6 text-center">
               <div className="text-4xl font-bold text-[#d4a088] mb-2">~8×</div>
-              <div className="text-white font-medium mb-1">prediabetes prevalence at 45</div>
+              <div className="text-white font-medium mb-1">Prediabetes prevalence at 45</div>
               <div className="text-zinc-500 text-sm">South Asian men vs. White peers<sup className="text-[10px]">1</sup></div>
               <div className="text-zinc-600 text-xs mt-2">30.7% vs. 3.9%</div>
             </div>
             <div className="bg-[#0a1628] border border-zinc-800 rounded-xl p-6 text-center">
               <div className="text-4xl font-bold text-[#d4a088] mb-2">~3×</div>
-              <div className="text-white font-medium mb-1">prediabetes prevalence at 45</div>
+              <div className="text-white font-medium mb-1">Prediabetes prevalence at 45</div>
               <div className="text-zinc-500 text-sm">South Asian women vs. White peers<sup className="text-[10px]">1</sup></div>
               <div className="text-zinc-600 text-xs mt-2">17.6% vs. 5.7%</div>
             </div>
             <div className="bg-[#0a1628] border border-zinc-800 rounded-xl p-6 text-center">
               <div className="text-4xl font-bold text-[#d4a088] mb-2">2×</div>
-              <div className="text-white font-medium mb-1">T2D hazard ratio by 55</div>
+              <div className="text-white font-medium mb-1">Type 2 Diabetes hazard ratio by 55</div>
               <div className="text-zinc-500 text-sm">vs. White adults, same age<sup className="text-[10px]">1</sup></div>
               <div className="text-zinc-600 text-xs mt-2">despite healthier behaviors</div>
             </div>
