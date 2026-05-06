@@ -231,13 +231,13 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
-              <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden ring-4 ring-[#d4a088]/40 bg-[#0d1c30]">
+              <div className="relative w-52 h-52 sm:w-64 sm:h-64 rounded-full overflow-hidden ring-4 ring-[#d4a088]/40 bg-[#0d1c30]">
                 <Image
                   src="/dr-japa.jpg"
                   alt="Dr. Sohan Japa"
                   fill
-                  className="object-cover object-top"
-                  sizes="(max-width: 640px) 192px, 224px"
+                  className="object-cover [object-position:50%_8%]"
+                  sizes="(max-width: 640px) 208px, 256px"
                 />
               </div>
             </div>
