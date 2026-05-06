@@ -17,7 +17,7 @@ export default function Home() {
           <div className="space-y-8">
             <div className="inline-block">
               <span className="text-[#d4a088] text-sm font-medium tracking-wider uppercase">
-                Board-Certified Physician Care
+                Metabolic Care for South Asians
               </span>
             </div>
             
