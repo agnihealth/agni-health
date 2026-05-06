@@ -114,19 +114,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features section */}
+      {/* Consolidated Section: Precision Metabolic Care */}
       <section id="approach" className="py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
+          {/* Section Header */}
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-              A different approach to <span className="text-[#d4a088]">metabolic health</span>
+              Precision metabolic care, <span className="text-[#d4a088]">built for South Asian men</span>
             </h2>
             <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-              Physician-led care. South Asian-calibrated protocols. Results that last.
+              Physician-led. Research-backed. Calibrated to your biology.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* Three Pillars */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16 sm:mb-20">
             <div className="p-8 rounded-xl bg-[#0d1c30] border border-zinc-800 text-center">
               <div className="w-12 h-12 rounded-lg bg-[#d4a088]/10 flex items-center justify-center mb-6 mx-auto">
                 <svg className="w-6 h-6 text-[#d4a088]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -135,8 +137,8 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3">South Asian Calibrated</h3>
               <p className="text-zinc-400 leading-relaxed">
-                We use South Asian-specific thresholds for BMI, waist circumference, and metabolic markers. 
-                What's "normal" for others may already be risky for you.
+                Built on the MASALA Study—the largest U.S. research on South Asian cardiovascular risk. 
+                We use ethnic-specific thresholds for BMI, waist, and metabolic markers that standard care ignores.
               </p>
             </div>
 
@@ -148,8 +150,8 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Beyond A1c</h3>
               <p className="text-zinc-400 leading-relaxed">
-                We track fasting insulin, HOMA-IR, ApoB, visceral fat, and metabolic markers 
-                that predict risk years before standard tests show problems.
+                We track fasting insulin, HOMA-IR, ApoB, visceral fat—markers that predict risk 
+                years before standard tests show problems.
               </p>
             </div>
 
@@ -159,144 +161,77 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Physician-Led Care</h3>
+              <h3 className="text-xl font-semibold mb-3">Direct Physician Access</h3>
               <p className="text-zinc-400 leading-relaxed">
-                Direct access to a board-certified internal medicine physician. 
-                No rushed follow-ups, no handoffs. Continuity matters.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How it works */}
-      <section className="py-16 sm:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-10 sm:mb-16 text-center">
-            How it <span className="text-[#d4a088]">works</span>
-          </h2>
-          
-          <div className="grid md:grid-cols-3 gap-12">
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-[#d4a088]/10 flex items-center justify-center mx-auto mb-6 text-2xl font-semibold text-[#d4a088]">
-                1
-              </div>
-              <h3 className="text-xl font-semibold mb-3">Initial Consultation</h3>
-              <p className="text-zinc-400">
-                30-minute video visit to understand your history, goals, and concerns. 
-                We'll order comprehensive labs tailored to South Asian metabolic risk.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-[#d4a088]/10 flex items-center justify-center mx-auto mb-6 text-2xl font-semibold text-[#d4a088]">
-                2
-              </div>
-              <h3 className="text-xl font-semibold mb-3">Personalized Protocol</h3>
-              <p className="text-zinc-400">
-                Based on your results, we create a protocol covering nutrition, movement, 
-                sleep, and medication if appropriate—all calibrated to your biology.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-[#d4a088]/10 flex items-center justify-center mx-auto mb-6 text-2xl font-semibold text-[#d4a088]">
-                3
-              </div>
-              <h3 className="text-xl font-semibold mb-3">Ongoing Support</h3>
-              <p className="text-zinc-400">
-                Async messaging, regular check-ins, and adjustments as your body responds. 
-                This isn't a one-time visit—it's continuous care.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Social Proof / Trust Section */}
-      <section className="py-16 sm:py-24 bg-[#0a1628] border-t border-zinc-800/60">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-              Clinical depth. <span className="text-[#d4a088]">Evidence-based.</span> Built for you.
-            </h2>
-            <p className="text-zinc-400 text-base sm:text-lg max-w-2xl mx-auto">
-              Agni isn't a wellness startup. It's a physician practice built on a decade of academic medicine
-              and the latest research in South Asian metabolic health.
-            </p>
-          </div>
-
-          {/* Three pillars */}
-          <div className="grid md:grid-cols-2 gap-8 mb-14">
-            <div className="bg-[#0d1c30] border border-zinc-800 rounded-xl p-8">
-              <div className="w-12 h-12 rounded-lg bg-[#d4a088]/10 flex items-center justify-center mb-6">
-                <svg className="w-6 h-6 text-[#d4a088]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Protocols from the Research Up</h3>
-              <p className="text-zinc-400 leading-relaxed text-sm">
-                Our clinical approach is built on peer-reviewed evidence—including the landmark 2026 MASALA Study, 
-                the largest U.S. longitudinal study of South Asian cardiovascular risk. We apply South Asian-specific 
-                BMI, HOMA-IR, ApoB, and visceral fat thresholds that standard care ignores.
-              </p>
-            </div>
-
-            <div className="bg-[#0d1c30] border border-zinc-800 rounded-xl p-8">
-              <div className="w-12 h-12 rounded-lg bg-[#d4a088]/10 flex items-center justify-center mb-6">
-                <svg className="w-6 h-6 text-[#d4a088]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Direct Physician Access</h3>
-              <p className="text-zinc-400 leading-relaxed text-sm">
-                No PAs. No care coordinators. No handoffs. One physician manages your entire care from initial 
-                consultation through ongoing treatment. Async messaging with 24-48hr physician response. 
-                This is what concierge medicine should look like.
+                No PAs. No handoffs. One board-certified physician manages your entire care 
+                with async messaging and 24-48hr response times.
               </p>
             </div>
           </div>
 
-          {/* Credential bar */}
-          <div className="border border-zinc-800 rounded-2xl px-6 sm:px-12 py-8 bg-[#0d1c30]">
-            <p className="text-center text-zinc-500 text-xs font-medium tracking-wider uppercase mb-8">Dr. Japa&apos;s clinical background</p>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
+          {/* How It Works */}
+          <div className="mb-16 sm:mb-20">
+            <h3 className="text-xl sm:text-2xl font-bold mb-10 sm:mb-12 text-center">
+              How it <span className="text-[#d4a088]">works</span>
+            </h3>
+            
+            <div className="grid md:grid-cols-3 gap-12">
               <div className="text-center">
-                <div className="text-[#d4a088] font-bold text-2xl mb-1">Stanford</div>
-                <div className="text-zinc-400 text-sm">MD</div>
+                <div className="text-[#d4a088] font-mono text-sm tracking-wider mb-4">01</div>
+                <h4 className="text-lg font-semibold mb-3">Initial Consultation</h4>
+                <p className="text-zinc-400 text-sm">
+                  30-minute video visit to understand your history, goals, and concerns. 
+                  We order comprehensive labs tailored to South Asian metabolic risk.
+                </p>
               </div>
+
               <div className="text-center">
-                <div className="text-[#d4a088] font-bold text-2xl mb-1">Harvard</div>
-                <div className="text-zinc-400 text-sm">Internal Medicine Residency</div>
+                <div className="text-[#d4a088] font-mono text-sm tracking-wider mb-4">02</div>
+                <h4 className="text-lg font-semibold mb-3">Personalized Protocol</h4>
+                <p className="text-zinc-400 text-sm">
+                  Based on your results, we create a protocol covering nutrition, movement, 
+                  sleep, and medication if appropriate—calibrated to your biology.
+                </p>
               </div>
+
               <div className="text-center">
-                <div className="text-[#d4a088] font-bold text-2xl mb-1">10+ Years</div>
-                <div className="text-zinc-400 text-sm">Academic clinical practice</div>
-              </div>
-              <div className="text-center">
-                <div className="text-[#d4a088] font-bold text-2xl mb-1">Board Certified</div>
-                <div className="text-zinc-400 text-sm">Internal Medicine, ABIM</div>
+                <div className="text-[#d4a088] font-mono text-sm tracking-wider mb-4">03</div>
+                <h4 className="text-lg font-semibold mb-3">Ongoing Support</h4>
+                <p className="text-zinc-400 text-sm">
+                  Async messaging, regular check-ins, and adjustments as your body responds. 
+                  This isn't a one-time visit—it's continuous care.
+                </p>
               </div>
             </div>
           </div>
 
-          {/* Physician quote */}
-          <div className="mt-10 sm:mt-12 max-w-2xl mx-auto text-center">
-            <blockquote className="relative">
-              <svg className="w-8 h-8 text-[#d4a088]/30 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-              </svg>
-              <p className="text-zinc-300 text-base sm:text-lg leading-relaxed italic">
-                &ldquo;I lived it too. Despite being a physician, I found myself at 26% body fat—&lsquo;healthy&rsquo; by 
-                standard charts, but I knew better. I dropped to 12% through protocols calibrated for South Asian 
-                metabolism. That&apos;s why I built Agni: care that actually understands your biology.&rdquo;
-              </p>
-              <footer className="mt-4 flex items-center justify-center gap-3">
-                <div className="w-px h-4 bg-zinc-600" />
-                <span className="text-zinc-500 text-sm">Dr. Sohan Japa, MD — Founder, Agni Health</span>
-                <div className="w-px h-4 bg-zinc-600" />
-              </footer>
-            </blockquote>
+          {/* Credential Bar */}
+          <div className="text-center text-zinc-500 text-sm mb-10 sm:mb-12">
+            <span className="inline-flex items-center gap-3 flex-wrap justify-center">
+              <span>Stanford MD</span>
+              <span className="text-zinc-700">·</span>
+              <span>Harvard Residency</span>
+              <span className="text-zinc-700">·</span>
+              <span>10+ Years Academic Practice</span>
+              <span className="text-zinc-700">·</span>
+              <span>Board Certified Internal Medicine</span>
+            </span>
+          </div>
+
+          {/* Physician Quote */}
+          <div className="max-w-2xl mx-auto">
+            <div className="border border-zinc-800 rounded-xl p-8 bg-[#0d1c30]">
+              <blockquote className="relative text-center">
+                <p className="text-zinc-300 text-base leading-relaxed italic mb-4">
+                  &ldquo;I lived it too. Despite being a physician, I found myself at 26% body fat—&lsquo;healthy&rsquo; by 
+                  standard charts, but I knew better. I dropped to 12% through protocols calibrated for South Asian 
+                  metabolism. That&apos;s why I built Agni.&rdquo;
+                </p>
+                <footer className="text-zinc-500 text-sm">
+                  — Dr. Sohan Japa, MD · Founder
+                </footer>
+              </blockquote>
+            </div>
           </div>
         </div>
       </section>
