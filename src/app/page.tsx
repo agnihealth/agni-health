@@ -163,7 +163,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Direct Physician Access</h3>
               <p className="text-zinc-400 leading-relaxed">
-                No PAs. No handoffs. One board-certified physician manages your entire care 
+                No PAs. No handoffs. Your board-certified physician manages your entire care 
                 with async messaging and 24-48hr response times.
               </p>
             </div>
