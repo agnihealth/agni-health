@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
-import { trackEvent } from "../components/Analytics";
+import { trackEvent, trackMetaEvent } from "../components/Analytics";
 
 export default function Book() {
   useEffect(() => {
@@ -12,6 +12,7 @@ export default function Book() {
     trackEvent('booking_page_viewed', {
       hero_variant: heroVariant ? `v${parseInt(heroVariant) + 1}` : 'unknown',
     });
+    trackMetaEvent('InitiateCheckout', { content_name: 'consultation_booking' });
   }, []);
 
   return (

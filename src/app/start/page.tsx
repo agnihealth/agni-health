@@ -4,7 +4,7 @@ import { useState, Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
-import { trackEvent } from "../components/Analytics";
+import { trackEvent, trackMetaEvent } from "../components/Analytics";
 
 type Answer = "yes" | "no" | null;
 
@@ -71,6 +71,7 @@ function StartPageContent() {
     e.preventDefault();
     if (email) {
       trackEvent("waitlist_signup", { email, failedAt: questions[step].key });
+      trackMetaEvent("Lead", { content_name: "waitlist_state_expansion" });
       
       // Save to Airtable
       try {
@@ -95,6 +96,7 @@ function StartPageContent() {
       e.preventDefault();
       if (email) {
         trackEvent("waitlist_signup", { email, type: isExecutive ? "executive" : "state" });
+        trackMetaEvent("Lead", { content_name: isExecutive ? "waitlist_executive" : "waitlist_state" });
         
         try {
           await fetch("/api/waitlist", {
