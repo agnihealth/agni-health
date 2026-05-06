@@ -541,6 +541,100 @@ export default function Home() {
           <p className="text-zinc-500 text-sm text-center max-w-xl mx-auto">
             Medications (including GLP-1s) are billed separately through your pharmacy if prescribed. FSA/HSA eligible.
           </p>
+
+          {/* Detailed comparison table */}
+          <div className="mt-14 border border-zinc-800 rounded-2xl overflow-hidden">
+            <div className="grid grid-cols-4 bg-[#0d1c30] border-b border-zinc-800">
+              <div className="px-6 py-4 text-zinc-500 text-xs font-medium tracking-wider uppercase">What&apos;s included</div>
+              <div className="px-6 py-4 text-center">
+                <span className="text-white text-sm font-semibold">Essential</span>
+                <div className="text-zinc-500 text-xs mt-0.5">$300/mo</div>
+              </div>
+              <div className="px-6 py-4 text-center relative">
+                <span className="absolute -top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#d4a088] text-[#0a1628] text-[10px] font-semibold px-2 py-0.5 rounded-full">Popular</span>
+                <span className="text-[#d4a088] text-sm font-semibold">Intensive</span>
+                <div className="text-zinc-500 text-xs mt-0.5">$600/mo</div>
+              </div>
+              <div className="px-6 py-4 text-center">
+                <span className="text-white text-sm font-semibold">Executive</span>
+                <div className="text-zinc-500 text-xs mt-0.5">Waitlist</div>
+              </div>
+            </div>
+
+            {[
+              {
+                category: "Physician Visits",
+                rows: [
+                  { label: "Initial 30-min video consultation", essential: true, intensive: true, executive: true },
+                  { label: "Follow-up visits", essential: "Quarterly (20 min)", intensive: "Monthly (20 min)", executive: "Bi-weekly" },
+                  { label: "Annual metabolic deep-dive", essential: false, intensive: "60 min", executive: "90 min" },
+                ],
+              },
+              {
+                category: "Lab Work & Monitoring",
+                rows: [
+                  { label: "Comprehensive initial lab panel", essential: true, intensive: true, executive: true },
+                  { label: "SA-specific markers (HOMA-IR, ApoB, fasting insulin)", essential: true, intensive: true, executive: true },
+                  { label: "Ongoing labs as clinically indicated", essential: true, intensive: true, executive: true },
+                  { label: "CGM integration & interpretation", essential: false, intensive: true, executive: true },
+                ],
+              },
+              {
+                category: "Physician Access",
+                rows: [
+                  { label: "Async physician messaging", essential: "48-hr response", intensive: "24-hr response", executive: "Priority" },
+                  { label: "Medication management & adjustments", essential: true, intensive: true, executive: true },
+                  { label: "Care plan updates between visits", essential: true, intensive: true, executive: true },
+                  { label: "Direct physician access", essential: false, intensive: false, executive: true },
+                ],
+              },
+              {
+                category: "Executive Care",
+                rows: [
+                  { label: "In-person visits", essential: false, intensive: false, executive: true },
+                  { label: "Executive health panel coordination", essential: false, intensive: false, executive: true },
+                ],
+              },
+            ].map(({ category, rows }) => (
+              <div key={category}>
+                <div className="grid grid-cols-4 bg-[#0a1628] border-t border-zinc-800/60 px-6 py-3">
+                  <div className="col-span-4 text-[#d4a088] text-xs font-semibold tracking-wider uppercase">{category}</div>
+                </div>
+                {rows.map(({ label, essential, intensive, executive }) => (
+                  <div key={label} className="grid grid-cols-4 border-t border-zinc-800/40 hover:bg-zinc-800/20 transition-colors">
+                    <div className="px-6 py-4 text-zinc-400 text-sm">{label}</div>
+                    <div className="px-6 py-4 text-center">
+                      {essential === true ? (
+                        <svg className="w-5 h-5 text-zinc-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                      ) : essential === false ? (
+                        <span className="text-zinc-700 text-lg">—</span>
+                      ) : (
+                        <span className="text-zinc-300 text-xs">{essential}</span>
+                      )}
+                    </div>
+                    <div className="px-6 py-4 text-center bg-[#d4a088]/5">
+                      {intensive === true ? (
+                        <svg className="w-5 h-5 text-[#d4a088] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                      ) : intensive === false ? (
+                        <span className="text-zinc-700 text-lg">—</span>
+                      ) : (
+                        <span className="text-[#d4a088] text-xs font-medium">{intensive}</span>
+                      )}
+                    </div>
+                    <div className="px-6 py-4 text-center">
+                      {executive === true ? (
+                        <svg className="w-5 h-5 text-zinc-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                      ) : executive === false ? (
+                        <span className="text-zinc-700 text-lg">—</span>
+                      ) : (
+                        <span className="text-zinc-300 text-xs">{executive}</span>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
