@@ -334,10 +334,10 @@ export default function Home() {
               </div>
               <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-4">Annual Membership</div>
               <div className="flex items-baseline gap-1 mb-1">
-                <span className="text-5xl font-bold">$149</span>
+                <span className="text-5xl font-bold">$174</span>
                 <span className="text-zinc-400">/mo</span>
               </div>
-              <div className="text-zinc-500 text-sm mb-6">Billed $1,788/yr · Save $600</div>
+              <div className="text-zinc-500 text-sm mb-6">Billed $2,088/yr · Save $300</div>
               <ul className="space-y-3 mb-8">
                 {[
                   "Quarterly 15-min follow-up visits",
