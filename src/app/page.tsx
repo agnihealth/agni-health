@@ -340,7 +340,7 @@ export default function Home() {
               <div className="text-zinc-500 text-sm mb-6">Billed $1,788/yr · Save $600</div>
               <ul className="space-y-3 mb-8">
                 {[
-                  "Monthly 15-min follow-up visits",
+                  "Quarterly 15-min follow-up visits",
                   "Unlimited async physician messaging",
                   "Personalized metabolic protocol",
                   "Medication management & adjustments",
@@ -374,7 +374,7 @@ export default function Home() {
               <div className="text-zinc-500 text-sm mb-6">Month-to-month · Cancel anytime</div>
               <ul className="space-y-3 mb-8">
                 {[
-                  "Monthly 15-min follow-up visits",
+                  "Quarterly 15-min follow-up visits",
                   "Unlimited async physician messaging",
                   "Personalized metabolic protocol",
                   "Medication management & adjustments",
