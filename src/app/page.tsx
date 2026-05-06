@@ -130,6 +130,18 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Longevity bridge */}
+      <section className="py-10 sm:py-14 bg-[#0a1628] border-t border-zinc-800/40">
+        <div className="max-w-3xl mx-auto px-4 sm:px-8 text-center">
+          <p className="text-xl sm:text-2xl font-semibold text-white">
+            Your 50s can be your <span className="text-[#d4a088]">strongest decade.</span>
+          </p>
+          <p className="text-zinc-400 mt-3 text-base">
+            Built for how South Asian bodies actually age.
+          </p>
+        </div>
+      </section>
+
       {/* Features section */}
       <section id="approach" className="py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
