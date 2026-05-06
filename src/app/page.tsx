@@ -53,23 +53,7 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Trust signals */}
-            <div className="flex flex-wrap items-center gap-4 sm:gap-8 pt-8 border-t border-zinc-800">
-              <div>
-                <div className="text-xl font-semibold text-white">Physician-led</div>
-                <div className="text-sm text-zinc-500">Direct MD care</div>
-              </div>
-              <div className="hidden sm:block w-px h-12 bg-zinc-800" />
-              <div>
-                <div className="text-xl font-semibold text-white">Board Certified</div>
-                <div className="text-sm text-zinc-500">Internal Medicine</div>
-              </div>
-              <div className="hidden sm:block w-px h-12 bg-zinc-800" />
-              <div>
-                <div className="text-xl font-semibold text-white">Telehealth</div>
-                <div className="text-sm text-zinc-500">California · Louisiana · Massachusetts</div>
-              </div>
-            </div>
+
           </div>
 
           {/* Right side - A/B tested hero image */}
