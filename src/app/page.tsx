@@ -428,11 +428,12 @@ export default function Home() {
               <div className="text-zinc-500 text-sm mb-6">$3,600/yr · or $350/mo monthly</div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
-                  "Quarterly 20-min follow-up visits",
-                  "Async physician messaging (48hr SLA)",
-                  "Personalized metabolic protocol",
-                  "Medication management & adjustments",
-                  "Labs review & care plan updates",
+                  "Quarterly 20-min video visits (board-certified MD)",
+                  "SA-specific lab panel (HOMA-IR, ApoB, fasting insulin)",
+                  "Personalized metabolic protocol document",
+                  "Medication management incl. GLP-1 if appropriate",
+                  "Unlimited async physician messaging (48-hr response)",
+                  "Ongoing labs review & care plan updates",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <svg className="w-5 h-5 text-zinc-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -465,13 +466,13 @@ export default function Home() {
               <div className="text-zinc-500 text-sm mb-6">$7,200/yr · or $700/mo monthly</div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
-                  "Monthly 20-min follow-up visits",
-                  "Async physician messaging (24hr SLA)",
-                  "Personalized metabolic protocol",
-                  "Medication management & adjustments",
-                  "Labs review & care plan updates",
-                  "CGM integration & interpretation",
-                  "Annual 60-min metabolic deep-dive",
+                  "Monthly 20-min video visits (board-certified MD)",
+                  "SA-specific lab panel (HOMA-IR, ApoB, fasting insulin)",
+                  "Personalized metabolic protocol document",
+                  "Medication management incl. GLP-1 if appropriate",
+                  "Unlimited async physician messaging (24-hr response)",
+                  "CGM setup, data review & clinical interpretation",
+                  "Annual 60-min metabolic deep-dive & goal reset",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <svg className="w-5 h-5 text-[#d4a088] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

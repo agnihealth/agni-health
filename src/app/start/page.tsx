@@ -137,7 +137,7 @@ function StartPageContent() {
           
           <p className="text-zinc-400 text-lg mb-8">
             {isExecutive 
-              ? "Be the first to know when our Executive tier ($15K/year) opens for enrollment. Priority access to comprehensive metabolic optimization with concierge-level care."
+              ? "Be the first to know when our Executive tier opens for enrollment. Priority access to comprehensive metabolic optimization with concierge-level care."
               : "We're expanding to more states soon. Join the waitlist and we'll notify you when we're available in your area."}
           </p>
 
