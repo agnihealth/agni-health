@@ -173,31 +173,36 @@ export default function Home() {
             
             <div className="grid md:grid-cols-3 gap-12">
               <div className="text-center">
-                <div className="text-[#d4a088] font-mono text-sm tracking-wider mb-4">01</div>
+                <div className="text-[#d4a088] font-mono text-base tracking-wider mb-4">01</div>
                 <h4 className="text-lg font-semibold mb-3">Initial Consultation</h4>
-                <p className="text-zinc-400 text-sm">
+                <p className="text-zinc-400 text-base">
                   30-minute video visit to understand your history, goals, and concerns. 
                   We order comprehensive labs tailored to South Asian metabolic risk.
                 </p>
               </div>
 
               <div className="text-center">
-                <div className="text-[#d4a088] font-mono text-sm tracking-wider mb-4">02</div>
+                <div className="text-[#d4a088] font-mono text-base tracking-wider mb-4">02</div>
                 <h4 className="text-lg font-semibold mb-3">Personalized Protocol</h4>
-                <p className="text-zinc-400 text-sm">
+                <p className="text-zinc-400 text-base">
                   Based on your results, we create a protocol covering nutrition, movement, 
                   sleep, and medication if appropriate.
                 </p>
               </div>
 
               <div className="text-center">
-                <div className="text-[#d4a088] font-mono text-sm tracking-wider mb-4">03</div>
+                <div className="text-[#d4a088] font-mono text-base tracking-wider mb-4">03</div>
                 <h4 className="text-lg font-semibold mb-3">Ongoing Support</h4>
-                <p className="text-zinc-400 text-sm">
+                <p className="text-zinc-400 text-base">
                   Async messaging, regular check-ins, and adjustments as your body responds.
                 </p>
               </div>
             </div>
+            
+            <p className="text-zinc-400 text-base text-center mt-10 max-w-2xl mx-auto">
+              Our goal isn&apos;t to be your doctor forever. Most patients achieve lasting metabolic 
+              improvements in 1-3 years and can return to their primary care physician with a clear maintenance plan.
+            </p>
           </div>
 
           {/* Physician Quote */}
