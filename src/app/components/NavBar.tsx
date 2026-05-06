@@ -12,6 +12,11 @@ const links = [
   { href: "#about", label: "Dr. Japa" },
 ];
 
+function scrollToSection(id: string) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+}
+
 export default function NavBar() {
   const [open, setOpen] = useState(false);
 
@@ -30,7 +35,12 @@ export default function NavBar() {
       {/* Desktop nav */}
       <div className="hidden md:flex items-center gap-8">
         {links.map(({ href, label }) => (
-          <a key={href} href={href} className="text-zinc-400 hover:text-white transition-colors text-sm">
+          <a
+            key={href}
+            href={href}
+            className="text-zinc-400 hover:text-white transition-colors text-sm"
+            onClick={(e) => { e.preventDefault(); scrollToSection(href.slice(1)); }}
+          >
             {label}
           </a>
         ))}
@@ -63,7 +73,7 @@ export default function NavBar() {
               key={href}
               href={href}
               className="text-zinc-300 hover:text-white transition-colors text-base"
-              onClick={() => setOpen(false)}
+              onClick={(e) => { e.preventDefault(); setOpen(false); scrollToSection(href.slice(1)); }}
             >
               {label}
             </a>
