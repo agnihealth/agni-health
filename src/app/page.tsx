@@ -509,10 +509,6 @@ export default function Home() {
                 <span className="bg-[#d4a088]/20 text-[#d4a088] text-xs font-semibold px-3 py-1 rounded-full">Waitlist Open</span>
               </div>
               <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-2">Executive</div>
-              <div className="flex items-baseline gap-1 mb-1">
-                <span className="text-5xl font-bold text-white">$15K</span>
-                <span className="text-zinc-400">/yr</span>
-              </div>
               <div className="text-zinc-400 text-sm mb-6">White-glove metabolic care</div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
