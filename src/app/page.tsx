@@ -236,6 +236,7 @@ export default function Home() {
                   src="/dr-japa.png"
                   alt="Dr. Sohan Japa"
                   fill
+                  quality={100}
                   className="object-cover object-top"
                   sizes="(max-width: 640px) 256px, 320px"
                 />
