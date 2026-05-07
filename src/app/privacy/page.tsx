@@ -44,10 +44,10 @@ export default function Privacy() {
             <p className="mb-4">We may use your health information to provide, coordinate, or manage your medical care. For example, a physician treating you may share information with other health professionals who are providing services to you or who may be treating you in the future.</p>
 
             <h3 className="text-lg font-medium text-white mb-2">Payment</h3>
-            <p className="mb-4">We may use and disclose your health information so that services you receive may be billed to and payment may be collected from you or from a third party. For example, we may need to provide your health plan with information about a service you received so your health plan will pay us or reimburse you for the service.</p>
+            <p className="mb-4">We may use and disclose your health information to process payment for services, including billing you directly or processing payment through the platform you used to enroll.</p>
 
             <h3 className="text-lg font-medium text-white mb-2">Health Care Operations</h3>
-            <p className="mb-4">We may use and disclose your health information in connection with our health care operations. Health care operations include quality assessment and improvement activities, reviewing and evaluating provider performance, training, licensing, and other business activities.</p>
+            <p className="mb-4">We may use and disclose your health information in connection with our health care operations. Health care operations include quality assessment and improvement activities, reviewing and evaluating provider performance, training, licensing, and other business activities. We may share your information with business associates (e.g., electronic health record vendors, scheduling platforms) who assist us under written agreements requiring them to protect your information. We limit use and disclosure of your protected health information to the minimum necessary to accomplish the intended purpose.</p>
 
             <h3 className="text-lg font-medium text-white mb-2">Other Permitted Uses and Disclosures</h3>
             <ul className="list-disc pl-6 space-y-2 mb-4">
@@ -76,7 +76,7 @@ export default function Privacy() {
             <p className="mb-4">You have the following rights with respect to your protected health information:</p>
 
             <h3 className="text-lg font-medium text-white mb-2">Right to Inspect and Copy</h3>
-            <p className="mb-4">You have the right to inspect and obtain a copy of your health information that we maintain in a designated record set. We may charge a reasonable fee for copies. We may deny your request in limited circumstances.</p>
+            <p className="mb-4">You have the right to inspect and obtain a copy of your health information that we maintain in a designated record set, including the right to receive an electronic copy in the format you request if readily producible. We will respond to your request within 30 days. We may charge a reasonable, cost-based fee for copies. We may deny your request in limited circumstances.</p>
 
             <h3 className="text-lg font-medium text-white mb-2">Right to Amend</h3>
             <p className="mb-4">You have the right to request that we amend your health information if you believe it is inaccurate or incomplete. We may deny your request under certain circumstances.</p>
@@ -90,6 +90,9 @@ export default function Privacy() {
             <h3 className="text-lg font-medium text-white mb-2">Right to Request Confidential Communications</h3>
             <p className="mb-4">You have the right to request that we communicate with you about your health information in a certain way or at a certain location.</p>
 
+            <h3 className="text-lg font-medium text-white mb-2">Right to Breach Notification</h3>
+            <p className="mb-4">You have the right to be notified within 60 days of the discovery of any breach of your unsecured protected health information.</p>
+
             <h3 className="text-lg font-medium text-white mb-2">Right to a Paper Copy of This Notice</h3>
             <p>You have the right to a paper copy of this Notice at any time, even if you have agreed to receive this Notice electronically. Contact us at the address below to request a copy.</p>
           </section>
@@ -100,9 +103,20 @@ export default function Privacy() {
           </section>
 
           <section>
+            <h2 className="text-xl font-semibold text-white mb-3">State Law Protections</h2>
+            <p>Patients in California have additional rights under the Confidentiality of Medical Information Act (CMIA). California law, including SB 107, provides heightened protections for reproductive health information and may restrict certain uses and disclosures beyond what HIPAA requires. We comply with applicable state privacy laws in all states where we provide services.</p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-white mb-3">Deceased Patients</h2>
+            <p>Protected health information of deceased individuals remains protected for 50 years following the date of death.</p>
+          </section>
+
+          <section>
             <h2 className="text-xl font-semibold text-white mb-3">Complaints</h2>
             <p className="mb-4">If you believe your privacy rights have been violated, you may file a complaint with us or with the Secretary of the U.S. Department of Health and Human Services. We will not retaliate against you for filing a complaint.</p>
-            <p>To file a complaint with us, contact us at: <a href="mailto:privacy@agnihealth.co" className="text-[#d4a088] hover:underline">privacy@agnihealth.co</a></p>
+            <p className="mb-4">To file a complaint with us, contact us at: <a href="mailto:privacy@agnihealth.co" className="text-[#d4a088] hover:underline">privacy@agnihealth.co</a></p>
+            <p>To file a complaint with the federal government: Office for Civil Rights, U.S. Department of Health and Human Services, 200 Independence Avenue, S.W., Washington, D.C. 20201 | 1-877-696-6775 | <a href="https://www.hhs.gov/ocr/privacy/hipaa/complaints" target="_blank" rel="noopener noreferrer" className="text-[#d4a088] hover:underline">hhs.gov/ocr/privacy/hipaa/complaints</a></p>
           </section>
 
           <section>
