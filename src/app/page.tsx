@@ -53,12 +53,6 @@ export default function Home() {
                 </Link>
               </div>
               <p className="text-[#d4a088] text-sm font-medium">Limited spots — next availability in 2–4 weeks.</p>
-              <p className="text-zinc-500 text-sm">
-                Not ready?{" "}
-                <Link href="/start?waitlist=true" className="text-zinc-400 hover:text-white underline underline-offset-2 transition-colors">
-                  Stay in the loop →
-                </Link>
-              </p>
             </div>
 
 
@@ -601,11 +595,11 @@ export default function Home() {
           <p className="text-zinc-500 text-sm mt-6">
             Currently accepting patients in California, Louisiana, and Massachusetts
           </p>
-          <p className="text-zinc-600 text-sm mt-2">
-            Outside these states?{" "}
-            <a href="/start?waitlist=true" className="text-[#d4a088] hover:underline">
-              Join the waitlist — we&apos;re expanding soon.
-            </a>
+          <p className="text-zinc-500 text-sm mt-3">
+            Not ready yet?{" "}
+            <Link href="/start?waitlist=true" className="text-zinc-400 hover:text-white underline underline-offset-2 transition-colors">
+              Stay in the loop →
+            </Link>
           </p>
         </div>
       </section>
