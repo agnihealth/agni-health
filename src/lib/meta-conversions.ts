@@ -3,6 +3,8 @@ import crypto from "crypto";
 const PIXEL_ID = "1713148253376763";
 const ACCESS_TOKEN = process.env.META_CONVERSIONS_API_TOKEN;
 const API_VERSION = "v19.0";
+// TODO: Remove after verifying events appear in Test Events tab
+const TEST_EVENT_CODE = "TEST7277";
 
 interface EventData {
   event_name: string;
@@ -67,6 +69,7 @@ export async function sendConversionEvent({
         body: JSON.stringify({
           data: [eventData],
           access_token: ACCESS_TOKEN,
+          test_event_code: TEST_EVENT_CODE, // TODO: Remove after verification
         }),
       }
     );
