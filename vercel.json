@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path((?!api/).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "agnihealth.co"
+        }
+      ],
+      "destination": "https://www.agnihealth.co/:path*",
+      "permanent": true
+    }
+  ]
+}
