@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import HeroImage from "./components/HeroImage";
 import TrackedLink from "./components/TrackedLink";
 import NavBar from "./components/NavBar";
+import EmailCapture from "./components/EmailCapture";
 
 export default function Home() {
   return (
@@ -31,24 +32,41 @@ export default function Home() {
               Evidence-based protocols built for South Asian metabolism—not generic guidelines designed for someone else.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 pt-4">
-              <TrackedLink 
-                href="/start"
-                eventName="cta_click"
-                eventProperties={{ location: 'hero', button: 'start_consultation' }}
-                className="bg-[#d4a088] text-[#0a1628] px-8 py-4 rounded text-base font-medium hover:bg-[#c4906c] transition-colors"
-              >
-                Start Your Consultation
-              </TrackedLink>
-              <Link 
-                href="#approach"
-                className="text-zinc-400 hover:text-white transition-colors text-base flex items-center gap-2"
-              >
-                How it works
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
+            <div className="space-y-4 pt-4">
+              <div className="flex flex-wrap items-center gap-3">
+                <span className="flex items-center gap-1.5 text-zinc-400 text-sm">
+                  <svg className="w-4 h-4 text-[#d4a088]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.069A1 1 0 0121 8.868V15.13a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                  100% virtual · CA, LA, MA
+                </span>
+              </div>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+                <TrackedLink 
+                  href="/start"
+                  eventName="cta_click"
+                  eventProperties={{ location: 'hero', button: 'start_consultation' }}
+                  className="bg-[#d4a088] text-[#0a1628] px-8 py-4 rounded text-base font-medium hover:bg-[#c4906c] transition-colors"
+                >
+                  Start Your Consultation
+                </TrackedLink>
+                <Link 
+                  href="#approach"
+                  className="text-zinc-400 hover:text-white transition-colors text-base flex items-center gap-2"
+                >
+                  How it works
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+              <p className="text-[#d4a088] text-sm font-medium">Limited spots — next availability in 1–2 weeks.</p>
+              <p className="text-zinc-500 text-sm">
+                Not ready?{" "}
+                <Link href="/start?waitlist=true" className="text-zinc-400 hover:text-white underline underline-offset-2 transition-colors">
+                  Stay in the loop →
+                </Link>
+              </p>
             </div>
 
 
@@ -171,9 +189,14 @@ export default function Home() {
               How it <span className="text-[#d4a088]">works</span>
             </h3>
             
-            <div className="grid md:grid-cols-3 gap-12">
-              <div className="text-center">
-                <div className="text-[#d4a088] font-mono text-base tracking-wider mb-4">01</div>
+            <div className="grid md:grid-cols-3 gap-8 relative">
+              {/* Connecting line on desktop */}
+              <div className="hidden md:block absolute top-8 left-[calc(16.67%+1rem)] right-[calc(16.67%+1rem)] h-px bg-zinc-800" />
+
+              <div className="text-center relative">
+                <div className="w-16 h-16 rounded-full border-2 border-[#d4a088]/40 bg-[#0a1628] flex items-center justify-center mx-auto mb-6 relative z-10">
+                  <span className="text-[#d4a088] font-mono text-2xl font-bold">01</span>
+                </div>
                 <h4 className="text-lg font-semibold mb-3">Initial Consultation</h4>
                 <p className="text-zinc-400 text-base">
                   30-minute video visit to understand your history, goals, and concerns. 
@@ -181,8 +204,10 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="text-[#d4a088] font-mono text-base tracking-wider mb-4">02</div>
+              <div className="text-center relative">
+                <div className="w-16 h-16 rounded-full border-2 border-[#d4a088]/40 bg-[#0a1628] flex items-center justify-center mx-auto mb-6 relative z-10">
+                  <span className="text-[#d4a088] font-mono text-2xl font-bold">02</span>
+                </div>
                 <h4 className="text-lg font-semibold mb-3">Personalized Protocol</h4>
                 <p className="text-zinc-400 text-base">
                   Based on your results, we create a protocol covering nutrition, movement, 
@@ -190,8 +215,10 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="text-[#d4a088] font-mono text-base tracking-wider mb-4">03</div>
+              <div className="text-center relative">
+                <div className="w-16 h-16 rounded-full border-2 border-[#d4a088]/40 bg-[#0a1628] flex items-center justify-center mx-auto mb-6 relative z-10">
+                  <span className="text-[#d4a088] font-mono text-2xl font-bold">03</span>
+                </div>
                 <h4 className="text-lg font-semibold mb-3">Ongoing Support</h4>
                 <p className="text-zinc-400 text-base">
                   Async messaging, regular check-ins, and adjustments as your body responds.
@@ -220,6 +247,13 @@ export default function Home() {
               </blockquote>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Stay in the loop */}
+      <section className="py-14 sm:py-20 bg-[#0d1c30] border-t border-zinc-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+          <EmailCapture />
         </div>
       </section>
 

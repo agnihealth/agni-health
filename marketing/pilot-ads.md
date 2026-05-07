@@ -34,7 +34,7 @@ A doctor who actually gets it
 Telehealth care built for South Asian men managing weight, blood sugar, and energy. Start in minutes from home.
 ```
 
-**CTA:** `Sign Up`
+**CTA:** `Learn More`
 
 ---
 
@@ -66,7 +66,7 @@ Control your blood sugar. Today.
 Prediabetes doesn't have to become diabetes. Agni Health connects you with a specialist in 48 hours or less.
 ```
 
-**CTA:** `Sign Up`
+**CTA:** `Learn More`
 
 ---
 
@@ -91,4 +91,4 @@ All within Meta limits (40 / 125).
 - **Audience:** Men 30–55, California, interests: South Asian culture, Indian food, diabetes awareness, health & wellness, Ayurveda
 - **Placements:** Facebook Feed + Instagram Feed only (exclude Audience Network for validation)
 - **Budget split:** ~$125/ad → rotate all 4, pause bottom 2 by day 3
-- **UTM suggestion:** `?utm_source=fb&utm_medium=paid&utm_campaign=pilot-may26&utm_content=ad1`
+- **UTM suggestion:** `?utm_source=fb&utm_medium=paid&utm_campaign=pilot-may26&utm_content=ad1-genes` (Ad 1), `ad2-doctor` (Ad 2), `ad3-weight` (Ad 3), `ad4-sugar` (Ad 4)

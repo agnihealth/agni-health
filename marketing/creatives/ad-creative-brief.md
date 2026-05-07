@@ -31,10 +31,10 @@ See `clinic/marketing/pilot-ads.md` for full copy (4 ads, all within Meta charac
 
 Tag each ad URL:
 ```
-Ad 1 (kitchen): ?utm_source=fb&utm_medium=paid&utm_campaign=pilot-may26&utm_content=kitchen-genes
-Ad 2 (outdoor): ?utm_source=fb&utm_medium=paid&utm_campaign=pilot-may26&utm_content=outdoor-doctor
-Ad 3 (fitness):  ?utm_source=fb&utm_medium=paid&utm_campaign=pilot-may26&utm_content=fitness-weight
-Ad 4 (digital):  ?utm_source=fb&utm_medium=paid&utm_campaign=pilot-may26&utm_content=digital-sugar
+Ad 1: ?utm_source=fb&utm_medium=paid&utm_campaign=pilot-may26&utm_content=ad1-genes
+Ad 2: ?utm_source=fb&utm_medium=paid&utm_campaign=pilot-may26&utm_content=ad2-doctor
+Ad 3: ?utm_source=fb&utm_medium=paid&utm_campaign=pilot-may26&utm_content=ad3-weight
+Ad 4: ?utm_source=fb&utm_medium=paid&utm_campaign=pilot-may26&utm_content=ad4-sugar
 ```
 
 ## A/B Rotation Schedule
