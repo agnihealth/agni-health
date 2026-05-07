@@ -217,7 +217,6 @@ export default function Home() {
                   standard charts, but I knew better. I dropped to 12% through protocols calibrated for South Asian 
                   metabolism. That&apos;s why I built Agni.&rdquo;
                 </p>
-                <p className="text-zinc-500 text-xs italic mb-4">Individual outcomes depend on clinical factors, adherence, and starting point.</p>
                 <footer className="text-zinc-500 text-sm">
                   — Dr. Sohan Japa, MD · Founder
                 </footer>
@@ -622,7 +621,7 @@ export default function Home() {
             <p>
               The information provided on this website is for educational purposes only and is not intended as medical advice. 
               Always consult with a qualified healthcare provider before making any health decisions. Individual results may vary.
-              Population statistics do not predict individual health outcomes. All care is individualized.
+              Population statistics do not predict individual health outcomes. All care is individualized. Individual outcomes depend on clinical factors, adherence, and starting point.
             </p>
             <p className="mt-2">
               <sup>1</sup> MASALA Study Investigators. <em>J Am Heart Assoc.</em> 2026. <a href="https://doi.org/10.1161/JAHA.124.041221" target="_blank" rel="noopener noreferrer" className="underline hover:text-zinc-400 transition-colors">doi:10.1161/JAHA.124.041221</a>
