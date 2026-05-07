@@ -52,7 +52,7 @@ export default function Home() {
                   </svg>
                 </Link>
               </div>
-              <p className="text-[#d4a088] text-sm font-medium">Limited spots — next availability in 1–2 weeks.</p>
+              <p className="text-[#d4a088] text-sm font-medium">Limited spots — next availability in 2–4 weeks.</p>
               <p className="text-zinc-500 text-sm">
                 Not ready?{" "}
                 <Link href="/start?waitlist=true" className="text-zinc-400 hover:text-white underline underline-offset-2 transition-colors">
@@ -493,7 +493,7 @@ export default function Home() {
               },
               {
                 q: "How quickly can I get an appointment?",
-                a: "Most new patients are seen within 1–2 weeks of signing up. After your initial visit, follow-up visits are scheduled quarterly, with async messaging between appointments."
+                a: "Most new patients are seen within 2–4 weeks of signing up. After your initial visit, follow-up visits are scheduled quarterly, with async messaging between appointments."
               },
               {
                 q: "What if I need a prescription?",
@@ -589,7 +589,7 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Ready for care that gets your biology?
           </h2>
-          <p className="text-[#d4a088] text-sm font-medium mb-8 sm:mb-10">Limited spots — next availability in 1–2 weeks.</p>
+          <p className="text-[#d4a088] text-sm font-medium mb-8 sm:mb-10">Limited spots — next availability in 2–4 weeks.</p>
           <TrackedLink 
             href="/start"
             eventName="cta_click"
