@@ -23,9 +23,9 @@ export default function Book() {
           <Image 
             src="/logo-transparent.png" 
             alt="Agni Health" 
-            width={160} 
-            height={40} 
-            className="h-10 w-auto"
+            width={400} 
+            height={100} 
+            className="h-[75px] sm:h-[113px] md:h-[138px] w-auto"
           />
         </Link>
         <div className="flex items-center gap-8">
