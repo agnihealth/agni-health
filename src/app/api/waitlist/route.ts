@@ -6,7 +6,8 @@ const BASE_ID = process.env.AIRTABLE_BASE_ID!;
 
 const TABLE_IDS = {
   executive: "tbljkeFXBbWOB921a",
-  state: "tblwUrHSkEMgjIKHx",
+  general: "tblBNabD75eELxnYA",
+  out_of_state: "tblwUrHSkEMgjIKHx",
 };
 
 export async function POST(req: NextRequest) {
@@ -20,9 +21,9 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    if (!["executive", "state"].includes(type)) {
+    if (!["executive", "general", "out_of_state"].includes(type)) {
       return NextResponse.json(
-        { error: 'Invalid type. Must be "executive" or "state"' },
+        { error: 'Invalid type. Must be "executive", "general", or "out_of_state"' },
         { status: 400 }
       );
     }
@@ -69,7 +70,7 @@ export async function POST(req: NextRequest) {
       ipAddress,
       userAgent,
       customData: {
-        content_name: type === "executive" ? "waitlist_executive" : "waitlist_state",
+        content_name: `waitlist_${type}`,
       },
     });
 

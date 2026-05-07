@@ -33,14 +33,6 @@ export default function Home() {
             </p>
 
             <div className="space-y-4 pt-4">
-              <div className="flex flex-wrap items-center gap-3">
-                <span className="flex items-center gap-1.5 text-zinc-400 text-sm">
-                  <svg className="w-4 h-4 text-[#d4a088]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.069A1 1 0 0121 8.868V15.13a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                  </svg>
-                  100% virtual · CA, LA, MA
-                </span>
-              </div>
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                 <TrackedLink 
                   href="/start"
@@ -283,19 +275,20 @@ export default function Home() {
               </h2>
               <div className="space-y-4 text-zinc-400 leading-relaxed">
                 <p>
-                  I earned my MD at Stanford and trained in internal medicine at Brigham and 
-                  Women's Hospital. Over the past decade, I've practiced at some of the country's 
-                  top academic medical centers—Mount Sinai, UCSF—caring for 
-                  thousands of patients across New York and the Bay Area.
+                  I earned my MD at Stanford and trained in internal medicine at Brigham and
+                  Women&apos;s Hospital. Over the past decade, I&apos;ve practiced at some of the country&apos;s
+                  top academic medical centers—Mount Sinai, UCSF—caring for thousands of patients
+                  across New York and the Bay Area.
                 </p>
                 <p>
-                  But I kept noticing the same pattern: South Asian patients doing everything 
-                  "right" and still developing diabetes. "Normal" BMIs hiding dangerous metabolic 
-                  profiles. Standard guidelines missing the mark by years. Our biology is different, 
-                  and the research is clear—but mainstream medicine hasn't caught up.
+                  Throughout my clinical career as well as in my personal life, I kept noticing the
+                  same pattern: South Asian patients doing everything &ldquo;right&rdquo; and still developing
+                  diabetes. &ldquo;Normal&rdquo; BMIs hiding dangerous metabolic profiles. Standard guidelines
+                  missing the mark by years. Our biology is different, and the research is
+                  clear—but mainstream medicine hasn&apos;t caught up.
                 </p>
                 <p>
-                  That's why I started Agni Health.
+                  That&apos;s why I started Agni Health.
                 </p>
               </div>
               <div className="mt-8 pt-6 border-t border-zinc-800">
