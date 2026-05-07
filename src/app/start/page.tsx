@@ -70,15 +70,17 @@ function StartPageContent() {
   const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      trackEvent("waitlist_signup", { email, failedAt: questions[step].key });
-      trackMetaEvent("Lead", { content_name: "waitlist_state_expansion" });
+      const failedAt = questions[step].key;
+      const waitlistType = failedAt === "inState" ? "out_of_state" : "general";
+      trackEvent("waitlist_signup", { email, failedAt });
+      trackMetaEvent("Lead", { content_name: `waitlist_${waitlistType}` });
       
       // Save to Airtable
       try {
         await fetch("/api/waitlist", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email, type: "state" }),
+          body: JSON.stringify({ email, type: waitlistType }),
         });
       } catch (err) {
         console.error("Waitlist save error:", err);
@@ -95,14 +97,15 @@ function StartPageContent() {
     const handleDirectWaitlist = async (e: React.FormEvent) => {
       e.preventDefault();
       if (email) {
-        trackEvent("waitlist_signup", { email, type: isExecutive ? "executive" : "state" });
-        trackMetaEvent("Lead", { content_name: isExecutive ? "waitlist_executive" : "waitlist_state" });
+        const directType = isExecutive ? "executive" : "general";
+        trackEvent("waitlist_signup", { email, type: directType });
+        trackMetaEvent("Lead", { content_name: `waitlist_${directType}` });
         
         try {
           await fetch("/api/waitlist", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email, type: isExecutive ? "executive" : "state" }),
+            body: JSON.stringify({ email, type: directType }),
           });
         } catch (err) {
           console.error("Waitlist save error:", err);

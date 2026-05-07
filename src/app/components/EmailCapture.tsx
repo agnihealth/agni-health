@@ -29,7 +29,7 @@ export default function EmailCapture({
       await fetch("/api/waitlist", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, type: "state" }),
+        body: JSON.stringify({ email, type: "general" }),
       });
     } catch {
       // silent — don't block the UX on API failure
