@@ -620,7 +620,7 @@ export default function Home() {
           <div className="mt-8 pt-6 border-t border-zinc-800 text-xs text-zinc-600 leading-relaxed">
             <p>
               The information provided on this website is for educational purposes only and is not intended as medical advice. 
-              Always consult with a qualified healthcare provider before making any health decisions. Individual results may vary.
+              Always consult with a qualified healthcare provider before making any health decisions.
               Population statistics do not predict individual health outcomes. All care is individualized. Individual outcomes depend on clinical factors, adherence, and starting point.
             </p>
             <p className="mt-2">
