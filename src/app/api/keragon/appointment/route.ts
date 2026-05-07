@@ -29,8 +29,10 @@ export async function POST(req: NextRequest) {
     }
 
     const forwardedFor = req.headers.get("x-forwarded-for");
-    const ipAddress = forwardedFor?.split(",")[0]?.trim();
-    const userAgent = req.headers.get("user-agent") || undefined;
+    // Meta requires user_data with at least IP + user-agent for event matching
+    // Fallback to placeholder values if not present (Keragon webhook won't have patient's real IP)
+    const ipAddress = forwardedFor?.split(",")[0]?.trim() || "0.0.0.0";
+    const userAgent = req.headers.get("user-agent") || "Keragon-Webhook/1.0";
 
     const eventData: Parameters<typeof sendConversionEvent>[0] = {
       eventName: "Schedule",
