@@ -583,7 +583,6 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Ready for care that gets your biology?
           </h2>
-          <p className="text-[#d4a088] text-sm font-medium mb-8 sm:mb-10">Limited spots — next availability in 2–4 weeks.</p>
           <TrackedLink 
             href="/start"
             eventName="cta_click"
