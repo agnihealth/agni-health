@@ -13,16 +13,17 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
 
-    // Keragon passes through Healthie fields — map them here
-    const email: string | undefined = body.email || body.patient_email;
+    // Healthie webhook sends resource_id as appointment_id
     const appointmentId: string | undefined =
-      body.appointment_id || body.id;
-    const appointmentType: string | undefined =
-      body.appointment_type || body.appointment_type_name;
+      body.appointment_id?.toString() || body.resource_id?.toString() || body.id?.toString();
 
-    if (!email) {
+    // Email is optional — Healthie webhook doesn't include it
+    // Without email, Meta still counts the conversion but can't match to ad click
+    const email: string | undefined = body.email || body.patient_email;
+
+    if (!appointmentId) {
       return NextResponse.json(
-        { error: "Missing email — cannot fire conversion event" },
+        { error: "Missing appointment_id" },
         { status: 400 }
       );
     }
@@ -31,25 +32,36 @@ export async function POST(req: NextRequest) {
     const ipAddress = forwardedFor?.split(",")[0]?.trim();
     const userAgent = req.headers.get("user-agent") || undefined;
 
-    const result = await sendConversionEvent({
+    const eventData: Parameters<typeof sendConversionEvent>[0] = {
       eventName: "Schedule",
-      email,
       sourceUrl: "https://agnihealth.co/book",
       ipAddress,
       userAgent,
       customData: {
-        content_name: appointmentType || "Initial Consultation",
-        content_ids: appointmentId ? [appointmentId] : undefined,
+        content_name: "Appointment",
+        content_ids: [appointmentId],
         content_type: "appointment",
       },
-    });
+    };
+
+    // Include email if available (improves attribution)
+    if (email) {
+      eventData.email = email;
+    }
+
+    const result = await sendConversionEvent(eventData);
 
     if (!result.success) {
       console.error("Meta Schedule event failed:", result.error);
       // Still return 200 — don't make Keragon retry on Meta failures
     }
 
-    return NextResponse.json({ success: true });
+    console.log(`Schedule event fired for appointment ${appointmentId}`, {
+      hasEmail: !!email,
+      metaSuccess: result.success,
+    });
+
+    return NextResponse.json({ success: true, appointmentId });
   } catch (err) {
     console.error("Keragon appointment webhook error:", err);
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });
