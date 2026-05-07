@@ -94,7 +94,7 @@ export default function Home() {
             </div>
             <div className="bg-[#0a1628] border border-zinc-800 rounded-xl p-6 text-center">
               <div className="text-4xl font-bold text-[#d4a088] mb-2">2×</div>
-              <div className="text-white font-medium mb-1">Type 2 Diabetes hazard ratio by 55</div>
+              <div className="text-white font-medium mb-1">Higher risk of diabetes by 55</div>
               <div className="text-zinc-500 text-sm">vs. White peers<sup className="text-[10px]">1</sup></div>
               <div className="text-zinc-600 text-xs mt-2">despite healthier behaviors</div>
             </div>
