@@ -71,13 +71,11 @@ export default function Home() {
       <section className="bg-[#0d1c30] py-16 sm:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4">
               The risk starts <span className="text-[#d4a088]">earlier than you think</span>
             </h2>
-            <p className="text-base sm:text-xl text-zinc-400 leading-relaxed max-w-3xl mx-auto">
-              A 2026 study of 2,700 U.S. adults found that South Asians accumulate cardiovascular risk factors
-              by their mid-40s—despite healthier diets, lower alcohol use, and comparable exercise
-              habits than White, Black, Hispanic, and Chinese adults.
+            <p className="text-base text-zinc-400 leading-relaxed max-w-2xl mx-auto">
+              South Asians accumulate cardiovascular risk by their mid-40s—even with healthier diets and exercise habits than peers.<sup className="text-[10px]">1</sup>
             </p>
           </div>
 
@@ -102,15 +100,8 @@ export default function Home() {
             </div>
           </div>
 
-          <p className="text-zinc-500 text-sm text-center leading-relaxed max-w-3xl mx-auto">
-            Standard medical guidelines were built on studies that largely excluded South Asian populations.
-            Different insulin sensitivity. Different fat distribution. Different risk thresholds.
-          </p>
-          <p className="text-zinc-500 text-xs text-center mt-3 italic">
-            Population statistics do not predict individual health outcomes. All care is individualized.
-          </p>
-          <p className="text-zinc-600 text-xs text-center mt-2">
-            <sup>1</sup> MASALA Study Investigators. <em>J Am Heart Assoc.</em> 2026. <a href="https://doi.org/10.1161/JAHA.124.041221" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#d4a088] transition-colors">doi:10.1161/JAHA.124.041221</a>
+          <p className="text-zinc-500 text-sm text-center mt-6 max-w-2xl mx-auto">
+            Standard guidelines largely excluded South Asian populations—different insulin sensitivity, fat distribution, and risk thresholds demand a different approach.
           </p>
         </div>
       </section>
@@ -631,6 +622,10 @@ export default function Home() {
             <p>
               The information provided on this website is for educational purposes only and is not intended as medical advice. 
               Always consult with a qualified healthcare provider before making any health decisions. Individual results may vary.
+              Population statistics do not predict individual health outcomes. All care is individualized.
+            </p>
+            <p className="mt-2">
+              <sup>1</sup> MASALA Study Investigators. <em>J Am Heart Assoc.</em> 2026. <a href="https://doi.org/10.1161/JAHA.124.041221" target="_blank" rel="noopener noreferrer" className="underline hover:text-zinc-400 transition-colors">doi:10.1161/JAHA.124.041221</a>
             </p>
           </div>
         </div>
