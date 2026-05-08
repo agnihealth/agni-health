@@ -40,9 +40,9 @@ Telehealth care built for South Asian men managing weight, blood sugar, and ener
 
 ## Ad 3 — Angle: GLP-1 / Weight Loss
 
-**Headline** (33 chars):
+**Headline** (28 chars):
 ```
-Finally lose weight. Keep it off.
+Take control of your weight.
 ```
 
 **Primary Text** (117 chars):
@@ -76,7 +76,7 @@ Prediabetes doesn't have to become diabetes. Agni Health connects you with a spe
 |-----|----------|--------------|
 | 1   | 38       | 112          |
 | 2   | 29       | 111          |
-| 3   | 33       | 117          |
+| 3   | 28       | 117          |
 | 4   | 32       | 107          |
 
 All within Meta limits (40 / 125).
