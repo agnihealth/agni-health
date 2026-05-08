@@ -54,6 +54,7 @@ if (typeof window !== 'undefined' && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
     person_profiles: 'identified_only',
     capture_pageview: false, // We'll handle this manually for SPA
     capture_pageleave: true,
+    capture_scroll_depth: true,
     bootstrap: {
       distinctID: anonId,
     },
