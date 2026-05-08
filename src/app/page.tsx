@@ -344,7 +344,7 @@ export default function Home() {
               <div className="text-[#d4a088] text-xs mb-6">First 25 members lock in this rate permanently.</div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
-                  "Quarterly 20-min video visits (board-certified MD)",
+                  "Quarterly 15-min video visits (board-certified MD)",
                   "SA-specific lab panel (HOMA-IR, ApoB, fasting insulin)",
                   "Medication management incl. GLP-1 if appropriate",
                   "Async physician messaging (48-hr response)",
@@ -383,12 +383,12 @@ export default function Home() {
               <div className="text-[#d4a088] text-xs mb-6">First 25 members lock in this rate permanently.</div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
-                  "Monthly 20-min video visits (board-certified MD)",
+                  "Monthly 15-min video visits (board-certified MD)",
                   "SA-specific lab panel (HOMA-IR, ApoB, fasting insulin)",
                   "Medication management incl. GLP-1 if appropriate",
                   "Async physician messaging (24-hr response)",
                   "CGM data review & clinical interpretation",
-                  "Annual 60-min metabolic deep-dive & goal reset",
+                  "Annual 45-min metabolic deep-dive & goal reset",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <svg className="w-5 h-5 text-[#d4a088] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
