@@ -4,7 +4,7 @@ import { useState, Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
-import { trackEvent, trackMetaEvent } from "../components/Analytics";
+import { trackEvent, trackMetaEvent, getAnonId, getHeroVariant } from "../components/Analytics";
 
 type Answer = "yes" | "no" | null;
 
@@ -72,7 +72,11 @@ function StartPageContent() {
     if (email) {
       const failedAt = questions[step].key;
       const waitlistType = failedAt === "inState" ? "out_of_state" : "general";
-      trackEvent("waitlist_signup", { email, failedAt });
+      trackEvent("waitlist_signup", { 
+        anon_id: getAnonId(),
+        hero_variant: getHeroVariant(),
+        failedAt 
+      });
       trackMetaEvent("Lead", { content_name: `waitlist_${waitlistType}` });
       
       // Save to Airtable
@@ -98,7 +102,11 @@ function StartPageContent() {
       e.preventDefault();
       if (email) {
         const directType = isExecutive ? "executive" : "general";
-        trackEvent("waitlist_signup", { email, type: directType });
+        trackEvent("waitlist_signup", { 
+          anon_id: getAnonId(),
+          hero_variant: getHeroVariant(),
+          type: directType 
+        });
         trackMetaEvent("Lead", { content_name: `waitlist_${directType}` });
         
         try {

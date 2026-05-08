@@ -3,14 +3,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
-import { trackEvent, trackMetaEvent } from "../components/Analytics";
+import { trackEvent, trackMetaEvent, getAnonId, getHeroVariant } from "../components/Analytics";
 
 export default function Book() {
   useEffect(() => {
-    // Track booking page view with hero variant for correlation
-    const heroVariant = localStorage.getItem('agni-hero-variant');
+    // Track booking page view with anon ID + hero variant for correlation
     trackEvent('booking_page_viewed', {
-      hero_variant: heroVariant ? `v${parseInt(heroVariant) + 1}` : 'unknown',
+      anon_id: getAnonId(),
+      hero_variant: getHeroVariant() || 'unknown',
     });
     trackMetaEvent('InitiateCheckout', { content_name: 'consultation_booking' });
   }, []);

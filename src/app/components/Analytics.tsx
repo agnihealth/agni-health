@@ -9,13 +9,54 @@ import Script from 'next/script';
 // Meta Pixel ID
 const META_PIXEL_ID = '1713148253376763';
 
-// Initialize PostHog
+// Anonymous session ID for HIPAA-safe analytics
+// Generates a random ID on first visit, persists in cookie for 1 year
+const ANON_ID_KEY = 'agni_anon_id';
+const ANON_ID_EXPIRY_DAYS = 365;
+
+function generateAnonId(): string {
+  return 'anon_' + Math.random().toString(36).substring(2) + Date.now().toString(36);
+}
+
+function setCookie(name: string, value: string, days: number) {
+  const expires = new Date(Date.now() + days * 864e5).toUTCString();
+  document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/; SameSite=Lax`;
+}
+
+function getCookie(name: string): string | null {
+  const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+  return match ? decodeURIComponent(match[2]) : null;
+}
+
+export function getAnonId(): string {
+  if (typeof window === 'undefined') return 'server';
+  
+  let anonId = getCookie(ANON_ID_KEY);
+  if (!anonId) {
+    anonId = generateAnonId();
+    setCookie(ANON_ID_KEY, anonId, ANON_ID_EXPIRY_DAYS);
+  }
+  return anonId;
+}
+
+// Get hero variant from localStorage (set by HeroImage component)
+export function getHeroVariant(): string | null {
+  if (typeof window === 'undefined') return null;
+  const variant = localStorage.getItem('agni-hero-variant');
+  return variant ? `v${parseInt(variant) + 1}` : null;
+}
+
+// Initialize PostHog with anonymous ID
 if (typeof window !== 'undefined' && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
+  const anonId = getAnonId();
   posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
     api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
     person_profiles: 'identified_only',
     capture_pageview: false, // We'll handle this manually for SPA
     capture_pageleave: true,
+    bootstrap: {
+      distinctID: anonId,
+    },
   });
 }
 
