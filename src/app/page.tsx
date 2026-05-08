@@ -319,10 +319,10 @@ export default function Home() {
               <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-1">Step 1</div>
               <div className="text-white font-semibold text-lg">Initial Consultation</div>
               <div className="text-zinc-400 text-sm mt-1">30-minute video visit · No commitment required</div>
-              <div className="text-[#d4a088] text-xs mt-1">Fee credited toward your 1st or 2nd month if you enroll.</div>
+              <div className="text-[#d4a088] text-xs mt-1">Fee credited toward your 1st month.</div>
             </div>
             <div className="flex items-baseline gap-1 sm:text-right shrink-0">
-              <span className="text-4xl font-bold text-white">$350</span>
+              <span className="text-4xl font-bold text-white">$300</span>
               <span className="text-zinc-400 text-sm">one-time</span>
             </div>
           </div>
@@ -610,7 +610,7 @@ export default function Home() {
               </div>
             </div>
             <div className="sm:text-right text-sm text-zinc-500 space-y-1">
-              <p>Board-certified internal medicine</p>
+              <p>Board-certified Internal Medicine</p>
               <p>Telehealth practice</p>
               <p>
                 <Link href="/privacy" className="hover:text-zinc-300 transition-colors">Notice of Privacy Practices</Link>
