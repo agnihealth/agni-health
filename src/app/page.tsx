@@ -37,10 +37,10 @@ export default function Home() {
                 <TrackedLink 
                   href="/start"
                   eventName="cta_click"
-                  eventProperties={{ location: 'hero', button: 'start_consultation' }}
+                  eventProperties={{ location: 'hero', button: 'book_discovery' }}
                   className="bg-[#d4a088] text-[#0a1628] px-8 py-4 rounded text-base font-medium hover:bg-[#c4906c] transition-colors"
                 >
-                  Start Your Consultation
+                  Book Your Discovery Call
                 </TrackedLink>
                 <Link 
                   href="#approach"
@@ -174,10 +174,10 @@ export default function Home() {
                 <div className="w-16 h-16 rounded-full border-2 border-[#d4a088]/40 bg-[#0a1628] flex items-center justify-center mx-auto mb-6 relative z-10">
                   <span className="text-[#d4a088] font-mono text-2xl font-bold">01</span>
                 </div>
-                <h4 className="text-lg font-semibold mb-3">Initial Consultation</h4>
+                <h4 className="text-lg font-semibold mb-3">Discovery Call</h4>
                 <p className="text-zinc-400 text-base">
-                  30-minute video visit to understand your history, goals, and concerns. 
-                  We order comprehensive labs tailored to South Asian metabolic risk.
+                  15-minute video call to understand your history, goals, and concerns. 
+                  We'll discuss next steps and order labs if you're a good fit.
                 </p>
               </div>
 
@@ -313,16 +313,16 @@ export default function Home() {
             Start with a consultation. Stay for the outcomes.
           </p>
 
-          {/* Initial Consultation */}
+          {/* Discovery Call */}
           <div className="bg-[#0d1c30] border border-zinc-700 rounded-2xl px-8 py-6 max-w-2xl mx-auto mb-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
               <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-1">Step 1</div>
-              <div className="text-white font-semibold text-lg">Initial Consultation</div>
-              <div className="text-zinc-400 text-sm mt-1">30-minute video visit · No commitment required</div>
+              <div className="text-white font-semibold text-lg">Discovery Call</div>
+              <div className="text-zinc-400 text-sm mt-1">15-minute video call · No commitment required</div>
               <div className="text-[#d4a088] text-xs mt-1">Fee credited toward your 1st month.</div>
             </div>
             <div className="flex items-baseline gap-1 sm:text-right shrink-0">
-              <span className="text-4xl font-bold text-white">$300</span>
+              <span className="text-4xl font-bold text-white">$49</span>
               <span className="text-zinc-400 text-sm">one-time</span>
             </div>
           </div>
@@ -520,7 +520,7 @@ export default function Home() {
                 </div>
                 {[
                   { category: "Physician Visits", rows: [
-                    { label: "Initial 30-min video consultation", essential: true, intensive: true, executive: true },
+                    { label: "15-min discovery call", essential: true, intensive: true, executive: true },
                     { label: "Follow-up visits", essential: "Quarterly", intensive: "Monthly", executive: "Bi-weekly" },
                     { label: "Annual metabolic deep-dive", essential: false, intensive: "60 min", executive: "90 min" },
                   ]},
@@ -576,10 +576,10 @@ export default function Home() {
           <TrackedLink 
             href="/start"
             eventName="cta_click"
-            eventProperties={{ location: 'bottom_cta', button: 'start_consultation' }}
+            eventProperties={{ location: 'bottom_cta', button: 'book_discovery' }}
             className="inline-block bg-[#d4a088] text-[#0a1628] px-10 py-4 rounded text-lg font-medium hover:bg-[#c4906c] transition-colors"
           >
-            Start Your Consultation
+            Book Your Discovery Call
           </TrackedLink>
           <p className="text-zinc-500 text-sm mt-6">
             Currently accepting patients in California, Louisiana, and Massachusetts

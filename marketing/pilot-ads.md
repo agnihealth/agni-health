@@ -92,3 +92,28 @@ All within Meta limits (40 / 125).
 - **Placements:** Facebook Feed + Instagram Feed only (exclude Audience Network for validation)
 - **Budget split:** ~$125/ad → rotate all 4, pause bottom 2 by day 3
 - **UTM suggestion:** `?utm_source=fb&utm_medium=paid&utm_campaign=pilot-may26&utm_content=ad1-genes` (Ad 1), `ad2-doctor` (Ad 2), `ad3-weight` (Ad 3), `ad4-sugar` (Ad 4)
+
+---
+
+## Ad 5 — Angle: Identity / Family History
+
+**Headline** (38 chars):
+```
+Your family history isn't your destiny.
+```
+
+**Primary Text:**
+```
+South Asians develop diabetes at lower BMIs than any other group. Agni Health connects you with a doctor who gets it.
+```
+
+**CTA:** `Learn More`
+
+## Ad 5 — Video Script (15s, text-on-screen, 9:16)
+
+- 0–3s: "South Asians get diabetes at a lower BMI."
+- 3–7s: "Most doctors don't know that."
+- 7–11s: "Agni Health does."
+- 11–15s: "See an expert." + agnihealth.co
+
+Delivery: email to sjapa6@gmail.com when generated
