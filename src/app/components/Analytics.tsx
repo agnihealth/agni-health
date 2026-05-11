@@ -58,7 +58,7 @@ if (typeof window !== 'undefined' && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
     bootstrap: {
       distinctID: anonId,
     },
-  });
+  } as Parameters<typeof posthog.init>[1]);
 }
 
 // Meta Pixel helper
