@@ -305,7 +305,7 @@ export default function Home() {
       </section>
 
       {/* Social Proof */}
-      <SocialProof />
+      {/* <SocialProof /> */}
 
       {/* Pricing */}
       <section id="pricing" className="py-16 sm:py-24">
