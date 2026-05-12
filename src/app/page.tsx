@@ -18,23 +18,12 @@ export default function Home() {
       <main className="max-w-7xl mx-auto px-4 sm:px-8 pt-6 sm:pt-8 pb-16 sm:pb-24">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
-            <div className="inline-block">
-              <span className="text-[#d4a088] text-sm font-medium tracking-wider uppercase">
-                Metabolic Care for South Asians
-              </span>
-            </div>
-            
             <Suspense fallback={
-              <>
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
-                  Your doctor's normal
-                  <br />
-                  <span className="text-[#d4a088]">isn't your normal.</span>
-                </h1>
-                <p className="text-base sm:text-xl text-zinc-400 leading-relaxed max-w-lg">
-                  Evidence-based protocols built for South Asian metabolism—not generic guidelines designed for someone else.
-                </p>
-              </>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
+                Your doctor's normal
+                <br />
+                <span className="text-[#d4a088]">isn't your normal.</span>
+              </h1>
             }>
               <HeroHeadline />
             </Suspense>
