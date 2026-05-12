@@ -1,6 +1,27 @@
 import { NextRequest, NextResponse } from "next/server";
 import { sendConversionEvent } from "@/lib/meta-conversions";
 
+const POSTHOG_API_KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY;
+const POSTHOG_HOST = "https://us.i.posthog.com";
+
+async function capturePostHogEvent(event: string, properties: Record<string, unknown>) {
+  if (!POSTHOG_API_KEY) return;
+  try {
+    await fetch(`${POSTHOG_HOST}/capture/`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        api_key: POSTHOG_API_KEY,
+        event,
+        distinct_id: (properties.appointment_id as string) || "server",
+        properties,
+      }),
+    });
+  } catch (err) {
+    console.error("PostHog capture failed:", err);
+  }
+}
+
 const KERAGON_SECRET = process.env.KERAGON_WEBHOOK_SECRET;
 
 export async function POST(req: NextRequest) {
@@ -61,6 +82,12 @@ export async function POST(req: NextRequest) {
     console.log(`Schedule event fired for appointment ${appointmentId}`, {
       hasEmail: !!email,
       metaSuccess: result.success,
+    });
+
+    await capturePostHogEvent("booking_completed", {
+      appointment_id: appointmentId,
+      has_email: !!email,
+      source: "keragon_webhook",
     });
 
     return NextResponse.json({ success: true, appointmentId });
