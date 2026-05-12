@@ -5,6 +5,7 @@ import HeroImage from "./components/HeroImage";
 import TrackedLink from "./components/TrackedLink";
 import NavBar from "./components/NavBar";
 import EmailCapture from "./components/EmailCapture";
+import SocialProof from "./components/SocialProof";
 
 export default function Home() {
   return (
@@ -112,7 +113,7 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-              Metabolic care <span className="text-[#d4a088]">built for South Asian men</span>
+              Metabolic care <span className="text-[#d4a088]">built for South Asians</span>
             </h2>
             <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
               Physician-led. Research-backed.
@@ -302,6 +303,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Social Proof */}
+      <SocialProof />
 
       {/* Pricing */}
       <section id="pricing" className="py-16 sm:py-24">
