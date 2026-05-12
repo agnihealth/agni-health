@@ -69,16 +69,11 @@ export default function EmailCapture({
           </button>
         </form>
       ) : (
-        <div className="flex flex-col items-center gap-2 text-sm">
-          <div className="flex items-center gap-2 text-zinc-400">
-            <svg className="w-4 h-4 text-[#d4a088]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-            Got it.
-          </div>
-          <a href="/guide" className="text-[#d4a088] hover:underline font-medium">
-            Read the guide →
-          </a>
+        <div className="flex items-center justify-center gap-2 text-zinc-400 text-sm">
+          <svg className="w-4 h-4 text-[#d4a088]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+          You&apos;re on the list. We&apos;ll be in touch.
         </div>
       )}
     </div>
