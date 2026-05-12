@@ -7,12 +7,14 @@ interface EmailCaptureProps {
   source?: string;
   heading?: string;
   subtext?: string;
+  compact?: boolean;
 }
 
 export default function EmailCapture({
   source = "homepage_fence",
   heading = "Not ready to book? Stay in the loop.",
   subtext = "Get updates on new research, availability, and what South Asian metabolic care actually looks like.",
+  compact = false,
 }: EmailCaptureProps) {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -39,10 +41,14 @@ export default function EmailCapture({
     setLoading(false);
   };
 
+  const compactHeading = "Not ready to book yet? Get updates on availability.";
+
   return (
     <div className="max-w-xl mx-auto text-center">
-      <h3 className="text-xl font-semibold mb-2">{heading}</h3>
-      <p className="text-zinc-400 text-sm mb-6">{subtext}</p>
+      <h3 className={`font-semibold mb-2 ${compact ? "text-base" : "text-xl"}`}>
+        {compact ? compactHeading : heading}
+      </h3>
+      {!compact && <p className="text-zinc-400 text-sm mb-6">{subtext}</p>}
 
       {!submitted ? (
         <form onSubmit={handleSubmit} className="flex gap-2 max-w-sm mx-auto">

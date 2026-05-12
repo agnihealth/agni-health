@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Suspense } from "react";
 import HeroImage from "./components/HeroImage";
+import HeroHeadline from "./components/HeroHeadline";
 import TrackedLink from "./components/TrackedLink";
 import NavBar from "./components/NavBar";
 import EmailCapture from "./components/EmailCapture";
@@ -23,15 +24,20 @@ export default function Home() {
               </span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
-              Your doctor's normal
-              <br />
-              isn't <span className="text-[#d4a088]">your normal.</span>
-            </h1>
-            
-            <p className="text-base sm:text-xl text-zinc-400 leading-relaxed max-w-lg">
-              Evidence-based protocols built for South Asian metabolism—not generic guidelines designed for someone else.
-            </p>
+            <Suspense fallback={
+              <>
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
+                  Your doctor's normal
+                  <br />
+                  <span className="text-[#d4a088]">isn't your normal.</span>
+                </h1>
+                <p className="text-base sm:text-xl text-zinc-400 leading-relaxed max-w-lg">
+                  Evidence-based protocols built for South Asian metabolism—not generic guidelines designed for someone else.
+                </p>
+              </>
+            }>
+              <HeroHeadline />
+            </Suspense>
 
             <div className="space-y-4 pt-4">
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
@@ -67,6 +73,13 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      {/* Email capture — high on page for bouncy paid traffic */}
+      <section className="py-10 sm:py-14 bg-[#0a1628] border-t border-zinc-800/60">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+          <EmailCapture compact />
+        </div>
+      </section>
 
       {/* The Problem section */}
       <section className="bg-[#0d1c30] py-16 sm:py-24">
@@ -224,13 +237,6 @@ export default function Home() {
               </blockquote>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Stay in the loop */}
-      <section className="py-14 sm:py-20 bg-[#0d1c30] border-t border-zinc-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <EmailCapture />
         </div>
       </section>
 
