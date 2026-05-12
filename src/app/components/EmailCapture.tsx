@@ -41,7 +41,7 @@ export default function EmailCapture({
     setLoading(false);
   };
 
-  const compactHeading = "Not ready to book? Get the free South Asian metabolic risk guide.";
+  const compactHeading = "Not ready to book? Get the free South Asian metabolic risk guide";
 
   return (
     <div className="max-w-xl mx-auto text-center">
