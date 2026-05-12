@@ -41,7 +41,7 @@ export default function EmailCapture({
     setLoading(false);
   };
 
-  const compactHeading = "Not ready to book yet? Get updates on availability.";
+  const compactHeading = "Not ready to book? Get the free South Asian metabolic risk guide.";
 
   return (
     <div className="max-w-xl mx-auto text-center">
@@ -65,15 +65,20 @@ export default function EmailCapture({
             disabled={loading}
             className="px-5 py-3 bg-[#d4a088] text-[#0a1628] rounded font-medium text-sm hover:bg-[#c4906c] transition-colors disabled:opacity-60"
           >
-            {loading ? "..." : "Notify me"}
+            {loading ? "..." : "Send it"}
           </button>
         </form>
       ) : (
-        <div className="flex items-center justify-center gap-2 text-zinc-400 text-sm">
-          <svg className="w-4 h-4 text-[#d4a088]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-          </svg>
-          You're on the list. We'll be in touch.
+        <div className="flex flex-col items-center gap-2 text-sm">
+          <div className="flex items-center gap-2 text-zinc-400">
+            <svg className="w-4 h-4 text-[#d4a088]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+            Got it.
+          </div>
+          <a href="/guide" className="text-[#d4a088] hover:underline font-medium">
+            Read the guide →
+          </a>
         </div>
       )}
     </div>
