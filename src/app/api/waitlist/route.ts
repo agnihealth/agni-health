@@ -48,10 +48,9 @@ export async function POST(req: NextRequest) {
       }
     );
 
-    const body = await res.json();
-    console.log("[waitlist] Airtable status:", res.status, JSON.stringify(body).slice(0, 200));
     if (!res.ok) {
-      console.error("[waitlist] Airtable error:", body);
+      const err = await res.json();
+      console.error("Airtable error:", err);
       return NextResponse.json(
         { error: "Failed to save to waitlist" },
         { status: 500 }
