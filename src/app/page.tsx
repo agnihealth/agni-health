@@ -22,7 +22,7 @@ export default function Home() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
                 Your doctor's normal
                 <br />
-                <span className="text-[#d4a088]">isn't your normal.</span>
+                <span className="text-[#d4a088]">isn't your normal</span>
               </h1>
             }>
               <HeroHeadline />

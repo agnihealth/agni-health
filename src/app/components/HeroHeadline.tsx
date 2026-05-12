@@ -11,7 +11,7 @@ const VARIANTS: Record<string, { headline: string; accent: string }> = {
 
 const DEFAULT = {
   headline: "Your doctor's normal",
-  accent: "isn't your normal.",
+  accent: "isn't your normal",
 };
 
 export default function HeroHeadline() {
