@@ -31,6 +31,13 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  themeColor: "#0a1628",
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+    ],
+    apple: "/favicon.png",
+  },
   title: "Agni Health | Metabolic Health for South Asians",
   description: "Physician-led metabolic health care designed for South Asian biology. Evidence-based protocols. Personalized to you.",
   metadataBase: new URL("https://agnihealth.co"),
