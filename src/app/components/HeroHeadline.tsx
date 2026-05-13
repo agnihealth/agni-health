@@ -26,7 +26,7 @@ const VARIANTS: Record<string, { headline: string; accent: string; sub?: string 
   "Ad 6 - Three stats": {
     headline: "3 numbers your doctor",
     accent: "isn't checking.",
-    sub: "HOMA-IR. ApoB. Fasting insulin. These predict metabolic disease in South Asians better than standard panels.",
+    sub: "HOMA-IR. ApoB. Fasting insulin. The markers standard care often skips — and why they matter for South Asians.",
   },
   // Ad 5 — before/after
   "Ad 5 -- Before/After (A/B test)": {
