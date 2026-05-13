@@ -78,6 +78,7 @@ Prediabetes doesn't have to become diabetes. Agni Health connects you with a spe
 | 2   | 29       | 111          |
 | 3   | 28       | 117          |
 | 4   | 32       | 107          |
+| 5   | 43       | 172          |
 
 All within Meta limits (40 / 125).
 
@@ -95,25 +96,78 @@ All within Meta limits (40 / 125).
 
 ---
 
-## Ad 5 — Angle: Identity / Family History
+## Ad 5 — Angle: Transformation / Before & After
 
-**Headline** (38 chars):
+**Headline** (43 chars):
 ```
-Your family history isn't your destiny.
+This is what metabolic progress looks like.
 ```
 
-**Primary Text:**
+**Primary Text** (172 chars):
 ```
-South Asians develop diabetes at lower BMIs than any other group. Agni Health connects you with a doctor who gets it.
+Visceral fat is the #1 driver of metabolic disease in South Asian men — even at a "normal" weight. Agni Health is physician-led care designed for your biology. CA, LA & MA.
 ```
 
 **CTA:** `Learn More`
 
-## Ad 5 — Video Script (15s, text-on-screen, 9:16)
+**UTM:** `?utm_source=fb&utm_medium=paid&utm_campaign=pilot-may26&utm_content=ad5-beforeafter`
 
-- 0–3s: "South Asians get diabetes at a lower BMI."
-- 3–7s: "Most doctors don't know that."
-- 7–11s: "Agni Health does."
-- 11–15s: "See an expert." + agnihealth.co
+---
 
-Delivery: email to sjapa6@gmail.com when generated
+### CMO Assessment (2026-05-11) — ⚠️ Creative Pivot Recommended
+
+**Body before/after creatives (v1–v9) are HIGH RISK for Meta:**
+Meta Ads policy prohibits before/after imagery showing body composition changes. These will likely be auto-rejected and could flag the account.
+
+**⚠️ v9 BUG:** Disclaimer says "Featured individual is a real person" but this version is designated as *simulated*. Disclaimer must read: *"Simulation only. Not a real patient or actual result. Individual results will vary."*
+
+**Recommended creative for Meta — Biomarker Before/After (Meta-compliant):**
+- `creatives/ad5-biomarker-before-after-v2.jpg` ← **USE THIS** for Meta
+  - HbA1c 6.4% → 5.2%, Fasting Insulin 19 → 8 μU/mL, HOMA-IR 3.4 → 1.4
+  - Navy background, clean typography, Agni Health logo
+  - No body imagery = no Meta policy trigger
+  - Clinically credible for SA men who track their labs
+  - Requires disclaimer: *"Representative results. Individual outcomes vary. Consult your physician."*
+
+**Body before/after use cases (approved):**
+- Organic Instagram posts (educational content frame) — `before-after-final-v8.png`
+- Email newsletters to Healthie/waitlist patients
+- Do NOT run as paid Meta/IG ads
+
+Full assessment: `marketing/cmo-assessment-before-after-2026-05-11.md`
+
+---
+
+### Ad 5B — Biomarker Creative Copy (Meta-safe alternative)
+
+**Headline:**
+```
+Your labs don't lie. Neither do ours.
+```
+*(38 chars — within Meta 40-char limit)*
+
+**Primary Text:**
+```
+HbA1c, HOMA-IR, fasting insulin — these are the numbers that predict metabolic disease. South Asian men at normal BMI can still be in the danger zone. Agni Health reads the full picture.
+```
+*(186 chars — over 125-char limit; trim to:)*
+
+**Primary Text (trimmed):**
+```
+HbA1c and HOMA-IR predict metabolic disease before symptoms appear. South Asian men are at risk even at "normal" BMI. Agni Health reads the full picture.
+```
+*(152 chars — still over; final version:)*
+
+**Primary Text (final, 124 chars):**
+```
+Your HbA1c and HOMA-IR tell a story before symptoms do. Agni Health is built to read them.
+```
+
+**CTA:** `Learn More`
+
+**Image:** `creatives/ad5-biomarker-before-after-v2.jpg`
+
+**Required disclaimer** (add to ad copy or image):
+> *Representative results. Individual outcomes vary based on medical history, program adherence, and other factors.*
+
+**UTM:** `?utm_source=fb&utm_medium=paid&utm_campaign=pilot-may26&utm_content=ad5b-biomarker`
