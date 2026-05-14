@@ -16,7 +16,7 @@ const VARIANTS: Record<string, { headline: string; accent: string; sub?: string 
   },
   // Ad 4 — blood sugar
   "Ad 4 -- Blood Sugar - Copy": {
-    headline: "Your blood sugar looks fine",
+    headline: "Your blood sugar looks fine.",
     accent: "It's not the whole story",
   },
   // Ad 6 — three stats
