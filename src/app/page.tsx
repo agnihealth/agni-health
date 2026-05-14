@@ -154,7 +154,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Direct Physician Access</h3>
               <p className="text-zinc-400 leading-relaxed">
-                No PAs. No handoffs. Your physician handles everything—async messaging, 24–48hr responses.
+                No PAs. No handoffs. Your physician handles everything.
               </p>
             </div>
           </div>
