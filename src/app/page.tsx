@@ -312,7 +312,7 @@ export default function Home() {
               <div className="text-[#d4a088] text-xs mt-1">Fee credited toward your 1st month.</div>
             </div>
             <div className="flex items-baseline gap-1 sm:text-right shrink-0">
-              <span className="text-4xl font-bold text-white">$49</span>
+              <span className="text-4xl font-bold text-white">$50</span>
               <span className="text-zinc-400 text-sm">one-time</span>
             </div>
           </div>
