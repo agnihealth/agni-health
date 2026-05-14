@@ -15,10 +15,8 @@ function StartPageContent() {
   const isWaitlist = searchParams.get("waitlist") === "true";
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<{
-    metabolicConcern: Answer;
     inState: Answer;
   }>({
-    metabolicConcern: null,
     inState: null,
   });
   const [showNotFit, setShowNotFit] = useState(false);
@@ -26,11 +24,6 @@ function StartPageContent() {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const questions = [
-    {
-      key: "metabolicConcern" as const,
-      question: "Are you concerned about or managing a metabolic condition?",
-      subtext: "Prediabetes, type 2 diabetes, high cholesterol, weight, or metabolic syndrome",
-    },
     {
       key: "inState" as const,
       question: "Are you located in California, Louisiana, or Massachusetts?",
