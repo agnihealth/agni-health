@@ -129,8 +129,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3">South Asian Calibrated</h3>
               <p className="text-zinc-400 leading-relaxed">
-                Built on the MASALA Study—the largest U.S. research on South Asian cardiovascular risk. 
-                We use ethnic-specific thresholds for BMI, waist, and metabolic markers that standard care ignores.
+                Different biology needs different benchmarks. Built on the MASALA Study, the largest U.S. cardiovascular research on South Asians.
               </p>
             </div>
 
