@@ -10,7 +10,7 @@ import SocialProof from "./components/SocialProof";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0a1628] text-white font-[family-name:var(--font-jakarta)]">
+    <div className="min-h-screen overflow-x-hidden bg-[#0a1628] text-white font-[family-name:var(--font-jakarta)]">
       {/* Nav */}
       <NavBar />
 
@@ -602,7 +602,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-zinc-800 py-12">
-        <div className="max-w-7xl mx-auto px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
             <div>
               <Image 
