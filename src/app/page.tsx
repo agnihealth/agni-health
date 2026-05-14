@@ -175,8 +175,7 @@ export default function Home() {
                 </div>
                 <h4 className="text-lg font-semibold mb-3">Discovery Call</h4>
                 <p className="text-zinc-400 text-base">
-                  15-minute video call to understand your history, goals, and concerns. 
-                  We'll discuss next steps and order labs if you're a good fit.
+                  15-minute video call to understand your history, goals, and concerns.
                 </p>
               </div>
 
