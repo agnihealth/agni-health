@@ -185,7 +185,7 @@ export default function Home() {
                 </div>
                 <h4 className="text-lg font-semibold mb-3">Personalized Protocol</h4>
                 <p className="text-zinc-400 text-base">
-                  Based on your results, we create a protocol covering nutrition, movement, 
+                  Based on lab results, we create a protocol covering nutrition, movement, 
                   sleep, and medication if appropriate.
                 </p>
               </div>
