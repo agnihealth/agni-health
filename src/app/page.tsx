@@ -56,7 +56,7 @@ export default function Home() {
                   </svg>
                 </Link>
               </div>
-              <p className="text-[#d4a088] text-sm font-medium">Limited spots — next availability in 2–4 weeks.</p>
+
             </div>
 
 
