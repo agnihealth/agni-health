@@ -620,7 +620,7 @@ export default function Home() {
               <p>Board-certified Internal Medicine</p>
               <p>Telehealth practice</p>
               <p>
-                <Link href="/privacy" className="hover:text-zinc-300 transition-colors">Notice of Privacy Practices</Link>
+                <Link href="/terms" className="hover:text-zinc-300 transition-colors">Terms of Service</Link>
               </p>
             </div>
           </div>
