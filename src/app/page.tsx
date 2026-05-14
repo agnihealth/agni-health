@@ -243,10 +243,7 @@ export default function Home() {
             </div>
             
             <div>
-              <span className="text-[#d4a088] text-sm font-medium tracking-wider uppercase">
-                Your Physician
-              </span>
-              <h2 className="text-4xl font-bold mt-4 mb-6">
+              <h2 className="text-4xl font-bold mb-6">
                 Dr. Sohan Japa, MD
               </h2>
               <div className="space-y-4 text-zinc-400 leading-relaxed">
@@ -305,7 +302,6 @@ export default function Home() {
             Simple, <span className="text-[#d4a088]">transparent</span> pricing
           </h2>
           <p className="text-zinc-400 text-lg text-center mb-4 max-w-2xl mx-auto">
-            Start with a consultation. Stay for the outcomes.
           </p>
 
           {/* Discovery Call */}
