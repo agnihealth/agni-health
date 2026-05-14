@@ -217,7 +217,7 @@ export default function Home() {
                   metabolism. That&apos;s why I built Agni.&rdquo;
                 </p>
                 <footer className="text-zinc-500 text-sm">
-                  — Dr. Sohan Japa, MD · Founder
+                  — Dr. Sohan Japa · Founder
                 </footer>
               </blockquote>
             </div>
@@ -244,7 +244,7 @@ export default function Home() {
             
             <div>
               <h2 className="text-4xl font-bold mb-6">
-                Dr. Sohan Japa, MD
+                Dr. Sohan Japa
               </h2>
               <div className="space-y-4 text-zinc-400 leading-relaxed">
                 <p>
