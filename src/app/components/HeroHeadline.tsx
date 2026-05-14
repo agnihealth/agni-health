@@ -37,6 +37,16 @@ const VARIANTS: Record<string, { headline: string; accent: string; sub?: string 
     headline: "Real results.",
     accent: "Built for South Asian biology.",
   },
+  // Ad 2 — doctor
+  "Ad 2 -- Doctor who gets it - Copy": {
+    headline: "A doctor who actually gets it.",
+    accent: "Because he lived it too.",
+  },
+  // Ad 3 — weight loss
+  "Ad 3 -- Wt loss - Copy": {
+    headline: "Finally, weight loss advice",
+    accent: "built for your body.",
+  },
 };
 
 const DEFAULT = {
