@@ -203,7 +203,7 @@ export default function Home() {
             </div>
             
             <p className="text-[#d4a088] text-lg text-center mt-10 max-w-2xl mx-auto font-medium">
-              Our goal isn&apos;t to be your doctor forever. Most care plans are structured over 1–3 years before transitioning back to primary care with a clear maintenance plan.
+              Most plans run 1–3 years, then transition back to primary care. <u>We&apos;re not here forever — we&apos;re here to fix the problem.</u>
             </p>
           </div>
 
