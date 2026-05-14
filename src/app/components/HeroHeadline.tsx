@@ -7,47 +7,47 @@ const VARIANTS: Record<string, { headline: string; accent: string; sub?: string 
   // Ad 7 — belly fat video
   "Ad 7: Video of Belly Fat troubles": {
     headline: "South Asian bodies store fat",
-    accent: "differently. Here's why.",
+    accent: "differently. Here's why",
   },
   // Ad 1 — metabolic risk
   "Ad 1 -- Metabolic Risk": {
     headline: "Your metabolic risk is higher",
-    accent: "than standard guidelines recognize.",
+    accent: "than standard guidelines recognize",
   },
   // Ad 4 — blood sugar
   "Ad 4 -- Blood Sugar - Copy": {
-    headline: "Your blood sugar looks fine.",
-    accent: "It's not the whole story.",
+    headline: "Your blood sugar looks fine",
+    accent: "It's not the whole story",
   },
   // Ad 6 — three stats
   "Ad 6 - Three stats - Copy": {
     headline: "Your risk starts",
-    accent: "earlier than you think.",
+    accent: "earlier than you think",
   },
   // Ad 5 — before/after
   "Ad 5 -- Before/After (A test) - Copy": {
-    headline: "Built to address visceral fat.",
-    accent: "Built for South Asian biology.",
+    headline: "Built to address visceral fat",
+    accent: "Built for South Asian biology",
   },
   "Ad 5 -- Before/After (B test) - Copy": {
-    headline: "Built to address visceral fat.",
-    accent: "Built for South Asian biology.",
+    headline: "Built to address visceral fat",
+    accent: "Built for South Asian biology",
   },
   // Ad 2 — doctor
   "Ad 2 -- Doctor who gets it - Copy": {
-    headline: "A doctor who actually gets it.",
-    accent: "Because he lived it too.",
+    headline: "A doctor who actually gets it",
+    accent: "Because he lived it too",
   },
   // Ad 3 — weight loss
   "Ad 3 -- Wt loss - Copy": {
     headline: "Finally, weight loss advice",
-    accent: "built for your body.",
+    accent: "built for your body",
   },
 };
 
 const DEFAULT = {
   headline: "Standard 'normal' wasn't built",
-  accent: "for South Asian biology.",
+  accent: "for South Asian biology",
 };
 
 export default function HeroHeadline() {
