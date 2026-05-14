@@ -152,6 +152,8 @@ function StartPageContent() {
               <div className="flex gap-2">
                 <input
                   type="email"
+                  inputMode="email"
+                  autoComplete="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="your@email.com"
@@ -228,6 +230,8 @@ function StartPageContent() {
               <div className="flex gap-2">
                 <input
                   type="email"
+                  inputMode="email"
+                  autoComplete="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="your@email.com"
@@ -309,16 +313,16 @@ function StartPageContent() {
             {currentQuestion.subtext}
           </p>
 
-          <div className="flex gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => handleAnswer("yes")}
-              className="px-12 py-4 bg-[#d4a088] text-[#0a1628] rounded text-lg font-medium hover:bg-[#e0b098] transition-colors"
+              className="w-full sm:w-auto px-12 py-4 bg-[#d4a088] text-[#0a1628] rounded text-lg font-medium hover:bg-[#e0b098] transition-colors"
             >
               Yes
             </button>
             <button
               onClick={() => handleAnswer("no")}
-              className="px-12 py-4 bg-zinc-800 text-white rounded text-lg font-medium hover:bg-zinc-700 transition-colors"
+              className="w-full sm:w-auto px-12 py-4 bg-zinc-800 text-white rounded text-lg font-medium hover:bg-zinc-700 transition-colors"
             >
               No
             </button>

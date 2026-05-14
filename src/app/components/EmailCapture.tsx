@@ -41,7 +41,7 @@ export default function EmailCapture({
     setLoading(false);
   };
 
-  const compactHeading = "Not ready to book? Get the free South Asian metabolic risk guide";
+  const compactHeading = "Not ready to book? Stay in the loop.";
 
   return (
     <div className="max-w-xl mx-auto text-center">
@@ -54,6 +54,8 @@ export default function EmailCapture({
         <form onSubmit={handleSubmit} className="flex gap-2 max-w-sm mx-auto">
           <input
             type="email"
+            inputMode="email"
+            autoComplete="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="your@email.com"
@@ -63,6 +65,7 @@ export default function EmailCapture({
           <button
             type="submit"
             disabled={loading}
+            enterKeyHint="send"
             className="px-5 py-3 bg-[#d4a088] text-[#0a1628] rounded font-medium text-sm hover:bg-[#c4906c] transition-colors disabled:opacity-60"
           >
             {loading ? "..." : "Send it"}

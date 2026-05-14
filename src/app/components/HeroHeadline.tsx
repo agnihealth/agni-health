@@ -57,7 +57,7 @@ export default function HeroHeadline() {
 
   return (
     <div>
-      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
+      <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
         {v.headline}
         <br />
         <span className="text-[#d4a088]">{v.accent}</span>
