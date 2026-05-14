@@ -21,8 +21,8 @@ const VARIANTS: Record<string, { headline: string; accent: string; sub?: string 
   },
   // Ad 6 — three stats
   "Ad 6 - Three stats - Copy": {
-    headline: "3 numbers your doctor",
-    accent: "that standard panels often miss.",
+    headline: "Your risk starts",
+    accent: "earlier than you think.",
   },
   // Ad 5 — before/after
   "Ad 5 -- Before/After (A test) - Copy": {
