@@ -102,9 +102,7 @@ export default function Home() {
             </div>
           </div>
 
-          <p className="text-zinc-500 text-sm text-center mt-6 max-w-2xl mx-auto">
-            Standard guidelines largely excluded South Asian populations—different insulin sensitivity, fat distribution, and risk thresholds demand a different approach.
-          </p>
+
         </div>
       </section>
 
