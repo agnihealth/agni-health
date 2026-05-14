@@ -17,23 +17,23 @@ const VARIANTS: Record<string, { headline: string; accent: string; sub?: string 
     sub: "South Asians develop prediabetes at 8× the rate — at the same BMI. We built care for that reality.",
   },
   // Ad 4 — blood sugar
-  "Ad 4 -- Blood Sugar": {
+  "Ad 4 -- Blood Sugar - Copy": {
     headline: "Your blood sugar looks fine.",
     accent: "It's not the whole story.",
     sub: "Fasting insulin and HOMA-IR reveal risk years before A1c does. We check them.",
   },
   // Ad 6 — three stats
-  "Ad 6 - Three stats": {
+  "Ad 6 - Three stats - Copy": {
     headline: "3 numbers your doctor",
     accent: "isn't checking.",
     sub: "HOMA-IR. ApoB. Fasting insulin. The markers standard care often skips — and why they matter for South Asians.",
   },
   // Ad 5 — before/after
-  "Ad 5 -- Before/After (A/B test)": {
+  "Ad 5 -- Before/After (A test) - Copy": {
     headline: "Real results.",
     accent: "Built for South Asian biology.",
   },
-  "Ad 5 -- Before/After (B test)": {
+  "Ad 5 -- Before/After (B test) - Copy": {
     headline: "Real results.",
     accent: "Built for South Asian biology.",
   },
