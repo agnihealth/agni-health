@@ -14,9 +14,9 @@ export default function Terms() {
           <Image
             src="/logo-transparent.png"
             alt="Agni Health"
-            width={300}
-            height={138}
-            className="h-10 w-auto"
+            width={400}
+            height={100}
+            className="h-[75px] sm:h-[113px] md:h-[138px] w-auto"
           />
         </Link>
       </nav>
