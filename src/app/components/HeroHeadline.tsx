@@ -26,11 +26,11 @@ const VARIANTS: Record<string, { headline: string; accent: string; sub?: string 
   },
   // Ad 5 — before/after
   "Ad 5 -- Before/After (A test) - Copy": {
-    headline: "Real results.",
+    headline: "Real results. Less visceral fat.",
     accent: "Built for South Asian biology.",
   },
   "Ad 5 -- Before/After (B test) - Copy": {
-    headline: "Real results.",
+    headline: "Real results. Less visceral fat.",
     accent: "Built for South Asian biology.",
   },
   // Ad 2 — doctor
