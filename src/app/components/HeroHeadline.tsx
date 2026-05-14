@@ -12,7 +12,7 @@ const VARIANTS: Record<string, { headline: string; accent: string; sub?: string 
   // Ad 1 — metabolic risk
   "Ad 1 -- Metabolic Risk": {
     headline: "Your metabolic risk is higher",
-    accent: "than your doctor thinks.",
+    accent: "than standard guidelines recognize.",
   },
   // Ad 4 — blood sugar
   "Ad 4 -- Blood Sugar - Copy": {
@@ -22,15 +22,15 @@ const VARIANTS: Record<string, { headline: string; accent: string; sub?: string 
   // Ad 6 — three stats
   "Ad 6 - Three stats - Copy": {
     headline: "3 numbers your doctor",
-    accent: "isn't checking.",
+    accent: "that standard panels often miss.",
   },
   // Ad 5 — before/after
   "Ad 5 -- Before/After (A test) - Copy": {
-    headline: "Real results. Less visceral fat.",
+    headline: "Built to address visceral fat.",
     accent: "Built for South Asian biology.",
   },
   "Ad 5 -- Before/After (B test) - Copy": {
-    headline: "Real results. Less visceral fat.",
+    headline: "Built to address visceral fat.",
     accent: "Built for South Asian biology.",
   },
   // Ad 2 — doctor
@@ -46,8 +46,8 @@ const VARIANTS: Record<string, { headline: string; accent: string; sub?: string 
 };
 
 const DEFAULT = {
-  headline: "Your doctor's normal",
-  accent: "isn't your normal",
+  headline: "Standard 'normal' wasn't built",
+  accent: "for South Asian biology.",
 };
 
 export default function HeroHeadline() {
