@@ -141,7 +141,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Beyond A1c</h3>
               <p className="text-zinc-400 leading-relaxed">
-                We track fasting insulin, HOMA-IR, ApoB, visceral fat—markers that predict risk 
+                We track fasting insulin, HOMA-IR, ApoB, and visceral fat via DEXA scan—markers that predict risk 
                 years before standard tests show problems.
               </p>
             </div>
