@@ -334,7 +334,8 @@ export default function Home() {
               <ul className="space-y-3 mb-8 flex-1">
                 {[
                   "Quarterly 15-min video visits (board-certified MD)",
-                  "Quarterly labs included (CBC, CMP, lipids, ApoB, fasting insulin)",
+                  "Labs included (CBC, CMP, lipids, ApoB, fasting insulin)",
+                  "DEXA scan included",
                   "Medication management incl. GLP-1 if appropriate",
                   "Async physician messaging (48-hr response)",
                   "Ongoing labs review & care plan updates",
@@ -373,6 +374,7 @@ export default function Home() {
                 {[
                   "Monthly 15-min video visits (board-certified MD)",
                   "Quarterly labs included (CBC, CMP, lipids, ApoB, fasting insulin)",
+                  "DEXA scan included",
                   "Medication management incl. GLP-1 if appropriate",
                   "Async physician messaging (24-hr response)",
                   "CGM data review & clinical interpretation",
@@ -457,7 +459,7 @@ export default function Home() {
               },
               {
                 q: "Are the labs included in my membership?",
-                a: "Yes — labs are included in your membership. Every quarter we order a comprehensive panel (CBC, CMP, lipid panel, ApoB, and fasting insulin) drawn at Quest or LabCorp. The lab cost is covered as part of your plan — no surprise bills."
+                a: "Yes — labs are included in your membership. We order a comprehensive panel (CBC, CMP, lipid panel, ApoB, and fasting insulin) drawn at Quest or LabCorp, as well as a DEXA scan to track body composition and visceral fat. All lab costs are covered as part of your plan — no surprise bills."
               },
               {
                 q: "Can I cancel anytime?",
@@ -513,7 +515,8 @@ export default function Home() {
                     { label: "Annual metabolic deep-dive", essential: false, intensive: "45 min", executive: "90 min" },
                   ]},
                   { category: "Lab Work & Monitoring", rows: [
-                    { label: "Quarterly labs included (CBC, CMP, lipids, ApoB, fasting insulin)", essential: true, intensive: true, executive: true },
+                    { label: "Labs included (CBC, CMP, lipids, ApoB, fasting insulin)", essential: true, intensive: "Quarterly", executive: true },
+                    { label: "DEXA scan included", essential: true, intensive: true, executive: true },
                     { label: "SA-specific markers (HOMA-IR, ApoB, fasting insulin)", essential: true, intensive: true, executive: true },
                     { label: "CGM integration & interpretation", essential: false, intensive: true, executive: true },
                   ]},
