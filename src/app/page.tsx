@@ -336,7 +336,7 @@ export default function Home() {
                   "Quarterly 15-min video visits (board-certified MD)",
                   "Labs included (CBC, CMP, lipids, ApoB, fasting insulin)",
                   "DEXA scan included",
-                  "Medication management incl. GLP-1 if appropriate",
+                  "Medication management including GLP-1 if appropriate",
                   "Async physician messaging (48-hr response)",
                   "Ongoing labs review & care plan updates",
                 ].map((item) => (
@@ -375,7 +375,7 @@ export default function Home() {
                   "Monthly 15-min video visits (board-certified MD)",
                   "Quarterly labs included (CBC, CMP, lipids, ApoB, fasting insulin)",
                   "DEXA scan included",
-                  "Medication management incl. GLP-1 if appropriate",
+                  "Medication management including GLP-1 if appropriate",
                   "Async physician messaging (24-hr response)",
                   "CGM data review & clinical interpretation",
                   "Annual 45-min metabolic deep-dive",
@@ -456,6 +456,10 @@ export default function Home() {
               {
                 q: "Do you accept insurance?",
                 a: "We are a self-pay practice and do not bill insurance directly. Upon request, we can provide a superbill for potential reimbursement through your FSA or HSA."
+              },
+              {
+                q: "Why do you include a DEXA scan?",
+                a: "Standard BMI and weight don't tell the full story — especially for South Asians, who accumulate visceral (organ) fat at lower BMI thresholds than other populations. A DEXA scan measures your exact body composition: visceral fat, subcutaneous fat, lean muscle mass, and bone density. It gives us a precise baseline and lets us track whether your protocol is actually working — not just what the scale says. It's one of the most clinically useful tools we have for metabolic risk assessment, and almost no primary care practice includes it."
               },
               {
                 q: "Are the labs included in my membership?",
