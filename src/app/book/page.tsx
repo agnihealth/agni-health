@@ -15,6 +15,7 @@ export default function Book() {
     trackMetaEvent('InitiateCheckout', { content_name: 'consultation_booking' });
   }, []);
 
+
   return (
     <div className="min-h-screen bg-[#0a1628] text-white font-[family-name:var(--font-jakarta)]">
       {/* Nav */}

@@ -106,9 +106,9 @@ export function trackEvent(event: string, properties?: Record<string, unknown>) 
 
 // A/B test tracking
 export function trackExperiment(experimentName: string, variant: string | number) {
-  trackEvent('$experiment_started', {
-    experiment: experimentName,
-    variant: variant,
+  trackEvent('ab_test_assigned', {
+    experiment_name: experimentName,
+    variant,
   });
 }
 

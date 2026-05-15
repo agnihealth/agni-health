@@ -55,7 +55,11 @@ function StartPageContent() {
       setStep(step + 1);
     } else {
       // All yes - qualified!
-      trackEvent("screening_qualified", { answers: newAnswers });
+      trackEvent("screening_qualified", {
+        answers: newAnswers,
+        anon_id: getAnonId(),
+        hero_variant: getHeroVariant() || 'unknown',
+      });
       router.push("/book");
     }
   };

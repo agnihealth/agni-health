@@ -330,12 +330,11 @@ export default function Home() {
                 <span className="text-5xl font-bold">$300</span>
                 <span className="text-zinc-400">/mo</span>
               </div>
-              <div className="text-zinc-500 text-sm mb-1">$3,600/yr · or $350/mo monthly</div>
               <div className="text-[#d4a088] text-xs mb-6">First 25 members lock in this rate permanently.</div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
                   "Quarterly 15-min video visits (board-certified MD)",
-                  "SA-specific lab panel (HOMA-IR, ApoB, fasting insulin)",
+                  "Quarterly labs included (CBC, CMP, lipids, ApoB, fasting insulin)",
                   "Medication management incl. GLP-1 if appropriate",
                   "Async physician messaging (48-hr response)",
                   "Ongoing labs review & care plan updates",
@@ -369,16 +368,15 @@ export default function Home() {
                 <span className="text-5xl font-bold">$600</span>
                 <span className="text-zinc-400">/mo</span>
               </div>
-              <div className="text-zinc-500 text-sm mb-1">$7,200/yr · or $700/mo monthly</div>
               <div className="text-[#d4a088] text-xs mb-6">First 25 members lock in this rate permanently.</div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
                   "Monthly 15-min video visits (board-certified MD)",
-                  "SA-specific lab panel (HOMA-IR, ApoB, fasting insulin)",
+                  "Quarterly labs included (CBC, CMP, lipids, ApoB, fasting insulin)",
                   "Medication management incl. GLP-1 if appropriate",
                   "Async physician messaging (24-hr response)",
                   "CGM data review & clinical interpretation",
-                  "Annual 45-min metabolic deep-dive & goal reset",
+                  "Annual 45-min metabolic deep-dive",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <svg className="w-5 h-5 text-[#d4a088] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -459,15 +457,15 @@ export default function Home() {
               },
               {
                 q: "Are the labs included in my membership?",
-                a: "Your membership includes the physician's interpretation and ordering of your lab panel. Lab draw costs vary — we work with Quest and LabCorp, and many patients have these covered by insurance. For self-pay patients, out-of-pocket lab costs typically range from $100–300 for the comprehensive initial panel. We'll give you a clear estimate before ordering."
+                a: "Yes — labs are included in your membership. Every quarter we order a comprehensive panel (CBC, CMP, lipid panel, ApoB, and fasting insulin) drawn at Quest or LabCorp. The lab cost is covered as part of your plan — no surprise bills."
               },
               {
                 q: "Can I cancel anytime?",
-                a: "Yes. There's no long-term contract. Your membership is billed monthly and you can cancel anytime, effective immediately. No penalties, no runaround."
+                a: "Yes. Your membership is billed monthly and you can cancel anytime, effective at the end of your current billing period. No long-term commitment, no penalties."
               },
               {
                 q: "How quickly can I get an appointment?",
-                a: "Most new patients are seen within 2–4 weeks of signing up. After your initial visit, follow-up visits are scheduled quarterly, with async messaging between appointments."
+                a: "Most new patients are seen within 2–4 weeks of signing up. After your initial visit, follow-up cadence depends on your plan — quarterly for Essential, monthly for Intensive. Async messaging is available between all appointments."
               },
               {
                 q: "What if I need a prescription?",
@@ -512,10 +510,10 @@ export default function Home() {
                   { category: "Physician Visits", rows: [
                     { label: "15-min discovery call", essential: true, intensive: true, executive: true },
                     { label: "Follow-up visits", essential: "Quarterly", intensive: "Monthly", executive: "Bi-weekly" },
-                    { label: "Annual metabolic deep-dive", essential: false, intensive: "60 min", executive: "90 min" },
+                    { label: "Annual metabolic deep-dive", essential: false, intensive: "45 min", executive: "90 min" },
                   ]},
                   { category: "Lab Work & Monitoring", rows: [
-                    { label: "Comprehensive initial lab panel", essential: true, intensive: true, executive: true },
+                    { label: "Quarterly labs included (CBC, CMP, lipids, ApoB, fasting insulin)", essential: true, intensive: true, executive: true },
                     { label: "SA-specific markers (HOMA-IR, ApoB, fasting insulin)", essential: true, intensive: true, executive: true },
                     { label: "CGM integration & interpretation", essential: false, intensive: true, executive: true },
                   ]},
