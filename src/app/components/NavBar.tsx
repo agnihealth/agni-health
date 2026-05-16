@@ -50,7 +50,7 @@ export default function NavBar() {
           eventProperties={{ location: 'nav', button: 'book_discovery' }}
           className="bg-[#d4a088] text-[#0a1628] px-5 py-2.5 rounded text-sm font-medium hover:bg-[#c4906c] transition-colors"
         >
-          Book Discovery Call
+          Book Initial Consultation
         </TrackedLink>
       </div>
 
@@ -84,7 +84,7 @@ export default function NavBar() {
             eventProperties={{ location: 'nav_mobile', button: 'book_discovery' }}
             className="bg-[#d4a088] text-[#0a1628] px-5 py-3 rounded text-sm font-medium hover:bg-[#c4906c] transition-colors text-center mt-2"
           >
-            Book Discovery Call
+            Book Initial Consultation
           </TrackedLink>
         </div>
       )}

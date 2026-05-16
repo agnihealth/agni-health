@@ -224,7 +224,7 @@ export default function GuidePage() {
               href="/start"
               className="inline-block bg-[#d4a088] text-[#0a1628] px-8 py-4 rounded font-medium hover:bg-[#c4906c] transition-colors"
             >
-              Book Your Discovery Call
+              Book Initial Consultation
             </Link>
             <p className="text-zinc-600 text-sm mt-4">
               Currently accepting patients in California, Louisiana, and

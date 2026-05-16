@@ -44,7 +44,7 @@ export default function Home() {
                   eventProperties={{ location: 'hero', button: 'book_discovery' }}
                   className="bg-[#d4a088] text-[#0a1628] px-8 py-4 rounded text-base font-medium hover:bg-[#c4906c] transition-colors"
                 >
-                  Book Your Discovery Call
+                  Book Initial Consultation
                 </TrackedLink>
               </div>
 
@@ -173,7 +173,7 @@ export default function Home() {
                 <div className="w-16 h-16 rounded-full border-2 border-[#d4a088]/40 bg-[#0a1628] flex items-center justify-center mx-auto mb-6 relative z-10">
                   <span className="text-[#d4a088] font-mono text-2xl font-bold">01</span>
                 </div>
-                <h4 className="text-lg font-semibold mb-3">Discovery Call</h4>
+                <h4 className="text-lg font-semibold mb-3">Initial Consultation</h4>
                 <p className="text-zinc-400 text-base">
                   15-minute video call to understand your history, goals, and concerns.
                 </p>
@@ -307,7 +307,7 @@ export default function Home() {
           <div className="bg-[#0d1c30] border border-zinc-700 rounded-2xl px-8 py-6 max-w-2xl mx-auto mb-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
               <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-1">Step 1</div>
-              <div className="text-white font-semibold text-lg">Discovery Call</div>
+              <div className="text-white font-semibold text-lg">Initial Consultation</div>
               <div className="text-zinc-400 text-sm mt-1">15-minute video call · No commitment required</div>
               <div className="text-[#d4a088] text-xs mt-1">Fee credited toward your 1st month.</div>
             </div>
@@ -574,7 +574,7 @@ export default function Home() {
             eventProperties={{ location: 'bottom_cta', button: 'book_discovery' }}
             className="inline-block bg-[#d4a088] text-[#0a1628] px-10 py-4 rounded text-lg font-medium hover:bg-[#c4906c] transition-colors"
           >
-            Book Your Discovery Call
+            Book Initial Consultation
           </TrackedLink>
           <p className="text-zinc-500 text-sm mt-6">
             Currently accepting patients in California, Louisiana, and Massachusetts
