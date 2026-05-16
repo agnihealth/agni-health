@@ -3,7 +3,7 @@
 import posthog from 'posthog-js';
 import { PostHogProvider } from 'posthog-js/react';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect, Suspense } from 'react';
+import { useEffect, useRef, Suspense } from 'react';
 import Script from 'next/script';
 
 // Meta Pixel ID
@@ -51,8 +51,8 @@ if (typeof window !== 'undefined' && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
   const anonId = getAnonId();
   posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
     api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
-    person_profiles: 'identified_only',
-    capture_pageview: false, // We'll handle this manually for SPA
+    person_profiles: 'always',
+    capture_pageview: true, // Auto-capture handles initial load + UTM params
     capture_pageleave: true,
     capture_scroll_depth: true,
     bootstrap: {
@@ -75,12 +75,18 @@ export function trackMetaEvent(event: string, data?: Record<string, unknown>) {
   }
 }
 
-// Track pageviews on route change
+// Track pageviews on SPA route changes (initial load handled by auto-capture)
 function PageViewTracker() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const isFirstRender = useRef(true);
 
   useEffect(() => {
+    // Skip first render — auto-capture handles initial pageview with UTM params
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
     if (pathname && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
       let url = window.origin + pathname;
       if (searchParams.toString()) {
