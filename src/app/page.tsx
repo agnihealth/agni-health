@@ -378,7 +378,6 @@ export default function Home() {
                   "Medication management including GLP-1 if appropriate",
                   "Async physician messaging (24-hr response)",
                   "CGM data review & clinical interpretation",
-                  "Annual 45-min metabolic deep-dive",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <svg className="w-5 h-5 text-[#d4a088] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -516,7 +515,6 @@ export default function Home() {
                   { category: "Physician Visits", rows: [
                     { label: "15-min discovery call", essential: true, intensive: true, executive: true },
                     { label: "Follow-up visits", essential: "Quarterly", intensive: "Monthly", executive: "Bi-weekly" },
-                    { label: "Annual metabolic deep-dive", essential: false, intensive: "45 min", executive: "90 min" },
                   ]},
                   { category: "Lab Work & Monitoring", rows: [
                     { label: "Labs included (CBC, CMP, lipids, ApoB, fasting insulin)", essential: true, intensive: "Quarterly", executive: true },
