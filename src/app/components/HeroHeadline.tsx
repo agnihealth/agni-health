@@ -7,7 +7,7 @@ const VARIANTS: Record<string, { headline: string; accent: string; sub?: string 
   // Ad 7 — belly fat video
   "Ad 7: Video of Belly Fat troubles": {
     headline: "South Asian bodies store fat",
-    accent: "differently. Here's why",
+    accent: "differently",
   },
   // Ad 1 — metabolic risk
   "Ad 1 -- Metabolic Risk": {
