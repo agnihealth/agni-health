@@ -11,13 +11,13 @@ const VARIANTS: Record<string, { headline: string; accent: string; sub?: string 
   },
   // Ad 1 — metabolic risk
   "Ad 1 -- Metabolic Risk": {
-    headline: "Your metabolic risk is higher",
+    headline: "South Asian metabolic risk is higher",
     accent: "than standard guidelines recognize",
   },
   // Ad 4 — blood sugar
   "Ad 4 -- Blood Sugar - Copy": {
-    headline: "Your blood sugar looks fine.",
-    accent: "It's not the whole story",
+    headline: "Normal blood sugar doesn't always tell",
+    accent: "the full story for South Asian bodies",
   },
   // Ad 6 — three stats
   "Ad 6 - Three stats - Copy": {
@@ -40,8 +40,8 @@ const VARIANTS: Record<string, { headline: string; accent: string; sub?: string 
   },
   // Ad 3 — weight loss
   "Ad 3 -- Wt loss - Copy": {
-    headline: "Finally, weight loss advice",
-    accent: "built for your body",
+    headline: "Metabolic health care",
+    accent: "built for South Asian bodies",
   },
 };
 
