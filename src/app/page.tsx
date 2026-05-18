@@ -36,7 +36,7 @@ export default function Home() {
               <HeroHeadline />
             </Suspense>
 
-            <div className="space-y-4 pt-4">
+            <div className="hidden lg:block space-y-4 pt-4">
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                 <TrackedLink 
                   href="/start"
@@ -47,7 +47,6 @@ export default function Home() {
                   Book Initial Consultation
                 </TrackedLink>
               </div>
-
             </div>
 
 
@@ -58,6 +57,17 @@ export default function Home() {
             <Suspense fallback={<div className="aspect-[4/3] rounded-2xl bg-[#1a2d4a] animate-pulse" />}>
               <HeroImage />
             </Suspense>
+            {/* CTA below image on mobile only */}
+            <div className="lg:hidden mt-6">
+              <TrackedLink
+                href="/start"
+                eventName="cta_click"
+                eventProperties={{ location: 'hero_mobile', button: 'book_discovery' }}
+                className="block w-full text-center bg-[#d4a088] text-[#0a1628] px-8 py-4 rounded text-base font-medium hover:bg-[#c4906c] transition-colors"
+              >
+                Book Initial Consultation
+              </TrackedLink>
+            </div>
           </div>
         </div>
       </main>
