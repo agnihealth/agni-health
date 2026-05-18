@@ -76,7 +76,7 @@ export default function Home() {
       </main>
 
       {/* Email capture — desktop only (mobile version is inside hero) */}
-      <section className="hidden sm:block py-14 bg-[#0a1628] border-t border-zinc-800/60">
+      <section className="hidden lg:block py-14 bg-[#0a1628] border-t border-zinc-800/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <EmailCapture compact />
         </div>
