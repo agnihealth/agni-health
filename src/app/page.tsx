@@ -54,7 +54,7 @@ export default function Home() {
           </div>
 
           {/* Right side - A/B tested hero image */}
-          <div className="hidden lg:block">
+          <div className="mt-8 lg:mt-0">
             <Suspense fallback={<div className="aspect-[4/3] rounded-2xl bg-[#1a2d4a] animate-pulse" />}>
               <HeroImage />
             </Suspense>
