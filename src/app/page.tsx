@@ -16,7 +16,7 @@ export default function Home() {
 
       {/* Hero */}
       <main className="max-w-7xl mx-auto px-4 sm:px-8 pt-6 sm:pt-8 pb-16 sm:pb-24">
-        <div className="grid lg:grid-cols-2 gap-3 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-4 lg:gap-16 items-center">
           <div className="space-y-8">
             {/* Credential badge */}
             <div className="flex items-center gap-2 text-sm text-zinc-400">
@@ -58,7 +58,7 @@ export default function Home() {
               <HeroImage />
             </Suspense>
             {/* CTA below image on mobile only */}
-            <div className="lg:hidden mt-6">
+            <div className="lg:hidden mt-4">
               <TrackedLink
                 href="/start"
                 eventName="cta_click"
