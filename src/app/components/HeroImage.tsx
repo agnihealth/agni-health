@@ -13,7 +13,6 @@ type HeroVariant = ImageVariant | StatsVariant;
 const HERO_VARIANTS: HeroVariant[] = [
   { kind: 'image', src: "/hero-v3-kitchen.png", alt: "South Asian man in kitchen with masala dabba and lentils" },
   { kind: 'image', src: "/hero-v2-outdoor.png", alt: "South Asian man walking outdoors in morning light" },
-  { kind: 'stats' },
 ];
 
 export default function HeroImage() {
