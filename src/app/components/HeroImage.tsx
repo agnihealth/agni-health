@@ -20,22 +20,26 @@ export default function HeroImage() {
   const [variant, setVariant] = useState<number | null>(null);
 
   useEffect(() => {
-    // Check URL param first (?v=1, ?v=2, ?v=3)
+    const variantCount = HERO_VARIANTS.length;
+
+    // Check URL param first (?v=1, ?v=2)
     const urlVariant = searchParams.get('v');
-    if (urlVariant && ['1', '2', '3'].includes(urlVariant)) {
-      setVariant(parseInt(urlVariant) - 1);
+    const urlIndex = urlVariant ? parseInt(urlVariant) - 1 : -1;
+    if (urlIndex >= 0 && urlIndex < variantCount) {
+      setVariant(urlIndex);
       return;
     }
 
-    // Check localStorage for sticky assignment
+    // Check localStorage for sticky assignment (re-randomize if out of range)
     const stored = localStorage.getItem('agni-hero-variant');
-    if (stored && ['0', '1', '2'].includes(stored)) {
-      setVariant(parseInt(stored));
+    const storedIndex = stored !== null ? parseInt(stored) : -1;
+    if (storedIndex >= 0 && storedIndex < variantCount) {
+      setVariant(storedIndex);
       return;
     }
 
     // Random assignment, persist to localStorage
-    const random = Math.floor(Math.random() * 3);
+    const random = Math.floor(Math.random() * variantCount);
     localStorage.setItem('agni-hero-variant', String(random));
     setVariant(random);
 
