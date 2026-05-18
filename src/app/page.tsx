@@ -73,7 +73,7 @@ export default function Home() {
       </main>
 
       {/* Email capture — high on page for bouncy paid traffic */}
-      <section className="py-10 sm:py-14 bg-[#0a1628] border-t border-zinc-800/60">
+      <section className="pt-4 pb-8 sm:py-14 bg-[#0a1628] border-t border-zinc-800/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <EmailCapture compact />
         </div>
