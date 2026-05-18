@@ -57,8 +57,8 @@ export default function Home() {
             <Suspense fallback={<div className="aspect-[4/3] rounded-2xl bg-[#1a2d4a] animate-pulse" />}>
               <HeroImage />
             </Suspense>
-            {/* CTA below image on mobile only */}
-            <div className="lg:hidden mt-12">
+            {/* CTA + not-ready link below image on mobile only */}
+            <div className="lg:hidden mt-12 space-y-4">
               <TrackedLink
                 href="/start"
                 eventName="cta_click"
@@ -67,13 +67,16 @@ export default function Home() {
               >
                 Book Initial Consultation
               </TrackedLink>
+              <div className="text-center">
+                <EmailCapture compact />
+              </div>
             </div>
           </div>
         </div>
       </main>
 
-      {/* Email capture — high on page for bouncy paid traffic */}
-      <section className="pt-4 pb-8 sm:py-14 bg-[#0a1628] border-t border-zinc-800/60">
+      {/* Email capture — desktop only (mobile version is inside hero) */}
+      <section className="hidden sm:block py-14 bg-[#0a1628] border-t border-zinc-800/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <EmailCapture compact />
         </div>
