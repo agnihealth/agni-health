@@ -16,7 +16,7 @@ export default function Home() {
 
       {/* Hero */}
       <main className="max-w-7xl mx-auto px-4 sm:px-8 pt-6 sm:pt-8 pb-16 sm:pb-24">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-16 items-center">
           <div className="space-y-8">
             {/* Credential badge */}
             <div className="flex items-center gap-2 text-sm text-zinc-400">
@@ -53,7 +53,7 @@ export default function Home() {
           </div>
 
           {/* Right side - A/B tested hero image */}
-          <div className="mt-8 lg:mt-0">
+          <div className="lg:mt-0">
             <Suspense fallback={<div className="aspect-[4/3] rounded-2xl bg-[#1a2d4a] animate-pulse" />}>
               <HeroImage />
             </Suspense>
