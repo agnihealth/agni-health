@@ -58,7 +58,7 @@ export default function Home() {
               <HeroImage />
             </Suspense>
             {/* CTA below image on mobile only */}
-            <div className="lg:hidden mt-8">
+            <div className="lg:hidden mt-12">
               <TrackedLink
                 href="/start"
                 eventName="cta_click"
