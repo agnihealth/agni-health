@@ -12,7 +12,7 @@ const TABLE_IDS = {
 
 export async function POST(req: NextRequest) {
   try {
-    const { email, name, type } = await req.json();
+    const { email, name, type, question } = await req.json();
 
     if (!email || !type) {
       return NextResponse.json(
@@ -43,6 +43,7 @@ export async function POST(req: NextRequest) {
             Email: email,
             Name: name || "",
             "Created At": new Date().toISOString(),
+            ...(question ? { Notes: question } : {}),
           },
         }),
       }
