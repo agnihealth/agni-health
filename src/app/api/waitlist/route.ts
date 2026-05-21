@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { sendConversionEvent } from "@/lib/meta-conversions";
+import { trackServerEvent } from "@/lib/posthog-server";
 
 const PAT = process.env.AIRTABLE_PAT!;
 const BASE_ID = process.env.AIRTABLE_BASE_ID!;
@@ -63,6 +64,13 @@ export async function POST(req: NextRequest) {
     const ipAddress = forwardedFor?.split(",")[0]?.trim();
     const userAgent = req.headers.get("user-agent") || undefined;
     const referer = req.headers.get("referer") || undefined;
+
+    // Track Lead in PostHog (server-side, bypasses ad blockers)
+    await trackServerEvent(email, "Lead", {
+      waitlist_type: type,
+      has_question: !!question,
+      source_url: referer,
+    });
 
     await sendConversionEvent({
       eventName: "Lead",
