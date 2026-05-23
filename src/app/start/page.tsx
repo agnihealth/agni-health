@@ -26,7 +26,7 @@ function StartPageContent() {
   const questions = [
     {
       key: "inState" as const,
-      question: "Are you located in California, Louisiana, or Massachusetts?",
+      question: "Are you located in California or Massachusetts?",
       subtext: "We're currently licensed in these states",
     },
   ];
@@ -220,7 +220,7 @@ function StartPageContent() {
           
           <p className="text-zinc-400 text-lg mb-8">
             {answers.inState === "no" 
-              ? "We're currently only licensed in California, Louisiana, and Massachusetts. We're expanding soon."
+              ? "We're currently only licensed in California and Massachusetts. We're expanding soon."
               : "Our practice focuses on metabolic conditions like prediabetes, diabetes, and weight management. We may not be the best fit for your needs right now."}
           </p>
 

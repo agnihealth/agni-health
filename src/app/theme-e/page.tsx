@@ -85,7 +85,7 @@ export default function ThemeE() {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-sm font-medium">CA · LA · MA</div>
+                  <div className="text-sm font-medium">CA · MA</div>
                   <div className="text-xs text-zinc-500">Telehealth</div>
                 </div>
               </div>

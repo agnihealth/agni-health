@@ -227,7 +227,7 @@ export default function GuidePage() {
               Book Initial Consultation
             </Link>
             <p className="text-zinc-600 text-sm mt-4">
-              Currently accepting patients in California, Louisiana, and
+              Currently accepting patients in California and
               Massachusetts.
             </p>
           </section>

@@ -73,7 +73,7 @@ export default function FontA() {
               </div>
               <div className="w-px h-12 bg-zinc-800" />
               <div>
-                <div className="text-2xl font-semibold text-white">CA · LA · MA</div>
+                <div className="text-2xl font-semibold text-white">CA · MA</div>
                 <div className="text-sm text-zinc-500">Licensed States</div>
               </div>
               <div className="w-px h-12 bg-zinc-800" />

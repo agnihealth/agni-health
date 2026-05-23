@@ -60,7 +60,7 @@ export default function Book() {
         </div>
 
         <p className="text-center text-zinc-500 text-sm mt-8">
-          Currently accepting patients in California, Louisiana, and Massachusetts.
+          Currently accepting patients in California and Massachusetts.
         </p>
       </main>
 

@@ -35,10 +35,10 @@ export default function Terms() {
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">1. About Our Services</h2>
-            <p className="mb-4">Agni Health provides telehealth medical services, including but not limited to medical consultations, metabolic health management, medication management, and ongoing care coordination. Our services are provided by Sohan Japa, MD, a board-certified physician licensed in California, Louisiana, and Massachusetts.</p>
+            <p className="mb-4">Agni Health provides telehealth medical services, including but not limited to medical consultations, metabolic health management, medication management, and ongoing care coordination. Our services are provided by Sohan Japa, MD, a board-certified physician licensed in California and Massachusetts.</p>
             <p className="mb-4"><strong>Important Limitations:</strong></p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Our services are available only to patients physically located in California, Louisiana, or Massachusetts at the time of consultation</li>
+              <li>Our services are available only to patients physically located in California or Massachusetts at the time of consultation</li>
               <li>We provide non-emergency outpatient care only</li>
               <li><strong>We do not provide emergency medical services. If you are experiencing a medical emergency, call 911 or go to your nearest emergency room immediately.</strong></li>
               <li>Our services do not replace your primary care physician or specialist care; we provide targeted metabolic health management</li>
@@ -66,7 +66,7 @@ export default function Terms() {
             <p className="mb-4">To use our services, you must:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Be at least 18 years of age</li>
-              <li>Be physically located in California, Louisiana, or Massachusetts at the time of any telehealth consultation</li>
+              <li>Be physically located in California or Massachusetts at the time of any telehealth consultation</li>
               <li>Have the legal capacity to enter into a binding agreement</li>
               <li>Provide accurate and complete information during registration and throughout your care</li>
             </ul>

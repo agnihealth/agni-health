@@ -73,7 +73,7 @@ export default function FontC() {
               </div>
               <div className="w-px h-12 bg-zinc-800" />
               <div>
-                <div className="text-2xl text-white font-[family-name:var(--font-playfair)]">CA · LA · MA</div>
+                <div className="text-2xl text-white font-[family-name:var(--font-playfair)]">CA · MA</div>
                 <div className="text-sm text-zinc-500">Licensed States</div>
               </div>
               <div className="w-px h-12 bg-zinc-800" />

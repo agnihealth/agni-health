@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The South Asian Metabolic Risk Guide — Agni Health</title>
+<style>
+  /* ─── Reset & Base ─── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  :root {
+    --bg-dark:    #0d1117;
+    --bg-page:    #111827;
+    --amber:      #F5A623;
+    --amber-light:#FBC55A;
+    --white:      #F9F9F7;
+    --muted:      #9CA3AF;
+    --border:     #1F2937;
+    --cream:      #F5F0E8;
+    --teal:       #0F766E;
+    --font-display: 'Georgia', 'Times New Roman', serif;
+    --font-body:    'Helvetica Neue', Arial, sans-serif;
+  }
+
+  html { font-size: 16px; }
+  body {
+    font-family: var(--font-body);
+    background: #E8E4DC;
+    color: #1a1a1a;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* ─── Page Layout ─── */
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto 0.5in;
+    background: var(--bg-page);
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+  @media print {
+    body { background: white; }
+    .page { margin: 0; box-shadow: none; }
+    @page { size: 8.5in 11in; margin: 0; }
+  }
+
+  /* ─── Cover Page ─── */
+  .cover {
+    background: var(--bg-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 11in;
+    padding: 1in;
+    text-align: center;
+    position: relative;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 40%;
+    background: radial-gradient(ellipse at 50% 100%, rgba(245,166,35,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .cover-logo {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 3rem;
+  }
+
+  .cover-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .cover-title {
+    font-family: var(--font-display);
+    font-size: 2.6rem;
+    line-height: 1.2;
+    color: var(--white);
+    margin-bottom: 1.25rem;
+    max-width: 5.5in;
+  }
+
+  .cover-title span { color: var(--amber); }
+
+  .cover-subtitle {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--muted);
+    max-width: 4.5in;
+    margin-bottom: 3rem;
+  }
+
+  .cover-divider {
+    width: 3rem;
+    height: 2px;
+    background: var(--amber);
+    margin: 0 auto 2.5rem;
+  }
+
+  .cover-byline {
+    font-size: 0.9rem;
+    color: var(--white);
+    line-height: 1.6;
+  }
+
+  .cover-byline strong { color: var(--amber); }
+  .cover-byline .credentials { color: var(--muted); font-size: 0.78rem; margin-top: 0.3rem; }
+
+  .cover-footer {
+    position: absolute;
+    bottom: 0.5in;
+    left: 0; right: 0;
+    text-align: center;
+    font-size: 0.65rem;
+    color: #374151;
+    letter-spacing: 0.05em;
+  }
+
+  /* ─── Inner Pages ─── */
+  .inner {
+    background: var(--cream);
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    min-height: 11in;
+    position: relative;
+  }
+
+  .page-header {
+    background: var(--bg-dark);
+    padding: 0.35in 0.65in;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page-header-logo { color: var(--amber); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+  .page-header-num  { color: var(--muted); font-size: 0.7rem; }
+
+  .page-body {
+    padding: 0.55in 0.65in 0.65in;
+    flex: 1;
+  }
+
+  .section-eyebrow {
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--teal);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  h1.page-title {
+    font-family: var(--font-display);
+    font-size: 1.95rem;
+    line-height: 1.2;
+    color: var(--bg-dark);
+    margin-bottom: 0.4rem;
+  }
+
+  h1.page-title em { color: var(--amber); font-style: normal; }
+
+  .page-intro {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #374151;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #D1C8B8;
+  }
+
+  h2.section-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--bg-dark);
+    margin: 1.2rem 0 0.5rem;
+  }
+
+  p { font-size: 0.9rem; line-height: 1.7; color: #374151; margin-bottom: 0.75rem; }
+
+  /* Stat callouts */
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 1rem 0; }
+  .stat-card {
+    background: var(--bg-dark);
+    border-radius: 6px;
+    padding: 0.75rem 0.9rem;
+    border-left: 3px solid var(--amber);
+  }
+  .stat-card .stat-num { font-size: 1.75rem; font-weight: 800; color: var(--amber); line-height: 1; }
+  .stat-card .stat-label { font-size: 0.72rem; color: var(--muted); line-height: 1.4; margin-top: 0.25rem; }
+
+  /* Blockquote */
+  blockquote {
+    border-left: 3px solid var(--amber);
+    margin: 1rem 0;
+    padding: 0.6rem 1rem;
+    background: rgba(245,166,35,0.06);
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #1F2937;
+    border-radius: 0 4px 4px 0;
+  }
+
+  /* Test cards (Page 3) */
+  .test-card {
+    background: white;
+    border: 1px solid #D1C8B8;
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .test-card .test-name {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--bg-dark);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .test-badge {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    background: var(--amber);
+    color: var(--bg-dark);
+    padding: 0.15em 0.5em;
+    border-radius: 3px;
+  }
+  .test-card .test-range { font-size: 0.78rem; color: var(--teal); margin: 0.3rem 0 0.5rem; }
+  .test-card p { margin: 0; font-size: 0.85rem; }
+
+  /* Data table */
+  table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.82rem; }
+  th { background: var(--bg-dark); color: var(--amber); padding: 0.45rem 0.65rem; text-align: left; font-weight: 700; font-size: 0.73rem; letter-spacing: 0.08em; text-transform: uppercase; }
+  td { padding: 0.5rem 0.65rem; color: #1F2937; border-bottom: 1px solid #E5DDD0; vertical-align: top; line-height: 1.4; }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.6); }
+  td:last-child { color: var(--teal); font-weight: 600; }
+
+  /* Checklist */
+  .checklist { list-style: none; margin: 0.75rem 0; }
+  .checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #E5DDD0;
+    font-size: 0.88rem;
+    color: #1F2937;
+    line-height: 1.4;
+  }
+  .checklist li .check-box {
+    width: 18px; height: 18px;
+    border: 2px solid #9CA3AF;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 0.1em;
+  }
+  .score-box {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+  .score-item {
+    background: var(--bg-dark);
+    border-radius: 6px;
+    padding: 0.65rem 0.75rem;
+    text-align: center;
+  }
+  .score-item .score-range { font-size: 0.85rem; font-weight: 800; color: var(--amber); }
+  .score-item .score-label { font-size: 0.7rem; color: var(--muted); margin-top: 0.25rem; line-height: 1.3; }
+
+  /* Conversation guide */
+  .quote-box {
+    background: var(--bg-dark);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+    border-left: 4px solid var(--amber);
+  }
+  .quote-box .quote-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--amber); margin-bottom: 0.5rem; font-weight: 700; }
+  .quote-box p { color: var(--white); font-style: italic; margin: 0; font-size: 0.88rem; line-height: 1.65; }
+
+  /* About page */
+  .about-quote {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #1F2937;
+    border-left: 3px solid var(--amber);
+    padding: 0.75rem 1rem;
+    margin: 1rem 0 1.25rem;
+    font-style: italic;
+  }
+  .about-quote em { color: var(--teal); font-style: normal; font-weight: 700; }
+
+  .cta-box {
+    background: var(--bg-dark);
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .cta-box .cta-text { flex: 1; }
+  .cta-box .cta-text h3 { font-size: 1rem; color: var(--white); margin-bottom: 0.25rem; }
+  .cta-box .cta-text p { font-size: 0.8rem; color: var(--muted); margin: 0; }
+  .cta-btn {
+    background: var(--amber);
+    color: var(--bg-dark);
+    font-weight: 700;
+    font-size: 0.82rem;
+    padding: 0.6rem 1.1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    white-space: nowrap;
+    letter-spacing: 0.03em;
+  }
+
+  /* Page footer */
+  .page-footer {
+    background: #E0D9CF;
+    border-top: 1px solid #D1C8B8;
+    padding: 0.25in 0.65in;
+    font-size: 0.65rem;
+    color: #6B7280;
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ COVER PAGE ═══════════════════════════════ -->
+<div class="page cover">
+  <div class="cover-logo">Agni Health</div>
+
+  <div class="cover-eyebrow">Physician-authored guide</div>
+
+  <h1 class="cover-title">
+    The South Asian <span>Metabolic</span> Risk Guide
+  </h1>
+
+  <div class="cover-divider"></div>
+
+  <p class="cover-subtitle">
+    The 8 markers your doctor probably isn't checking — and what they mean for you
+  </p>
+
+  <div class="cover-byline">
+    <strong>Dr. Sohan Japa, MD</strong>
+    <div class="credentials">Stanford Medicine &nbsp;·&nbsp; Brigham and Women's Hospital</div>
+  </div>
+
+  <div class="cover-footer">
+    © 2026 Sohan Japa MD LLC DBA Agni Health &nbsp;·&nbsp; agnihealth.co &nbsp;·&nbsp; For educational purposes. Not a substitute for medical advice.
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════ PAGE 1 — THE PROBLEM ══════════════════════ -->
+<div class="page inner">
+  <div class="page-header">
+    <span class="page-header-logo">Agni Health</span>
+    <span class="page-header-num">01 / 07</span>
+  </div>
+  <div class="page-body">
+    <div class="section-eyebrow">The Problem</div>
+    <h1 class="page-title">"Your tests came back <em>normal</em>."<br>But something still feels off.</h1>
+    <p class="page-intro">
+      South Asian men are developing prediabetes and metabolic disease at twice the rate of their white peers — often <em>despite</em> healthier diets and more exercise. By age 45, nearly 1 in 3 South Asian men has prediabetes. Most of them have no idea.
+    </p>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-num">4×</div>
+        <div class="stat-label">Higher lifetime risk of type 2 diabetes compared to white Americans</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">1 in 3</div>
+        <div class="stat-label">South Asian men over 45 have prediabetes or undiagnosed diabetes</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">23</div>
+        <div class="stat-label">BMI where South Asians begin metabolic risk — standard cutoff is 25</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">10+ yrs</div>
+        <div class="stat-label">Earlier onset of cardiovascular disease in South Asians vs. white peers</div>
+      </div>
+    </div>
+
+    <h2 class="section-heading">The standard labs miss the story</h2>
+    <p>
+      When your doctor orders an A1c, they're looking at a three-month average of your blood sugar. It's useful. But it's a lagging indicator — by the time it moves, insulin resistance has often been building for a decade.
+    </p>
+    <p>
+      The thresholds your doctor uses were calibrated on European populations. For South Asian men, the danger zones start earlier and look different. Most physicians weren't taught this. It's not negligence — it's a gap in the evidence base.
+    </p>
+    <p>
+      This guide gives you what most standard blood panels leave out.
+    </p>
+  </div>
+  <div class="page-footer">
+    <span>The South Asian Metabolic Risk Guide · Dr. Sohan Japa MD</span>
+    <span>agnihealth.co · For educational purposes only</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════ PAGE 2 — THE PARADOX ════════════════════════ -->
+<div class="page inner">
+  <div class="page-header">
+    <span class="page-header-logo">Agni Health</span>
+    <span class="page-header-num">02 / 07</span>
+  </div>
+  <div class="page-body">
+    <div class="section-eyebrow">The South Asian Metabolic Paradox</div>
+    <h1 class="page-title">Healthier habits. <em>Worse</em> outcomes. Why?</h1>
+    <p class="page-intro">
+      South Asians — including men who exercise, maintain a healthy weight, and avoid processed food — disproportionately develop insulin resistance, prediabetes, and cardiovascular disease. Understanding why requires looking past the standard metrics.
+    </p>
+
+    <h2 class="section-heading">Visceral fat vs. total body fat</h2>
+    <p>
+      South Asians carry a higher proportion of visceral fat (the fat surrounding internal organs) relative to their total body fat compared to other ethnic groups. This fat is metabolically active in ways that subcutaneous fat is not — it drives insulin resistance, inflammation, and cardiovascular risk.
+    </p>
+    <p>
+      A South Asian man at BMI 24 — "healthy" by standard charts — may carry the visceral fat burden of a white man at BMI 28. The BMI number doesn't capture this.
+    </p>
+
+    <blockquote>
+      "A South Asian man at BMI 24 may have the cardiovascular risk equivalent of a White man at BMI 28."<br>
+      <small style="color: var(--teal)">— MASALA Study, University of California San Francisco</small>
+    </blockquote>
+
+    <h2 class="section-heading">Insulin resistance develops earlier</h2>
+    <p>
+      Research from the MASALA Study — the largest longitudinal study of South Asian cardiovascular health in the US — shows that South Asian men develop insulin resistance earlier, at lower BMI, and often without the warning signs that flag risk in other populations.
+    </p>
+
+    <h2 class="section-heading">The ethnic-specific thresholds</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Standard Cutoff</th>
+          <th>South Asian Cutoff</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>BMI (overweight)</td><td>≥ 25</td><td>≥ 23</td></tr>
+        <tr><td>BMI (obese)</td><td>≥ 30</td><td>≥ 27.5</td></tr>
+        <tr><td>Waist circumference (men)</td><td>&gt; 40 in (102 cm)</td><td>&gt; 35.5 in (90 cm)</td></tr>
+        <tr><td>Fasting glucose concern</td><td>≥ 100 mg/dL</td><td>≥ 95 mg/dL</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="page-footer">
+    <span>The South Asian Metabolic Risk Guide · Dr. Sohan Japa MD</span>
+    <span>agnihealth.co · For educational purposes only</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════ PAGE 3 — THE 3 MISSING TESTS ═══════════════════ -->
+<div class="page inner">
+  <div class="page-header">
+    <span class="page-header-logo">Agni Health</span>
+    <span class="page-header-num">03 / 07</span>
+  </div>
+  <div class="page-body">
+    <div class="section-eyebrow">The 3 Tests Your Doctor Probably Didn't Order</div>
+    <h1 class="page-title">A1c is a lagging indicator.<br><em>Here's what to ask for instead.</em></h1>
+    <p class="page-intro">
+      These three tests are not exotic or experimental — they're standard lab tests available through any major lab. Most primary care physicians simply don't order them routinely. For South Asian men, they can reveal insulin resistance years before A1c moves.
+    </p>
+
+    <div class="test-card">
+      <div class="test-name">
+        1. Fasting Insulin
+        <span class="test-badge">Ask for this</span>
+      </div>
+      <div class="test-range">Optimal range: 2–6 µIU/mL &nbsp;·&nbsp; Most labs flag "normal" up to 25</div>
+      <p>The single most important early-warning test for insulin resistance. Your pancreas pumps out extra insulin to keep blood sugar normal — so A1c looks fine while insulin is quietly tripling. Fasting insulin catches this early.</p>
+    </div>
+
+    <div class="test-card">
+      <div class="test-name">
+        2. HOMA-IR
+        <span class="test-badge">Calculate from results</span>
+      </div>
+      <div class="test-range">Threshold for concern: &gt; 2.0 &nbsp;·&nbsp; Standard labs often don't report this</div>
+      <p>Calculated from fasting glucose and fasting insulin: <strong>(Fasting Insulin × Fasting Glucose) ÷ 405</strong>. South Asian men often show HOMA-IR &gt; 3.5 with a "normal" A1c of 5.4. Ask your doctor to calculate it, or do it yourself.</p>
+    </div>
+
+    <div class="test-card">
+      <div class="test-name">
+        3. ApoB (Apolipoprotein B)
+        <span class="test-badge">Better than LDL</span>
+      </div>
+      <div class="test-range">Optimal: &lt; 80 mg/dL &nbsp;·&nbsp; South Asians often show high ApoB with "normal" LDL</div>
+      <p>LDL cholesterol undercounts cardiovascular risk in South Asians, who tend to have smaller, denser LDL particles. ApoB counts every atherogenic particle directly — it's a more accurate predictor. Ask your doctor to add it to your lipid panel.</p>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>The South Asian Metabolic Risk Guide · Dr. Sohan Japa MD</span>
+    <span>agnihealth.co · For educational purposes only</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════ PAGE 4 — THE OTHER 5 MARKERS ══════════════════ -->
+<div class="page inner">
+  <div class="page-header">
+    <span class="page-header-logo">Agni Health</span>
+    <span class="page-header-num">04 / 07</span>
+  </div>
+  <div class="page-body">
+    <div class="section-eyebrow">The Complete Picture</div>
+    <h1 class="page-title">The other <em>5 markers</em> worth knowing</h1>
+    <p class="page-intro">
+      Beyond the 3 critical tests, a complete metabolic evaluation for South Asian men should include these additional markers. Together, they give a picture that a standard annual blood panel cannot.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Marker</th>
+          <th>Why It Matters</th>
+          <th>South Asian Threshold</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Waist circumference</strong></td>
+          <td>The best single proxy for visceral fat. BMI misses it. Measure at the navel, not the belt.</td>
+          <td>&gt; 90 cm (35.5 in) — vs. 102 cm standard</td>
+        </tr>
+        <tr>
+          <td><strong>Triglyceride : HDL ratio</strong></td>
+          <td>A strong proxy for insulin resistance. Often called the "poor man's insulin test." Free from your standard lipid panel.</td>
+          <td>&gt; 2.0 is a warning sign</td>
+        </tr>
+        <tr>
+          <td><strong>Uric acid</strong></td>
+          <td>Elevated in insulin resistance and metabolic syndrome. Often ignored. Linked to gout, kidney stones, and cardiovascular disease.</td>
+          <td>&gt; 5.5 mg/dL warrants attention</td>
+        </tr>
+        <tr>
+          <td><strong>Ferritin</strong></td>
+          <td>Often elevated with metabolic syndrome and non-alcoholic fatty liver disease. Frequently dismissed unless very high.</td>
+          <td>&gt; 200 µg/L without explanation</td>
+        </tr>
+        <tr>
+          <td><strong>hsCRP</strong></td>
+          <td>High-sensitivity C-reactive protein. Marker of chronic low-grade inflammation — a driver of both insulin resistance and cardiovascular disease.</td>
+          <td>&gt; 1.0 mg/L worth investigating</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="section-heading">How to request them</h2>
+    <p>
+      All 8 tests are available through standard labs (Quest, LabCorp, etc.). Your physician can order them — most won't proactively. At your next annual physical, bring the conversation guide on page 6 and ask directly.
+    </p>
+    <p>
+      <strong>Note:</strong> Many PCPs haven't incorporated South Asian-specific thresholds into their practice. If your results fall in "normal" ranges by standard criteria but within the South Asian risk zones, you may need to advocate for follow-up or seek a specialist.
+    </p>
+  </div>
+  <div class="page-footer">
+    <span>The South Asian Metabolic Risk Guide · Dr. Sohan Japa MD</span>
+    <span>agnihealth.co · For educational purposes only</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════ PAGE 5 — SELF-ASSESSMENT ══════════════════════ -->
+<div class="page inner">
+  <div class="page-header">
+    <span class="page-header-logo">Agni Health</span>
+    <span class="page-header-num">05 / 07</span>
+  </div>
+  <div class="page-body">
+    <div class="section-eyebrow">Self-Assessment</div>
+    <h1 class="page-title">Where do <em>you</em> stand?</h1>
+    <p class="page-intro">
+      Check any items that apply to you. This is not a diagnostic tool — it's a way to gauge whether a full South Asian-specific metabolic evaluation is worth pursuing.
+    </p>
+
+    <ul class="checklist">
+      <li><div class="check-box"></div><span>A1c between 5.5–5.9% ("normal" or "borderline")</span></li>
+      <li><div class="check-box"></div><span>Fasting glucose 95–115 mg/dL</span></li>
+      <li><div class="check-box"></div><span>BMI 22–26 with abdominal fat you can't seem to lose</span></li>
+      <li><div class="check-box"></div><span>One or both parents with type 2 diabetes</span></li>
+      <li><div class="check-box"></div><span>A sibling with type 2 diabetes or insulin resistance</span></li>
+      <li><div class="check-box"></div><span>Triglycerides &gt; 150 mg/dL</span></li>
+      <li><div class="check-box"></div><span>Fatigue, brain fog, or energy crashes after meals</span></li>
+      <li><div class="check-box"></div><span>Difficulty losing weight despite consistent exercise</span></li>
+    </ul>
+
+    <div class="score-box">
+      <div class="score-item">
+        <div class="score-range">0 – 1</div>
+        <div class="score-label">Lower risk. Still worth monitoring with the right tests at your next physical.</div>
+      </div>
+      <div class="score-item">
+        <div class="score-range">2 – 3</div>
+        <div class="score-label">Moderate risk. Request the 8 markers at your next visit. Bring page 6.</div>
+      </div>
+      <div class="score-item">
+        <div class="score-range">4+</div>
+        <div class="score-label">Elevated risk. A South Asian-specific metabolic evaluation is strongly recommended.</div>
+      </div>
+    </div>
+
+    <p style="margin-top: 1rem; font-size: 0.82rem; color: #6B7280;">
+      <em>This checklist is for informational purposes and does not constitute medical advice. Results should be interpreted in the context of a full clinical evaluation. A score of 4+ does not mean you have diabetes or will develop it — it means you deserve a thorough workup.</em>
+    </p>
+  </div>
+  <div class="page-footer">
+    <span>The South Asian Metabolic Risk Guide · Dr. Sohan Japa MD</span>
+    <span>agnihealth.co · For educational purposes only</span>
+  </div>
+</div>
+
+
+<!-- ═════════════════════ PAGE 6 — CONVERSATION GUIDE ══════════════════════ -->
+<div class="page inner">
+  <div class="page-header">
+    <span class="page-header-logo">Agni Health</span>
+    <span class="page-header-num">06 / 07</span>
+  </div>
+  <div class="page-body">
+    <div class="section-eyebrow">Doctor Visit Prep</div>
+    <h1 class="page-title">What to ask at your<br><em>next appointment</em></h1>
+    <p class="page-intro">
+      Print this page and bring it. These are direct, evidence-based requests — not fringe requests. Every test listed is standard medicine. The difficulty is that most physicians don't order them proactively.
+    </p>
+
+    <div class="quote-box">
+      <div class="quote-label">Script — say or show this to your doctor</div>
+      <p>"I'd like to add fasting insulin and ApoB to my lab panel. Can you also calculate my HOMA-IR from the results? I've read that South Asians develop insulin resistance at lower BMI and lower A1c thresholds — and I'd like to be proactive about checking the full picture while I'm still in a normal range."</p>
+    </div>
+
+    <h2 class="section-heading">If they're unfamiliar with HOMA-IR:</h2>
+    <p>"HOMA-IR is calculated as (Fasting Insulin × Fasting Glucose) ÷ 405. It's not a special test — just a formula from the two values I'm already requesting. I can calculate it myself from the results if needed."</p>
+
+    <h2 class="section-heading">If they say your A1c is fine:</h2>
+    <p>"I understand A1c is normal. I'm concerned about early insulin resistance, which can be present for 5–10 years before A1c moves. Fasting insulin is the early-warning marker I'm looking for."</p>
+
+    <h2 class="section-heading">If they're resistant:</h2>
+    <p>You are allowed to ask twice. If your doctor dismisses metabolic concerns that are evidence-based and low-risk to test for, you deserve a second opinion. The tests cost $50–150 out of pocket and are available directly through Quest or LabCorp without a physician order in most states.</p>
+
+    <h2 class="section-heading">What to do with your results:</h2>
+    <p>Most labs will give you a printout or portal access. If your fasting insulin is &gt;10 µIU/mL, HOMA-IR &gt;2.0, or ApoB &gt;80 mg/dL, consider a consultation with a physician who understands South Asian metabolic risk specifically.</p>
+  </div>
+  <div class="page-footer">
+    <span>The South Asian Metabolic Risk Guide · Dr. Sohan Japa MD</span>
+    <span>agnihealth.co · For educational purposes only</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════════ PAGE 7 — ABOUT AGNI HEALTH ══════════════════════ -->
+<div class="page inner">
+  <div class="page-header">
+    <span class="page-header-logo">Agni Health</span>
+    <span class="page-header-num">07 / 07</span>
+  </div>
+  <div class="page-body">
+    <div class="section-eyebrow">About Agni Health</div>
+    <h1 class="page-title">Why I <em>built</em> this</h1>
+
+    <div class="about-quote">
+      "I'm an internal medicine physician — Stanford MD, Brigham and Women's trained. I eat well, I exercise, and I come from a South Asian family. Despite all of that, I found myself at <em>26% body fat</em> — 'healthy' by standard charts. But I knew the charts were wrong for someone like me.
+      <br><br>
+      I dropped to 12% body fat using protocols calibrated for South Asian metabolism. Then I built Agni to make that science available to others."
+    </div>
+
+    <p>
+      <strong>Agni Health</strong> is physician-led telehealth built specifically for South Asian metabolic health. We use South Asian-specific lab thresholds, the MASALA Study protocols, and direct physician access — no PAs, no handoffs. You talk to Dr. Japa.
+    </p>
+
+    <h2 class="section-heading">What an Agni Health consultation includes:</h2>
+    <p>
+      A 30-minute consultation that covers your complete metabolic picture: labs ordered or interpreted, South Asian-specific thresholds applied, a personalized plan delivered within 5–7 days. Initial visit: $350. No insurance required. HSA/FSA accepted.
+    </p>
+    <p>
+      Currently seeing patients in <strong>California, Massachusetts, and Louisiana.</strong>
+    </p>
+
+    <div class="cta-box">
+      <div class="cta-text">
+        <h3>Ready to see the full picture?</h3>
+        <p>Limited availability · No waitlist · 30-minute consultation · $350</p>
+      </div>
+      <a href="https://agnihealth.co" class="cta-btn">Book at agnihealth.co →</a>
+    </div>
+
+    <p style="margin-top: 1.25rem; font-size: 0.75rem; color: #6B7280; line-height: 1.5;">
+      © 2026 Sohan Japa MD LLC DBA Agni Health &nbsp;·&nbsp; agnihealth.co &nbsp;·&nbsp; For educational purposes only. This guide does not constitute medical advice and does not establish a doctor-patient relationship. All clinical decisions should be made in consultation with a licensed physician. If you are experiencing a medical emergency, call 911 immediately.
+    </p>
+  </div>
+  <div class="page-footer">
+    <span>The South Asian Metabolic Risk Guide · Dr. Sohan Japa MD</span>
+    <span>agnihealth.co · For educational purposes only</span>
+  </div>
+</div>
+
+</body>
+</html>

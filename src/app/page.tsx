@@ -491,7 +491,7 @@ export default function Home() {
               },
               {
                 q: "What states are you licensed in?",
-                a: "We're currently accepting patients in California, Louisiana, and Massachusetts. We're expanding to additional states — join the waitlist if you're outside these states."
+                a: "We're currently accepting patients in California and Massachusetts. We're expanding to additional states — join the waitlist if you're outside these states."
               },
               {
                 q: "Is this covered under my FSA or HSA?",
@@ -588,7 +588,7 @@ export default function Home() {
             Book Initial Consultation
           </TrackedLink>
           <p className="text-zinc-500 text-sm mt-6">
-            Currently accepting patients in California, Louisiana, and Massachusetts
+            Currently accepting patients in California and Massachusetts
           </p>
           <p className="text-zinc-500 text-sm mt-3">
             Not ready yet?{" "}
