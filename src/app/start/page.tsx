@@ -1,16 +1,37 @@
 "use client";
 
-import { useState, Suspense } from "react";
+import { useState, Suspense, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import { trackEvent, trackMetaEvent, trackGoogleConversion, getAnonId, getHeroVariant } from "../components/Analytics";
+
+// Preserve gclid across page navigation via sessionStorage
+function useGclid() {
+  const searchParams = useSearchParams();
+  const [gclid, setGclid] = useState<string | null>(null);
+  
+  useEffect(() => {
+    // Check URL first, then fall back to sessionStorage
+    const urlGclid = searchParams.get("gclid");
+    if (urlGclid) {
+      sessionStorage.setItem("gclid", urlGclid);
+      setGclid(urlGclid);
+    } else {
+      const storedGclid = sessionStorage.getItem("gclid");
+      setGclid(storedGclid);
+    }
+  }, [searchParams]);
+  
+  return gclid;
+}
 
 type Answer = "yes" | "no" | null;
 
 function StartPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const gclid = useGclid();
   const tier = searchParams.get("tier");
   const isWaitlist = searchParams.get("waitlist") === "true";
   const [step, setStep] = useState(0);
@@ -60,7 +81,9 @@ function StartPageContent() {
         anon_id: getAnonId(),
         hero_variant: getHeroVariant() || 'unknown',
       });
-      router.push("/book");
+      // Preserve gclid when redirecting to /book
+      const bookUrl = gclid ? `/book?gclid=${encodeURIComponent(gclid)}` : "/book";
+      router.push(bookUrl);
     }
   };
 
