@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { sendConversionEvent } from "@/lib/meta-conversions";
+import { uploadBookingCompletedConversion } from "@/lib/google-ads-conversions";
+import { findRecentUnusedGclid, markGclidUsed } from "@/lib/gclid-lookup";
 
 const POSTHOG_API_KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY;
 const POSTHOG_HOST = "https://us.i.posthog.com";
@@ -89,6 +91,28 @@ export async function POST(req: NextRequest) {
       has_email: !!email,
       source: "keragon_webhook",
     });
+
+    // Real, verified "Booking Completed" conversion for Google Ads — only
+    // fires here, on a genuine Healthie booking event, not on /book page load.
+    // Healthie's webhook doesn't pass through gclid, so we best-effort
+    // correlate against the most recent gclid captured on /book (see
+    // src/lib/gclid-lookup.ts). If no gclid is found (e.g. organic/direct
+    // traffic, or outside the lookback window), we skip the upload —
+    // no gclid means Google Ads has nothing to attribute the conversion to.
+    const gclidRecord = await findRecentUnusedGclid();
+    if (gclidRecord) {
+      const uploadResult = await uploadBookingCompletedConversion({
+        gclid: gclidRecord.gclid,
+        orderId: appointmentId,
+      });
+      if (uploadResult.success) {
+        await markGclidUsed(gclidRecord.id);
+      } else {
+        console.error("Google Ads conversion upload failed for appointment", appointmentId, uploadResult.error);
+      }
+    } else {
+      console.log(`No recent gclid found for appointment ${appointmentId} — skipping Google Ads conversion upload`);
+    }
 
     return NextResponse.json({ success: true, appointmentId });
   } catch (err) {

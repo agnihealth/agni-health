@@ -2,18 +2,41 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect } from "react";
-import { trackEvent, trackMetaEvent, getAnonId, getHeroVariant } from "../components/Analytics";
+import { useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
+import { trackEvent, trackMetaEvent, trackGoogleConversion, getAnonId, getHeroVariant } from "../components/Analytics";
 
-export default function Book() {
+function BookContent() {
+  const searchParams = useSearchParams();
+
   useEffect(() => {
     // Track booking page view with anon ID + hero variant for correlation
+    const anonId = getAnonId();
     trackEvent('booking_page_viewed', {
-      anon_id: getAnonId(),
+      anon_id: anonId,
       hero_variant: getHeroVariant() || 'unknown',
     });
     trackMetaEvent('InitiateCheckout', { content_name: 'consultation_booking' });
-  }, []);
+    // Google Ads conversion: "Booking Started" action, fired on reaching the
+    // booking page. This is a proxy for intent, NOT a real completed booking —
+    // the Healthie iframe has no redirect/postMessage back to us, so we can't
+    // detect actual completion client-side. The real "Booking Completed"
+    // conversion is uploaded server-side from /api/keragon/appointment once
+    // Healthie confirms a booking actually happened (see gclid correlation below).
+    trackGoogleConversion('AW-10887208227/18_tCJyLodUcEKO6tsco');
+
+    // Capture gclid (if present on this visit) and stash it keyed by anon_id
+    // so the Keragon webhook can later correlate a real Healthie booking back
+    // to the ad click for accurate server-side conversion upload.
+    const gclid = searchParams.get('gclid');
+    if (gclid) {
+      fetch('/api/track-gclid', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ gclid, anonId }),
+      }).catch(() => {});
+    }
+  }, [searchParams]);
 
 
   return (
@@ -43,9 +66,7 @@ export default function Book() {
       <main className="max-w-4xl mx-auto px-8 py-12">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold mb-4">Schedule Your Consultation</h1>
-          <p className="text-zinc-400">
-            Select a time that works for you. Initial consultations are 30 minutes via video.
-          </p>
+
         </div>
         
         <div className="bg-white rounded-xl overflow-hidden">
@@ -71,5 +92,17 @@ export default function Book() {
         </div>
       </footer>
     </div>
+  );
+}
+
+export default function Book() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-[#0a1628] flex items-center justify-center">
+        <div className="text-white">Loading...</div>
+      </div>
+    }>
+      <BookContent />
+    </Suspense>
   );
 }
