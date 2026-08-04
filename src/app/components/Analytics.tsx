@@ -9,6 +9,9 @@ import Script from 'next/script';
 // Meta Pixel ID
 const META_PIXEL_ID = '1713148253376763';
 
+// Google tag (GA4 / Google Ads) ID
+const GOOGLE_TAG_ID = 'G-XS2NE7QSDY';
+
 // Anonymous session ID for HIPAA-safe analytics
 // Generates a random ID on first visit, persists in cookie for 1 year
 const ANON_ID_KEY = 'agni_anon_id';
@@ -72,6 +75,36 @@ declare global {
 export function trackMetaEvent(event: string, data?: Record<string, unknown>) {
   if (typeof window !== 'undefined' && window.fbq) {
     window.fbq('track', event, data);
+  }
+}
+
+// Google Ads / GA4 helper
+declare global {
+  interface Window {
+    gtag: (...args: unknown[]) => void;
+    dataLayer: unknown[];
+  }
+}
+
+export function trackGoogleEvent(event: string, data?: Record<string, unknown>) {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', event, data);
+  }
+}
+
+// Google Ads conversion tracking.
+// `sendTo` should be "AW-XXXXXXXXX/XXXXXXXXXXXXX" from a Google Ads conversion
+// action (Goals > Conversions > New conversion action > Website). Until that
+// label exists, calls are no-ops (still logged in dev for visibility).
+export function trackGoogleConversion(sendTo?: string, data?: Record<string, unknown>) {
+  if (!sendTo) {
+    if (process.env.NODE_ENV === 'development') {
+      console.log('[Analytics] trackGoogleConversion skipped — no conversion label configured', data);
+    }
+    return;
+  }
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'conversion', { send_to: sendTo, ...data });
   }
 }
 
@@ -157,11 +190,34 @@ function MetaPixel() {
   );
 }
 
+// Google tag (gtag.js) component — GA4 + Google Ads
+function GoogleTag() {
+  return (
+    <>
+      <Script
+        id="google-tag-src"
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_TAG_ID}`}
+      />
+      <Script id="google-tag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GOOGLE_TAG_ID}');
+          window.gtag = gtag;
+        `}
+      </Script>
+    </>
+  );
+}
+
 // Provider component
 export function AnalyticsProvider({ children }: { children: React.ReactNode }) {
   return (
     <PostHogProvider client={posthog}>
       <MetaPixel />
+      <GoogleTag />
       <Suspense fallback={null}>
         <PageViewTracker />
       </Suspense>

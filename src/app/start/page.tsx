@@ -4,7 +4,7 @@ import { useState, Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
-import { trackEvent, trackMetaEvent, getAnonId, getHeroVariant } from "../components/Analytics";
+import { trackEvent, trackMetaEvent, trackGoogleConversion, getAnonId, getHeroVariant } from "../components/Analytics";
 
 type Answer = "yes" | "no" | null;
 
@@ -75,6 +75,7 @@ function StartPageContent() {
         failedAt 
       });
       trackMetaEvent("Lead", { content_name: `waitlist_${waitlistType}` });
+      trackGoogleConversion(process.env.NEXT_PUBLIC_GOOGLE_ADS_WAITLIST_LABEL, { value: 1, currency: "USD" });
       
       // Save to Airtable
       try {
@@ -105,6 +106,7 @@ function StartPageContent() {
           type: directType 
         });
         trackMetaEvent("Lead", { content_name: `waitlist_${directType}` });
+        trackGoogleConversion(process.env.NEXT_PUBLIC_GOOGLE_ADS_WAITLIST_LABEL, { value: 1, currency: "USD" });
         
         try {
           await fetch("/api/waitlist", {
