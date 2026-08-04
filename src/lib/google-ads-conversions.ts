@@ -3,9 +3,16 @@
 // only when we have actual confirmation from Healthie that a booking happened.
 // This is distinct from the client-side "Booking Started" pageload conversion
 // on /book, which just measures intent to book.
+//
+// NOTE: Uses the Data Manager API (datamanager.googleapis.com), not the legacy
+// Google Ads API ConversionUploadService.UploadClickConversions endpoint.
+// New adopters of offline/click conversion upload are gated by Google
+// (CUSTOMER_NOT_ALLOWLISTED_FOR_THIS_FEATURE) and required to use Data Manager
+// API instead. Requires OAuth scope https://www.googleapis.com/auth/datamanager
+// on the refresh token in addition to https://www.googleapis.com/auth/adwords.
 
-const GOOGLE_ADS_API_VERSION = "v25";
 const BOOKING_COMPLETED_CONVERSION_ACTION_ID = "7708889681"; // "Booking Completed (Verified)", type UPLOAD_CLICKS
+const DATA_MANAGER_INGEST_URL = "https://datamanager.googleapis.com/v1/events:ingest";
 
 interface GoogleAdsCreds {
   developer_token: string;
@@ -64,16 +71,9 @@ async function getAccessToken(creds: GoogleAdsCreds): Promise<string> {
   return json.access_token;
 }
 
-// conversionDateTime must be "yyyy-MM-dd HH:mm:ss+HH:mm"
-function formatConversionDateTime(date: Date): string {
-  const pad = (n: number) => String(n).padStart(2, "0");
-  const y = date.getUTCFullYear();
-  const mo = pad(date.getUTCMonth() + 1);
-  const d = pad(date.getUTCDate());
-  const h = pad(date.getUTCHours());
-  const mi = pad(date.getUTCMinutes());
-  const s = pad(date.getUTCSeconds());
-  return `${y}-${mo}-${d} ${h}:${mi}:${s}+00:00`;
+// eventTimestamp must be RFC 3339, e.g. "2026-08-04T19:12:38Z"
+function formatEventTimestamp(date: Date): string {
+  return date.toISOString();
 }
 
 export async function uploadBookingCompletedConversion(params: {
@@ -90,31 +90,40 @@ export async function uploadBookingCompletedConversion(params: {
   try {
     const accessToken = await getAccessToken(creds);
     const customerId = creds.agni_health_customer_id.replace(/-/g, "");
-    const loginCustomerId = creds.manager_customer_id.replace(/-/g, "");
-
-    const url = `https://googleads.googleapis.com/${GOOGLE_ADS_API_VERSION}/customers/${customerId}:uploadClickConversions`;
+    const managerCustomerId = creds.manager_customer_id.replace(/-/g, "");
 
     const body = {
-      conversions: [
+      destinations: [
         {
-          gclid: params.gclid,
-          conversionAction: `customers/${customerId}/conversionActions/${BOOKING_COMPLETED_CONVERSION_ACTION_ID}`,
-          conversionDateTime: formatConversionDateTime(params.conversionDateTime || new Date()),
-          conversionValue: 1,
-          currencyCode: "USD",
-          ...(params.orderId ? { orderId: params.orderId } : {}),
+          operatingAccount: {
+            accountType: "GOOGLE_ADS",
+            accountId: customerId,
+          },
+          loginAccount: {
+            accountType: "GOOGLE_ADS",
+            accountId: managerCustomerId,
+          },
+          productDestinationId: BOOKING_COMPLETED_CONVERSION_ACTION_ID,
         },
       ],
-      partialFailure: true,
+      events: [
+        {
+          ...(params.orderId ? { transactionId: params.orderId } : {}),
+          eventTimestamp: formatEventTimestamp(params.conversionDateTime || new Date()),
+          adIdentifiers: {
+            gclid: params.gclid,
+          },
+          currency: "USD",
+          conversionValue: 1,
+        },
+      ],
     };
 
-    const res = await fetch(url, {
+    const res = await fetch(DATA_MANAGER_INGEST_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${accessToken}`,
-        "developer-token": creds.developer_token,
-        "login-customer-id": loginCustomerId,
       },
       body: JSON.stringify(body),
     });
@@ -122,18 +131,17 @@ export async function uploadBookingCompletedConversion(params: {
     const json = await res.json();
 
     if (!res.ok) {
-      console.error("Google Ads conversion upload failed:", JSON.stringify(json));
+      console.error("Google Ads (Data Manager API) conversion upload failed:", JSON.stringify(json));
       return { success: false, error: JSON.stringify(json) };
     }
 
-    if (json.partialFailureError) {
-      console.error("Google Ads conversion upload partial failure:", JSON.stringify(json.partialFailureError));
-      return { success: false, error: JSON.stringify(json.partialFailureError) };
+    if (json.fieldWarnings && json.fieldWarnings.length > 0) {
+      console.warn("Google Ads (Data Manager API) conversion upload warnings:", JSON.stringify(json.fieldWarnings));
     }
 
     return { success: true };
   } catch (err) {
-    console.error("Google Ads conversion upload error:", err);
+    console.error("Google Ads (Data Manager API) conversion upload error:", err);
     return { success: false, error: err instanceof Error ? err.message : String(err) };
   }
 }
