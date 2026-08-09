@@ -33,8 +33,7 @@ export default function Shredded() {
           <p className="text-zinc-400 text-lg leading-relaxed max-w-lg mx-auto">
             You lift, you eat clean, you do everything right — and you&apos;re still stuck at the same body fat %.
             It&apos;s not you. South Asians develop insulin resistance and prediabetes at the same BMI where other
-            groups stay metabolically healthy<sup>1</sup> — years before a standard lab panel catches it. We test for
-            it directly, and when
+            groups stay metabolically healthy<sup>1</sup>. We test for it directly, and when
             appropriate, we&apos;ll prescribe GLP-1s to help close the gap.
           </p>
 
