@@ -1,0 +1,440 @@
+import Link from "next/link";
+import Image from "next/image";
+import NavBar from "../components/NavBar";
+import TrackedLink from "../components/TrackedLink";
+import EmailCapture from "../components/EmailCapture";
+
+export default function Shredded() {
+  return (
+    <div className="min-h-screen overflow-x-hidden bg-[#0a1628] text-white font-[family-name:var(--font-jakarta)]">
+      {/* Nav */}
+      <NavBar />
+
+      {/* Hero */}
+      <main className="max-w-7xl mx-auto px-4 sm:px-8 pt-6 sm:pt-8 pb-16 sm:pb-24">
+        <div className="grid lg:grid-cols-2 gap-0 lg:gap-16 items-center">
+          <div className="space-y-8">
+            {/* Credential badge */}
+            <div className="flex items-center gap-2 text-sm text-zinc-400">
+              <svg className="w-4 h-4 text-[#d4a088] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+              <span>Stanford &amp; Harvard-trained physician care</span>
+            </div>
+
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
+              Cardio and clean eating aren&apos;t getting you
+              <br />
+              <span className="text-[#d4a088]">shredded. Here&apos;s why.</span>
+            </h1>
+
+            <p className="text-zinc-400 text-lg leading-relaxed max-w-lg">
+              You&apos;re 30-45, you lift, you watch what you eat — and you&apos;re still stuck at the same body fat %.
+              For South Asian men, the missing piece usually isn&apos;t willpower. It&apos;s insulin resistance, visceral fat,
+              and hormones that generic fitness advice never tests for.
+            </p>
+
+            <div className="space-y-4 pt-4">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+                <TrackedLink
+                  href="/start"
+                  eventName="cta_click"
+                  eventProperties={{ location: 'hero', button: 'book_discovery', variant: 'shredded' }}
+                  className="bg-[#d4a088] text-[#0a1628] px-8 py-4 rounded text-base font-medium hover:bg-[#c4906c] transition-colors"
+                >
+                  Get Your Body Comp Baseline
+                </TrackedLink>
+              </div>
+            </div>
+          </div>
+
+          {/* Right side - hero image */}
+          <div className="mt-12 lg:mt-0">
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
+              <Image
+                src="/hero-shredded-v1.png"
+                alt="Lean, muscular South Asian man in a home gym"
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#0a1628]/30" />
+            </div>
+            <div className="lg:hidden mt-12 space-y-4">
+              <TrackedLink
+                href="/start"
+                eventName="cta_click"
+                eventProperties={{ location: 'hero_mobile', button: 'book_discovery', variant: 'shredded' }}
+                className="block w-full text-center bg-[#d4a088] text-[#0a1628] px-8 py-4 rounded text-base font-medium hover:bg-[#c4906c] transition-colors"
+              >
+                Get Your Body Comp Baseline
+              </TrackedLink>
+              <div className="text-center">
+                <EmailCapture compact />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      {/* Email capture — desktop only */}
+      <section className="hidden lg:block py-14 bg-[#0a1628] border-t border-zinc-800/60">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+          <EmailCapture compact />
+        </div>
+      </section>
+
+      {/* The Problem section */}
+      <section className="bg-[#0d1c30] py-16 sm:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+              &ldquo;Skinny fat&rdquo; isn&apos;t <span className="text-[#d4a088]">in your head</span>
+            </h2>
+            <p className="text-base text-zinc-400 leading-relaxed max-w-2xl mx-auto">
+              South Asian men store fat viscerally — around organs, not just under skin — and carry it at lower body weights
+              than other populations.<sup className="text-[10px]">1</sup> That means two guys who look the same on a scale
+              can have very different metabolic pictures underneath. Your abs staying hidden at a bodyfat % that would show
+              them on someone else isn&apos;t bad luck — it&apos;s biology most trainers were never taught.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-10">
+            <div className="bg-[#0a1628] border border-zinc-800 rounded-xl p-6 text-center">
+              <div className="text-4xl font-bold text-[#d4a088] mb-2">~8×</div>
+              <div className="text-white font-medium mb-1">Higher prediabetes rate at 45</div>
+              <div className="text-zinc-500 text-sm">South Asian men vs. White peers<sup className="text-[10px]">1</sup></div>
+              <div className="text-zinc-600 text-xs mt-2">30.7% vs. 3.9%</div>
+            </div>
+            <div className="bg-[#0a1628] border border-zinc-800 rounded-xl p-6 text-center">
+              <div className="text-4xl font-bold text-[#d4a088] mb-2">Lower</div>
+              <div className="text-white font-medium mb-1">Visceral fat threshold</div>
+              <div className="text-zinc-500 text-sm">South Asians accumulate organ fat at lower BMI than other groups</div>
+            </div>
+            <div className="bg-[#0a1628] border border-zinc-800 rounded-xl p-6 text-center">
+              <div className="text-4xl font-bold text-[#d4a088] mb-2">Insulin</div>
+              <div className="text-white font-medium mb-1">The hidden lever</div>
+              <div className="text-zinc-500 text-sm">Fasting insulin/HOMA-IR predict stubborn fat storage years before standard labs flag anything</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Approach */}
+      <section id="approach" className="py-16 sm:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+              A body recomposition plan <span className="text-[#d4a088]">built on your labs, not a template</span>
+            </h2>
+            <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
+              Physician-led. Data-driven. No generic macros PDF.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-16 sm:mb-20">
+            <div className="p-8 rounded-xl bg-[#0d1c30] border border-zinc-800 text-center">
+              <div className="w-12 h-12 rounded-lg bg-[#d4a088]/10 flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-6 h-6 text-[#d4a088]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-3">DEXA-Verified Body Comp</h3>
+              <p className="text-zinc-400 leading-relaxed">
+                A DEXA scan shows exactly where your fat and muscle actually sit — visceral, subcutaneous, and lean mass
+                by region. No more guessing from a mirror or a scale.
+              </p>
+            </div>
+
+            <div className="p-8 rounded-xl bg-[#0d1c30] border border-zinc-800 text-center">
+              <div className="w-12 h-12 rounded-lg bg-[#d4a088]/10 flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-6 h-6 text-[#d4a088]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Fix the Metabolic Bottleneck</h3>
+              <p className="text-zinc-400 leading-relaxed">
+                We test fasting insulin, HOMA-IR, ApoB, and thyroid/hormone panels — the levers that decide whether your
+                training and diet actually translate into visible results.
+              </p>
+            </div>
+
+            <div className="p-8 rounded-xl bg-[#0d1c30] border border-zinc-800 text-center">
+              <div className="w-12 h-12 rounded-lg bg-[#d4a088]/10 flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-6 h-6 text-[#d4a088]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Direct Physician Access</h3>
+              <p className="text-zinc-400 leading-relaxed">
+                A board-certified MD who can prescribe when appropriate — not a coach guessing at supplements. No PAs,
+                no handoffs.
+              </p>
+            </div>
+          </div>
+
+          {/* Timeline: how care unfolds */}
+          <div className="mb-16 sm:mb-20">
+            <h3 className="text-xl sm:text-2xl font-bold mb-4 text-center">
+              How your <span className="text-[#d4a088]">first 90 days</span> unfold
+            </h3>
+            <p className="text-zinc-400 text-center max-w-xl mx-auto mb-12 sm:mb-16">
+              One straightforward path. No decision fatigue.
+            </p>
+
+            <div className="max-w-2xl mx-auto">
+              <div className="relative pl-10 sm:pl-12">
+                {/* Vertical line */}
+                <div className="absolute left-[15px] sm:left-[19px] top-2 bottom-2 w-px bg-zinc-800" />
+
+                <div className="relative pb-10">
+                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a1628] border-2 border-[#d4a088] flex items-center justify-center">
+                    <span className="text-[#d4a088] text-xs font-mono font-bold">W1</span>
+                  </div>
+                  <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-1">Week 1</div>
+                  <h4 className="text-lg font-semibold mb-2">Baseline consultation</h4>
+<p className="text-zinc-400 leading-relaxed">
+                    15-minute video call with Dr. Japa. We cover your training history, goals, and where you&apos;ve
+                    been stuck.
+                  </p>
+                </div>
+
+                <div className="relative pb-10">
+                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a1628] border-2 border-[#d4a088] flex items-center justify-center">
+                    <span className="text-[#d4a088] text-xs font-mono font-bold">W2</span>
+                  </div>
+                  <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-1">Week 2</div>
+                  <h4 className="text-lg font-semibold mb-2">Labs + DEXA scan</h4>
+                  <p className="text-zinc-400 leading-relaxed">
+                    Fasting insulin, HOMA-IR, ApoB, hormones, and a full body composition scan — visceral fat, lean
+                    mass, and bone density by region.
+                  </p>
+                </div>
+
+                <div className="relative pb-10">
+                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a1628] border-2 border-[#d4a088] flex items-center justify-center">
+                    <span className="text-[#d4a088] text-xs font-mono font-bold">W3</span>
+                  </div>
+                  <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-1">Week 3</div>
+                  <h4 className="text-lg font-semibold mb-2">Your protocol</h4>
+                  <p className="text-zinc-400 leading-relaxed">
+                    Dr. Japa reviews your results and builds a plan around your specific bottleneck — nutrition,
+                    training adjustments, and medication if it&apos;s clinically appropriate.
+                  </p>
+                </div>
+
+                <div className="relative pb-10">
+                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a1628] border-2 border-[#d4a088] flex items-center justify-center">
+                    <svg className="w-4 h-4 text-[#d4a088]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-4l-4 4v-4z" />
+                    </svg>
+                  </div>
+                  <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-1">Ongoing</div>
+                  <h4 className="text-lg font-semibold mb-2">Async support</h4>
+                  <p className="text-zinc-400 leading-relaxed">
+                    Message Dr. Japa directly as your body responds — no waiting for the next appointment slot to
+                    adjust course.
+                  </p>
+                </div>
+
+                <div className="relative">
+                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#d4a088] flex items-center justify-center">
+                    <span className="text-[#0a1628] text-xs font-mono font-bold">M3</span>
+                  </div>
+                  <div className="text-[#d4a088] text-xs font-medium tracking-wider uppercase mb-1">Month 3</div>
+                  <h4 className="text-lg font-semibold mb-2">Repeat DEXA — see the real number</h4>
+                  <p className="text-zinc-400 leading-relaxed">
+                    A second scan shows exactly how your body composition changed — visceral fat down, lean mass up.
+                    Not a guess. A measurement.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Physician Quote */}
+          <div className="max-w-2xl mx-auto">
+            <div className="border border-zinc-800 rounded-xl p-8 bg-[#0d1c30]">
+              <blockquote className="relative text-center">
+                <p className="text-zinc-300 text-base leading-relaxed italic mb-4">
+                  &ldquo;I lived it too. Despite being a physician, I found myself at 26% body fat—&lsquo;healthy&rsquo; by
+                  standard charts, but I knew better. I dropped to 12% once I stopped following generic advice and started
+                  treating my own labs. That&apos;s why I built Agni.&rdquo;
+                </p>
+                <footer className="text-zinc-500 text-sm">
+                  — Dr. Sohan Japa · Founder
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing — single plan */}
+      <section id="pricing" className="py-16 sm:py-24 bg-[#0d1c30]">
+        <div className="max-w-2xl mx-auto px-4 sm:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-10 text-center">
+            One plan. <span className="text-[#d4a088]">Everything included.</span>
+          </h2>
+
+          <div className="bg-[#0a1628] border-2 border-[#d4a088] rounded-2xl p-8 sm:p-10 relative">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap">
+              <span className="bg-zinc-700 text-zinc-200 text-xs font-semibold px-3 py-1 rounded-full">Founding Member Pricing</span>
+            </div>
+
+            <div className="text-center mb-8">
+              <div className="flex items-baseline justify-center gap-1 mb-1">
+                <span className="text-5xl sm:text-6xl font-bold">$600</span>
+                <span className="text-zinc-400 text-lg">/mo</span>
+              </div>
+              <div className="text-[#d4a088] text-sm mt-2">First 25 members lock in this rate permanently.</div>
+            </div>
+
+            <ul className="space-y-3 mb-8">
+              {[
+                "Monthly video visits with a board-certified MD — no PAs",
+                "DEXA scan every quarter to track real body comp change",
+                "Labs included: fasting insulin, ApoB, hormones, full panel",
+                "Medication management, including GLP-1s if appropriate",
+                "Async messaging — 24-hour response",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-[#d4a088] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-zinc-300 text-sm">{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <TrackedLink
+              href="/start"
+              eventName="cta_click"
+              eventProperties={{ location: 'pricing', button: 'flat_plan', variant: 'shredded' }}
+              className="block w-full bg-[#d4a088] text-[#0a1628] px-6 py-4 rounded text-base font-medium hover:bg-[#c4906c] transition-colors text-center"
+            >
+              Get Started — $50 Baseline Consultation
+            </TrackedLink>
+            <p className="text-zinc-500 text-xs text-center mt-4">
+              $50 consultation fee credited toward your first month. Cancel anytime.
+            </p>
+          </div>
+
+          <p className="text-zinc-500 text-sm text-center mt-8">
+            Medications (including GLP-1s) are billed separately through your pharmacy if prescribed. FSA/HSA eligible.
+          </p>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="faq" className="py-16 sm:py-24">
+        <div className="max-w-3xl mx-auto px-4 sm:px-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 sm:mb-16">
+            Frequently asked <span className="text-[#d4a088]">questions</span>
+          </h2>
+          <div className="space-y-6">
+            {[
+              {
+                q: "I already lift and diet — why would labs matter?",
+                a: "Training and nutrition are necessary but not sufficient if there's an underlying metabolic bottleneck. Insulin resistance, for example, actively promotes fat storage and blunts muscle gain — no amount of clean eating fully overrides it until it's addressed directly."
+              },
+              {
+                q: "Do you prescribe GLP-1 medications?",
+                a: "Yes — when clinically appropriate, typically for patients with confirmed insulin resistance or metabolic dysfunction, not as a shortcut. Dr. Japa reviews your labs to determine fit."
+              },
+              {
+                q: "Why a DEXA scan instead of just a scale or calipers?",
+                a: "DEXA gives precise visceral fat, subcutaneous fat, lean mass, and bone density — by region. It's the only way to actually confirm whether your protocol is changing body composition, not just body weight."
+              },
+              {
+                q: "Do you accept insurance?",
+                a: "We're a self-pay practice. Upon request, we provide a superbill for potential FSA/HSA reimbursement."
+              },
+              {
+                q: "Can I cancel anytime?",
+                a: "Yes. Billed monthly, cancel anytime effective end of the current billing period. No long-term commitment."
+              },
+              {
+                q: "What states are you licensed in?",
+                a: "Currently accepting patients in California and Massachusetts, with more states coming — join the waitlist if you're elsewhere."
+              },
+            ].map(({ q, a }) => (
+              <details key={q} className="group border border-zinc-800 rounded-xl p-6 bg-[#0d1c30]">
+                <summary className="flex items-center justify-between cursor-pointer list-none font-medium text-white">
+                  {q}
+                  <svg className="w-5 h-5 text-[#d4a088] group-open:rotate-180 transition-transform shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <p className="text-zinc-400 text-sm leading-relaxed mt-4">{a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section id="book" className="py-16 sm:py-24 bg-gradient-to-b from-[#0a1628] to-[#0d1c30]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+            Stop guessing. Find out what&apos;s actually holding your physique back.
+          </h2>
+          <TrackedLink
+            href="/start"
+            eventName="cta_click"
+            eventProperties={{ location: 'bottom_cta', button: 'book_discovery', variant: 'shredded' }}
+            className="inline-block bg-[#d4a088] text-[#0a1628] px-10 py-4 rounded text-lg font-medium hover:bg-[#c4906c] transition-colors"
+          >
+            Get Your Body Comp Baseline
+          </TrackedLink>
+          <p className="text-zinc-500 text-sm mt-6">
+            Currently accepting patients in California and Massachusetts
+          </p>
+          <p className="text-zinc-500 text-sm mt-3">
+            Not ready yet?{" "}
+            <Link href="/start?waitlist=true" className="text-zinc-400 hover:text-white underline underline-offset-2 transition-colors">
+              Stay in the loop →
+            </Link>
+          </p>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-zinc-800 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+            <div>
+              <Image
+                src="/logo-transparent.png"
+                alt="Agni Health"
+                width={240}
+                height={60}
+                className="h-10 sm:h-14 md:h-16 w-auto mb-2"
+              />
+              <div className="text-sm text-zinc-500">
+                © 2026 Agni Health. All rights reserved.
+              </div>
+            </div>
+            <div className="sm:text-right text-sm text-zinc-500 space-y-1">
+              <p>Board-certified Internal Medicine</p>
+              <p>Telehealth practice</p>
+              <p>
+                <Link href="/terms" className="hover:text-zinc-300 transition-colors">Terms of Service</Link>
+              </p>
+            </div>
+          </div>
+          <div className="mt-8 pt-6 border-t border-zinc-800 text-xs text-zinc-600 leading-relaxed">
+            <p>
+              The information provided on this website is for educational purposes only and is not intended as medical advice.
+              Always consult with a qualified healthcare provider before making any health decisions.
+              Population statistics do not predict individual health outcomes. All care is individualized. Individual outcomes depend on clinical factors, adherence, and starting point.
+            </p>
+            <p className="mt-2">
+              <sup>1</sup> Pedamallu H, et al. <em>J Am Heart Assoc.</em> 2026. <a href="https://doi.org/10.1161/JAHA.124.041221" target="_blank" rel="noopener noreferrer" className="underline hover:text-zinc-400 transition-colors">doi:10.1161/JAHA.124.041221</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
