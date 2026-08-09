@@ -46,15 +46,12 @@ export default function Shredded() {
             >
               Get Shredded Now
             </TrackedLink>
-            <div className="lg:hidden">
-              <EmailCapture compact />
-            </div>
           </div>
         </div>
       </main>
 
-      {/* Email capture — desktop only */}
-      <section className="hidden lg:block py-14 bg-[#0a0a0a] border-t border-zinc-800/60">
+      {/* Email capture */}
+      <section className="py-14 bg-[#0a0a0a] border-t border-zinc-800/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <EmailCapture compact />
         </div>
@@ -300,6 +297,12 @@ export default function Shredded() {
           </TrackedLink>
           <p className="text-zinc-500 text-sm mt-6">
             Currently accepting patients in California and Massachusetts
+          </p>
+          <p className="text-zinc-500 text-sm mt-3">
+            Not ready yet?{" "}
+            <Link href="/start?waitlist=true" className="text-zinc-400 hover:text-white underline underline-offset-2 transition-colors">
+              Stay in the loop →
+            </Link>
           </p>
         </div>
       </section>
