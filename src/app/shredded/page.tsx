@@ -85,9 +85,9 @@ export default function Shredded() {
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           {/* Timeline: how care unfolds */}
           <div className="mb-16 sm:mb-20">
-            <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">
               Your <span className="text-[#b32424]">Year 1</span> path
-            </h3>
+            </h2>
             <p className="text-zinc-400 text-center max-w-xl mx-auto mb-12 sm:mb-16">
               One path. No decision fatigue.
             </p>
