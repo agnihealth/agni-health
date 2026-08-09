@@ -66,7 +66,7 @@ export default function Shredded() {
             <span className="text-white font-semibold">It&apos;s not you</span>: South Asians run more{" "}
             <span className="text-[#b32424]">insulin resistant at the same BMI</span> where other groups stay
             metabolically healthy<sup>1</sup>, and insulin resistance makes it harder to lose fat. When appropriate,
-            we&apos;ll prescribe GLP-1s to help close the gap.
+            we&apos;ll prescribe <u>GLP-1s</u> to help close the gap.
           </p>
 
           <div className="pt-4 flex flex-col items-center gap-4">
