@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import NavBar from "../components/NavBar";
 import TrackedLink from "../components/TrackedLink";
-import EmailCapture from "../components/EmailCapture";
 
 export default function Shredded() {
   return (
@@ -49,13 +48,6 @@ export default function Shredded() {
           </div>
         </div>
       </main>
-
-      {/* Email capture */}
-      <section className="py-14 bg-[#0a0a0a] border-t border-zinc-800/60">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <EmailCapture compact />
-        </div>
-      </section>
 
       {/* Approach */}
       <section id="approach" className="py-16 sm:py-24">
