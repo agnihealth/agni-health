@@ -40,7 +40,8 @@ export default function Shredded() {
 
           <p className="text-zinc-400 text-lg leading-relaxed max-w-lg mx-auto">
             You lift, you watch what you eat, but you&apos;re stuck at the same body fat %. Our biology stores fat
-            differently — insulin resistance can block visible results years before standard labs catch it.
+            differently — insulin resistance can block visible results years before standard labs catch it. When
+            appropriate, we&apos;ll prescribe GLP-1s to help close the gap.
           </p>
 
           <div className="pt-4 flex flex-col items-center gap-4">
