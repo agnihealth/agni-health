@@ -44,7 +44,7 @@ export default function Shredded() {
       {/* Hero */}
       <main className="max-w-3xl mx-auto px-4 sm:px-8 pt-6 sm:pt-8 pb-16 sm:pb-24">
         <div className="text-center space-y-6">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
+          <h1 className="text-5xl sm:text-5xl lg:text-5xl font-bold leading-[1.1] tracking-tight">
             Are you <span className="text-[#b32424]">South Asian</span> and struggling
             <br className="hidden sm:block" />
             {" "}to get shredded?
@@ -85,7 +85,7 @@ export default function Shredded() {
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           {/* Timeline: how care unfolds */}
           <div className="mb-16 sm:mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">
+            <h2 className="text-3xl sm:text-3xl font-bold mb-4 text-center">
               Your <span className="text-[#b32424]">Year 1</span> path
             </h2>
             <p className="text-zinc-400 text-center max-w-xl mx-auto mb-12 sm:mb-16">
@@ -245,7 +245,7 @@ export default function Shredded() {
       {/* Pricing — single plan */}
       <section id="pricing" className="py-16 sm:py-24 bg-[#141414]">
         <div className="max-w-2xl mx-auto px-4 sm:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-10 text-center">
+          <h2 className="text-3xl sm:text-3xl font-bold mb-10 text-center">
             Fixed pricing. <span className="text-[#b32424]">Medications billed separately.</span>
           </h2>
 
@@ -301,7 +301,7 @@ export default function Shredded() {
       {/* CTA */}
       <section id="book" className="py-16 sm:py-24 bg-gradient-to-b from-[#0a0a0a] to-[#141414]">
         <div className="max-w-3xl mx-auto px-4 sm:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-3xl font-bold mb-6">
             Stop guessing. Find out what&apos;s actually holding your physique back.
           </h2>
           <TrackedLink
