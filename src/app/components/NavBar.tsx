@@ -19,9 +19,14 @@ function scrollToSection(id: string) {
 
 interface NavBarProps {
   links?: { href: string; label: string }[];
+  ctaLabel?: string;
+  ctaClassName?: string;
 }
 
-export default function NavBar({ links = defaultLinks }: NavBarProps) {
+const defaultCtaClassName = "bg-[#d4a088] text-[#0a1628] px-5 py-2.5 rounded text-sm font-medium hover:bg-[#c4906c] transition-colors";
+const defaultCtaClassNameMobile = "bg-[#d4a088] text-[#0a1628] px-5 py-3 rounded text-sm font-medium hover:bg-[#c4906c] transition-colors text-center mt-2";
+
+export default function NavBar({ links = defaultLinks, ctaLabel = "Book Initial Consultation", ctaClassName }: NavBarProps) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -52,9 +57,9 @@ export default function NavBar({ links = defaultLinks }: NavBarProps) {
           href="/start"
           eventName="cta_click"
           eventProperties={{ location: 'nav', button: 'book_discovery' }}
-          className="bg-[#d4a088] text-[#0a1628] px-5 py-2.5 rounded text-sm font-medium hover:bg-[#c4906c] transition-colors"
+          className={ctaClassName ?? defaultCtaClassName}
         >
-          Book Initial Consultation
+          {ctaLabel}
         </TrackedLink>
       </div>
 
@@ -86,9 +91,9 @@ export default function NavBar({ links = defaultLinks }: NavBarProps) {
             href="/start"
             eventName="cta_click"
             eventProperties={{ location: 'nav_mobile', button: 'book_discovery' }}
-            className="bg-[#d4a088] text-[#0a1628] px-5 py-3 rounded text-sm font-medium hover:bg-[#c4906c] transition-colors text-center mt-2"
+            className={ctaClassName ? `${ctaClassName} text-center mt-2` : defaultCtaClassNameMobile}
           >
-            Book Initial Consultation
+            {ctaLabel}
           </TrackedLink>
         </div>
       )}
