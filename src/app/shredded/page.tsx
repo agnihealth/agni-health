@@ -87,10 +87,10 @@ export default function Shredded() {
           {/* Timeline: how care unfolds */}
           <div className="mb-16 sm:mb-20">
             <h3 className="text-xl sm:text-2xl font-bold mb-4 text-center">
-              How your <span className="text-[#b32424]">first year</span> unfolds
+              Your <span className="text-[#b32424]">Year 1</span> path
             </h3>
             <p className="text-zinc-400 text-center max-w-xl mx-auto mb-12 sm:mb-16">
-              One straightforward path. No decision fatigue.
+              One path. No decision fatigue.
             </p>
 
             <div className="max-w-2xl mx-auto">
@@ -105,8 +105,7 @@ export default function Shredded() {
                   <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1">Week 1</div>
                   <h4 className="text-lg font-semibold mb-2">Baseline consultation</h4>
 <p className="text-zinc-400 leading-relaxed">
-                    15-minute video call with Dr. Japa. We cover your training history, goals, and where you&apos;ve
-                    been stuck.
+                    15-minute video call with Dr. Japa on your training history and where you&apos;re stuck.
                   </p>
                 </div>
 
@@ -117,8 +116,7 @@ export default function Shredded() {
                   <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1">Week 2</div>
                   <h4 className="text-lg font-semibold mb-2">Labs + DEXA scan</h4>
                   <p className="text-zinc-400 leading-relaxed">
-                    Fasting insulin, HOMA-IR, ApoB, hormones, and a full body composition scan — visceral fat, lean
-                    mass, and bone density by region.
+                    Fasting insulin, HOMA-IR, ApoB, hormones, and a full body composition scan.
                   </p>
                 </div>
 
@@ -129,8 +127,7 @@ export default function Shredded() {
                   <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1">Week 3</div>
                   <h4 className="text-lg font-semibold mb-2">Your protocol</h4>
                   <p className="text-zinc-400 leading-relaxed">
-                    Dr. Japa reviews your results and builds a plan around your specific bottleneck — nutrition,
-                    training adjustments, and medication if it&apos;s clinically appropriate.
+                    A plan built around your bottleneck — nutrition, training, medication if appropriate.
                   </p>
                 </div>
 
@@ -143,8 +140,7 @@ export default function Shredded() {
                   <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1">Ongoing</div>
                   <h4 className="text-lg font-semibold mb-2">Async support</h4>
                   <p className="text-zinc-400 leading-relaxed">
-                    Message Dr. Japa directly as your body responds — no waiting for the next appointment slot to
-                    adjust course.
+                    Message Dr. Japa directly as your body responds. No waiting for the next slot.
                   </p>
                 </div>
 
@@ -153,10 +149,9 @@ export default function Shredded() {
                     <span className="text-[#b32424] text-xs font-mono font-bold">M3</span>
                   </div>
                   <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1">Month 3</div>
-                  <h4 className="text-lg font-semibold mb-2">Repeat DEXA — see the real number</h4>
+                  <h4 className="text-lg font-semibold mb-2">Repeat DEXA</h4>
                   <p className="text-zinc-400 leading-relaxed">
-                    A second scan shows exactly how your body composition changed — visceral fat down, lean mass up.
-                    Not a guess. A measurement.
+                    A second scan: visceral fat down, lean mass up. A measurement, not a guess.
                   </p>
                 </div>
 
@@ -165,10 +160,9 @@ export default function Shredded() {
                     <span className="text-[#0a0a0a] text-xs font-mono font-bold">Y1</span>
                   </div>
                   <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1">Year 1</div>
-                  <h4 className="text-lg font-semibold mb-2">Sustained, verified transformation</h4>
+                  <h4 className="text-lg font-semibold mb-2">Results that hold</h4>
                   <p className="text-zinc-400 leading-relaxed">
-                    Quarterly DEXA and lab checkpoints keep your protocol dialed in as your body changes — so results
-                    hold, not just happen once.
+                    Quarterly DEXA and lab checkpoints keep your protocol dialed in.
                   </p>
                 </div>
               </div>
