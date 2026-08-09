@@ -16,7 +16,7 @@ export default function Shredded() {
           <div className="space-y-8">
             {/* Credential badge */}
             <div className="flex items-center gap-2 text-sm text-zinc-400">
-              <svg className="w-4 h-4 text-[#ff4d1c] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-[#3b82c4] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
               </svg>
               <span>Stanford &amp; Harvard-trained physician care</span>
@@ -25,7 +25,7 @@ export default function Shredded() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
               Cardio and clean eating aren&apos;t getting you
               <br />
-              <span className="text-[#ff4d1c]">shredded. Here&apos;s why.</span>
+              <span className="text-[#3b82c4]">shredded. Here&apos;s why.</span>
             </h1>
 
             <p className="text-zinc-400 text-lg leading-relaxed max-w-lg">
@@ -40,7 +40,7 @@ export default function Shredded() {
                   href="/start"
                   eventName="cta_click"
                   eventProperties={{ location: 'hero', button: 'book_discovery', variant: 'shredded' }}
-                  className="bg-[#ff4d1c] text-[#0a0a0a] px-8 py-4 rounded text-base font-medium hover:bg-[#e63e0f] transition-colors"
+                  className="bg-[#3b82c4] text-[#0a0a0a] px-8 py-4 rounded text-base font-medium hover:bg-[#2c68a3] transition-colors"
                 >
                   Get Your Body Comp Baseline
                 </TrackedLink>
@@ -65,7 +65,7 @@ export default function Shredded() {
                 href="/start"
                 eventName="cta_click"
                 eventProperties={{ location: 'hero_mobile', button: 'book_discovery', variant: 'shredded' }}
-                className="block w-full text-center bg-[#ff4d1c] text-[#0a0a0a] px-8 py-4 rounded text-base font-medium hover:bg-[#e63e0f] transition-colors"
+                className="block w-full text-center bg-[#3b82c4] text-[#0a0a0a] px-8 py-4 rounded text-base font-medium hover:bg-[#2c68a3] transition-colors"
               >
                 Get Your Body Comp Baseline
               </TrackedLink>
@@ -89,7 +89,7 @@ export default function Shredded() {
         <div className="max-w-4xl mx-auto px-4 sm:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-              &ldquo;Skinny fat&rdquo; isn&apos;t <span className="text-[#ff4d1c]">in your head</span>
+              &ldquo;Skinny fat&rdquo; isn&apos;t <span className="text-[#3b82c4]">in your head</span>
             </h2>
             <p className="text-base text-zinc-400 leading-relaxed max-w-2xl mx-auto">
               South Asian men store fat viscerally — around organs, not just under skin — and carry it at lower body weights
@@ -101,18 +101,18 @@ export default function Shredded() {
 
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             <div className="bg-[#0a0a0a] border border-zinc-800 rounded-xl p-6 text-center">
-              <div className="text-4xl font-bold text-[#ff4d1c] mb-2">~8×</div>
+              <div className="text-4xl font-bold text-[#3b82c4] mb-2">~8×</div>
               <div className="text-white font-medium mb-1">Higher prediabetes rate at 45</div>
               <div className="text-zinc-500 text-sm">South Asian men vs. White peers<sup className="text-[10px]">1</sup></div>
               <div className="text-zinc-600 text-xs mt-2">30.7% vs. 3.9%</div>
             </div>
             <div className="bg-[#0a0a0a] border border-zinc-800 rounded-xl p-6 text-center">
-              <div className="text-4xl font-bold text-[#ff4d1c] mb-2">Lower</div>
+              <div className="text-4xl font-bold text-[#3b82c4] mb-2">Lower</div>
               <div className="text-white font-medium mb-1">Visceral fat threshold</div>
               <div className="text-zinc-500 text-sm">South Asians accumulate organ fat at lower BMI than other groups</div>
             </div>
             <div className="bg-[#0a0a0a] border border-zinc-800 rounded-xl p-6 text-center">
-              <div className="text-4xl font-bold text-[#ff4d1c] mb-2">Insulin</div>
+              <div className="text-4xl font-bold text-[#3b82c4] mb-2">Insulin</div>
               <div className="text-white font-medium mb-1">The hidden lever</div>
               <div className="text-zinc-500 text-sm">Fasting insulin/HOMA-IR predict stubborn fat storage years before standard labs flag anything</div>
             </div>
@@ -125,7 +125,7 @@ export default function Shredded() {
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-              A body recomposition plan <span className="text-[#ff4d1c]">built on your labs, not a template</span>
+              A body recomposition plan <span className="text-[#3b82c4]">built on your labs, not a template</span>
             </h2>
             <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
               Physician-led. Data-driven. No generic macros PDF.
@@ -134,8 +134,8 @@ export default function Shredded() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-16 sm:mb-20">
             <div className="p-8 rounded-xl bg-[#141414] border border-zinc-800 text-center">
-              <div className="w-12 h-12 rounded-lg bg-[#ff4d1c]/10 flex items-center justify-center mb-6 mx-auto">
-                <svg className="w-6 h-6 text-[#ff4d1c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-12 h-12 rounded-lg bg-[#3b82c4]/10 flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-6 h-6 text-[#3b82c4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
@@ -147,8 +147,8 @@ export default function Shredded() {
             </div>
 
             <div className="p-8 rounded-xl bg-[#141414] border border-zinc-800 text-center">
-              <div className="w-12 h-12 rounded-lg bg-[#ff4d1c]/10 flex items-center justify-center mb-6 mx-auto">
-                <svg className="w-6 h-6 text-[#ff4d1c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-12 h-12 rounded-lg bg-[#3b82c4]/10 flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-6 h-6 text-[#3b82c4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
@@ -160,8 +160,8 @@ export default function Shredded() {
             </div>
 
             <div className="p-8 rounded-xl bg-[#141414] border border-zinc-800 text-center">
-              <div className="w-12 h-12 rounded-lg bg-[#ff4d1c]/10 flex items-center justify-center mb-6 mx-auto">
-                <svg className="w-6 h-6 text-[#ff4d1c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-12 h-12 rounded-lg bg-[#3b82c4]/10 flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-6 h-6 text-[#3b82c4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
@@ -176,7 +176,7 @@ export default function Shredded() {
           {/* Timeline: how care unfolds */}
           <div className="mb-16 sm:mb-20">
             <h3 className="text-xl sm:text-2xl font-bold mb-4 text-center">
-              How your <span className="text-[#ff4d1c]">first 90 days</span> unfold
+              How your <span className="text-[#3b82c4]">first 90 days</span> unfold
             </h3>
             <p className="text-zinc-400 text-center max-w-xl mx-auto mb-12 sm:mb-16">
               One straightforward path. No decision fatigue.
@@ -188,10 +188,10 @@ export default function Shredded() {
                 <div className="absolute left-[15px] sm:left-[19px] top-2 bottom-2 w-px bg-zinc-800" />
 
                 <div className="relative pb-10">
-                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a0a0a] border-2 border-[#ff4d1c] flex items-center justify-center">
-                    <span className="text-[#ff4d1c] text-xs font-mono font-bold">W1</span>
+                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a0a0a] border-2 border-[#3b82c4] flex items-center justify-center">
+                    <span className="text-[#3b82c4] text-xs font-mono font-bold">W1</span>
                   </div>
-                  <div className="text-[#ff4d1c] text-xs font-medium tracking-wider uppercase mb-1">Week 1</div>
+                  <div className="text-[#3b82c4] text-xs font-medium tracking-wider uppercase mb-1">Week 1</div>
                   <h4 className="text-lg font-semibold mb-2">Baseline consultation</h4>
 <p className="text-zinc-400 leading-relaxed">
                     15-minute video call with Dr. Japa. We cover your training history, goals, and where you&apos;ve
@@ -200,10 +200,10 @@ export default function Shredded() {
                 </div>
 
                 <div className="relative pb-10">
-                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a0a0a] border-2 border-[#ff4d1c] flex items-center justify-center">
-                    <span className="text-[#ff4d1c] text-xs font-mono font-bold">W2</span>
+                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a0a0a] border-2 border-[#3b82c4] flex items-center justify-center">
+                    <span className="text-[#3b82c4] text-xs font-mono font-bold">W2</span>
                   </div>
-                  <div className="text-[#ff4d1c] text-xs font-medium tracking-wider uppercase mb-1">Week 2</div>
+                  <div className="text-[#3b82c4] text-xs font-medium tracking-wider uppercase mb-1">Week 2</div>
                   <h4 className="text-lg font-semibold mb-2">Labs + DEXA scan</h4>
                   <p className="text-zinc-400 leading-relaxed">
                     Fasting insulin, HOMA-IR, ApoB, hormones, and a full body composition scan — visceral fat, lean
@@ -212,10 +212,10 @@ export default function Shredded() {
                 </div>
 
                 <div className="relative pb-10">
-                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a0a0a] border-2 border-[#ff4d1c] flex items-center justify-center">
-                    <span className="text-[#ff4d1c] text-xs font-mono font-bold">W3</span>
+                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a0a0a] border-2 border-[#3b82c4] flex items-center justify-center">
+                    <span className="text-[#3b82c4] text-xs font-mono font-bold">W3</span>
                   </div>
-                  <div className="text-[#ff4d1c] text-xs font-medium tracking-wider uppercase mb-1">Week 3</div>
+                  <div className="text-[#3b82c4] text-xs font-medium tracking-wider uppercase mb-1">Week 3</div>
                   <h4 className="text-lg font-semibold mb-2">Your protocol</h4>
                   <p className="text-zinc-400 leading-relaxed">
                     Dr. Japa reviews your results and builds a plan around your specific bottleneck — nutrition,
@@ -224,12 +224,12 @@ export default function Shredded() {
                 </div>
 
                 <div className="relative pb-10">
-                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a0a0a] border-2 border-[#ff4d1c] flex items-center justify-center">
-                    <svg className="w-4 h-4 text-[#ff4d1c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a0a0a] border-2 border-[#3b82c4] flex items-center justify-center">
+                    <svg className="w-4 h-4 text-[#3b82c4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-4l-4 4v-4z" />
                     </svg>
                   </div>
-                  <div className="text-[#ff4d1c] text-xs font-medium tracking-wider uppercase mb-1">Ongoing</div>
+                  <div className="text-[#3b82c4] text-xs font-medium tracking-wider uppercase mb-1">Ongoing</div>
                   <h4 className="text-lg font-semibold mb-2">Async support</h4>
                   <p className="text-zinc-400 leading-relaxed">
                     Message Dr. Japa directly as your body responds — no waiting for the next appointment slot to
@@ -238,10 +238,10 @@ export default function Shredded() {
                 </div>
 
                 <div className="relative">
-                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#ff4d1c] flex items-center justify-center">
+                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#3b82c4] flex items-center justify-center">
                     <span className="text-[#0a0a0a] text-xs font-mono font-bold">M3</span>
                   </div>
-                  <div className="text-[#ff4d1c] text-xs font-medium tracking-wider uppercase mb-1">Month 3</div>
+                  <div className="text-[#3b82c4] text-xs font-medium tracking-wider uppercase mb-1">Month 3</div>
                   <h4 className="text-lg font-semibold mb-2">Repeat DEXA — see the real number</h4>
                   <p className="text-zinc-400 leading-relaxed">
                     A second scan shows exactly how your body composition changed — visceral fat down, lean mass up.
@@ -274,10 +274,10 @@ export default function Shredded() {
       <section id="pricing" className="py-16 sm:py-24 bg-[#141414]">
         <div className="max-w-2xl mx-auto px-4 sm:px-8">
           <h2 className="text-2xl sm:text-3xl font-bold mb-10 text-center">
-            One plan. <span className="text-[#ff4d1c]">Everything included.</span>
+            One plan. <span className="text-[#3b82c4]">Everything included.</span>
           </h2>
 
-          <div className="bg-[#0a0a0a] border-2 border-[#ff4d1c] rounded-2xl p-8 sm:p-10 relative">
+          <div className="bg-[#0a0a0a] border-2 border-[#3b82c4] rounded-2xl p-8 sm:p-10 relative">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap">
               <span className="bg-zinc-700 text-zinc-200 text-xs font-semibold px-3 py-1 rounded-full">Founding Member Pricing</span>
             </div>
@@ -287,7 +287,7 @@ export default function Shredded() {
                 <span className="text-5xl sm:text-6xl font-bold">$600</span>
                 <span className="text-zinc-400 text-lg">/mo</span>
               </div>
-              <div className="text-[#ff4d1c] text-sm mt-2">First 25 members lock in this rate permanently.</div>
+              <div className="text-[#3b82c4] text-sm mt-2">First 25 members lock in this rate permanently.</div>
             </div>
 
             <ul className="space-y-3 mb-8">
@@ -299,7 +299,7 @@ export default function Shredded() {
                 "Async messaging — 24-hour response",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#ff4d1c] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#3b82c4] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-zinc-300 text-sm">{item}</span>
@@ -311,7 +311,7 @@ export default function Shredded() {
               href="/start"
               eventName="cta_click"
               eventProperties={{ location: 'pricing', button: 'flat_plan', variant: 'shredded' }}
-              className="block w-full bg-[#ff4d1c] text-[#0a0a0a] px-6 py-4 rounded text-base font-medium hover:bg-[#e63e0f] transition-colors text-center"
+              className="block w-full bg-[#3b82c4] text-[#0a0a0a] px-6 py-4 rounded text-base font-medium hover:bg-[#2c68a3] transition-colors text-center"
             >
               Get Started — $50 Baseline Consultation
             </TrackedLink>
@@ -330,7 +330,7 @@ export default function Shredded() {
       <section id="faq" className="py-16 sm:py-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 sm:mb-16">
-            Frequently asked <span className="text-[#ff4d1c]">questions</span>
+            Frequently asked <span className="text-[#3b82c4]">questions</span>
           </h2>
           <div className="space-y-6">
             {[
@@ -362,7 +362,7 @@ export default function Shredded() {
               <details key={q} className="group border border-zinc-800 rounded-xl p-6 bg-[#141414]">
                 <summary className="flex items-center justify-between cursor-pointer list-none font-medium text-white">
                   {q}
-                  <svg className="w-5 h-5 text-[#ff4d1c] group-open:rotate-180 transition-transform shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#3b82c4] group-open:rotate-180 transition-transform shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -383,7 +383,7 @@ export default function Shredded() {
             href="/start"
             eventName="cta_click"
             eventProperties={{ location: 'bottom_cta', button: 'book_discovery', variant: 'shredded' }}
-            className="inline-block bg-[#ff4d1c] text-[#0a0a0a] px-10 py-4 rounded text-lg font-medium hover:bg-[#e63e0f] transition-colors"
+            className="inline-block bg-[#3b82c4] text-[#0a0a0a] px-10 py-4 rounded text-lg font-medium hover:bg-[#2c68a3] transition-colors"
           >
             Get Your Body Comp Baseline
           </TrackedLink>
