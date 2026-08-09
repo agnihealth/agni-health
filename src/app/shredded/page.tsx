@@ -251,11 +251,11 @@ export default function Shredded() {
 
             <ul className="space-y-3 mb-8">
               {[
-                "Monthly video visits with a board-certified MD — no PAs",
+                "Quarterly video visits with a board-certified MD — no PAs",
                 "DEXA scan every quarter to track real body comp change",
                 "Labs included: fasting insulin, ApoB, hormones, full panel",
                 "Medication management, including GLP-1s if appropriate",
-                "Async messaging — 24-hour response",
+                "Async messaging — 72-hour response",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-[#b32424] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
