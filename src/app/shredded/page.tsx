@@ -38,6 +38,7 @@ export default function Shredded() {
         links={[{ href: "#approach", label: "How It Works" }, { href: "#pricing", label: "Pricing" }]}
         ctaLabel="Book Consultation"
         ctaClassName="bg-[#b32424] text-[#0a0a0a] px-5 py-2.5 rounded text-sm font-medium hover:bg-[#8c1c1c] transition-colors"
+        logoSrc="/logo-shredded.png"
       />
 
       {/* Hero */}
