@@ -11,67 +11,49 @@ export default function Shredded() {
       <NavBar />
 
       {/* Hero */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-8 pt-6 sm:pt-8 pb-16 sm:pb-24">
-        <div className="grid lg:grid-cols-2 gap-0 lg:gap-16 items-center">
-          <div className="space-y-8">
-            {/* Credential badge */}
-            <div className="flex items-center gap-2 text-sm text-zinc-400">
-              <svg className="w-4 h-4 text-[#b32424] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-              </svg>
-              <span>Stanford &amp; Harvard-trained physician care</span>
-            </div>
-
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
-              Are you <span className="text-[#b32424]">South Asian</span> and struggling
-              <br />
-              to get shredded?
-            </h1>
-
-            <p className="text-zinc-400 text-lg leading-relaxed max-w-lg">
-              You lift, you watch what you eat, but you&apos;re stuck at the same body fat %. For South Asian men,
-              the challenges are different. Abs are indeed made in the kitchen. And our biology poses some unique
-              challenges.
-            </p>
-
-            <div className="space-y-4 pt-4">
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
-                <TrackedLink
-                  href="/start"
-                  eventName="cta_click"
-                  eventProperties={{ location: 'hero', button: 'book_discovery', variant: 'shredded' }}
-                  className="bg-[#b32424] text-[#0a0a0a] px-8 py-4 rounded text-base font-medium hover:bg-[#8c1c1c] transition-colors"
-                >
-                  Get Your Body Comp Baseline
-                </TrackedLink>
-              </div>
-            </div>
+      <main className="max-w-3xl mx-auto px-4 sm:px-8 pt-6 sm:pt-8 pb-16 sm:pb-24">
+        <div className="text-center space-y-6">
+          {/* Credential badge */}
+          <div className="flex items-center justify-center gap-2 text-sm text-zinc-400">
+            <svg className="w-4 h-4 text-[#b32424] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+            <span>Stanford &amp; Harvard-trained physician care</span>
           </div>
 
-          {/* Right side - hero image */}
-          <div className="mt-12 lg:mt-0">
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
-              <Image
-                src="/hero-shredded-v1.png"
-                alt="Lean, muscular South Asian man in a home gym"
-                fill
-                className="object-cover"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#0a0a0a]/30" />
-            </div>
-            <div className="lg:hidden mt-12 space-y-4">
-              <TrackedLink
-                href="/start"
-                eventName="cta_click"
-                eventProperties={{ location: 'hero_mobile', button: 'book_discovery', variant: 'shredded' }}
-                className="block w-full text-center bg-[#b32424] text-[#0a0a0a] px-8 py-4 rounded text-base font-medium hover:bg-[#8c1c1c] transition-colors"
-              >
-                Get Your Body Comp Baseline
-              </TrackedLink>
-              <div className="text-center">
-                <EmailCapture compact />
-              </div>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
+            Are you <span className="text-[#b32424]">South Asian</span> and struggling
+            <br className="hidden sm:block" />
+            {" "}to get shredded?
+          </h1>
+
+          {/* Hero image */}
+          <div className="aspect-[4/3] rounded-2xl overflow-hidden relative max-w-lg mx-auto mt-8">
+            <Image
+              src="/hero-shredded-v1.png"
+              alt="Lean, muscular South Asian man in a home gym"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+
+          <p className="text-zinc-400 text-lg leading-relaxed max-w-lg mx-auto">
+            You lift, you watch what you eat, but you&apos;re stuck at the same body fat %. Our biology stores fat
+            differently — insulin resistance can block visible results years before standard labs catch it.
+          </p>
+
+          <div className="pt-4 flex flex-col items-center gap-4">
+            <TrackedLink
+              href="/start"
+              eventName="cta_click"
+              eventProperties={{ location: 'hero', button: 'book_discovery', variant: 'shredded' }}
+              className="bg-[#b32424] text-[#0a0a0a] px-8 py-4 rounded text-base font-medium hover:bg-[#8c1c1c] transition-colors"
+            >
+              Get Your Body Comp Baseline
+            </TrackedLink>
+            <div className="lg:hidden">
+              <EmailCapture compact />
             </div>
           </div>
         </div>
