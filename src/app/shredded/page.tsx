@@ -301,12 +301,6 @@ export default function Shredded() {
           <p className="text-zinc-500 text-sm mt-6">
             Currently accepting patients in California and Massachusetts
           </p>
-          <p className="text-zinc-500 text-sm mt-3">
-            Not ready yet?{" "}
-            <Link href="/start?waitlist=true" className="text-zinc-400 hover:text-white underline underline-offset-2 transition-colors">
-              Stay in the loop →
-            </Link>
-          </p>
         </div>
       </section>
 
