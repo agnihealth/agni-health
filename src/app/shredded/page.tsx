@@ -23,15 +23,15 @@ export default function Shredded() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
-              Cardio and clean eating aren&apos;t getting you
+              Are you <span className="text-[#b32424]">South Asian</span> and struggling
               <br />
-              <span className="text-[#b32424]">shredded. Here&apos;s why.</span>
+              to get shredded?
             </h1>
 
             <p className="text-zinc-400 text-lg leading-relaxed max-w-lg">
-              You&apos;re 30-45, you lift, you watch what you eat — and you&apos;re still stuck at the same body fat %.
-              For South Asian men, the missing piece usually isn&apos;t willpower. It&apos;s insulin resistance, visceral fat,
-              and hormones that generic fitness advice never tests for.
+              You lift, you watch what you eat, but you&apos;re stuck at the same body fat %. For South Asian men,
+              the challenges are different. Abs are indeed made in the kitchen. And our biology poses some unique
+              challenges.
             </p>
 
             <div className="space-y-4 pt-4">
