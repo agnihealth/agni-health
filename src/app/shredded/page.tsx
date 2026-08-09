@@ -64,7 +64,7 @@ export default function Shredded() {
           <p className="text-zinc-400 text-lg leading-relaxed max-w-lg mx-auto">
             You lift, you eat clean — and you&apos;re still stuck. South Asians are more{" "}
             <span className="text-[#b32424]">insulin resistant at the same BMI</span><sup>1</sup>. We&apos;ll fix that.
-            When appropriate, we&apos;ll prescribe <u>GLP-1s</u>.
+            When appropriate, we&apos;ll prescribe <u className="text-white font-semibold">GLP-1s</u>.
           </p>
 
           <div className="pt-4 flex flex-col items-center gap-4">
