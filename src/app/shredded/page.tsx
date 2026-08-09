@@ -62,11 +62,9 @@ export default function Shredded() {
           </div>
 
           <p className="text-zinc-400 text-lg leading-relaxed max-w-lg mx-auto">
-            You lift, you eat clean, you do everything right — and you&apos;re still stuck at the same body fat %.{" "}
-            <span className="text-white font-semibold">It&apos;s not you</span>: South Asians run more{" "}
-            <span className="text-[#b32424]">insulin resistant at the same BMI</span> where other groups stay
-            metabolically healthy<sup>1</sup>, and insulin resistance makes it harder to lose fat. When appropriate,
-            we&apos;ll prescribe <u>GLP-1s</u> to help close the gap.
+            You lift, you eat clean — and you&apos;re still stuck. South Asians are more{" "}
+            <span className="text-[#b32424]">insulin resistant at the same BMI</span><sup>1</sup>. We&apos;ll fix that.
+            When appropriate, we&apos;ll prescribe <u>GLP-1s</u>.
           </p>
 
           <div className="pt-4 flex flex-col items-center gap-4">
