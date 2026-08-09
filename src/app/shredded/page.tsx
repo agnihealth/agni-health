@@ -215,8 +215,8 @@ export default function Shredded() {
               <blockquote className="relative text-center">
                 <p className="text-zinc-300 text-base leading-relaxed italic mb-4">
                   &ldquo;I lived it too. Despite being a physician, I found myself at 26% body fat—&lsquo;healthy&rsquo; by
-                  standard charts, but I knew better. I dropped to 12% once I stopped following generic advice and started
-                  treating my own labs. That&apos;s why I built Agni.&rdquo;
+                  standard charts, but I knew better. I dropped to 12% once I stopped following generic advice.
+                  That&apos;s why I built Agni.&rdquo;
                 </p>
                 <footer className="text-zinc-500 text-sm">
                   — Dr. Sohan Japa · Founder
