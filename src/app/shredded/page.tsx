@@ -123,7 +123,7 @@ export default function Shredded() {
           {/* Timeline: how care unfolds */}
           <div className="mb-16 sm:mb-20">
             <h3 className="text-xl sm:text-2xl font-bold mb-4 text-center">
-              How your <span className="text-[#b32424]">first 90 days</span> unfold
+              How your <span className="text-[#b32424]">first year</span> unfolds
             </h3>
             <p className="text-zinc-400 text-center max-w-xl mx-auto mb-12 sm:mb-16">
               One straightforward path. No decision fatigue.
@@ -184,15 +184,27 @@ export default function Shredded() {
                   </p>
                 </div>
 
-                <div className="relative">
-                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#b32424] flex items-center justify-center">
-                    <span className="text-[#0a0a0a] text-xs font-mono font-bold">M3</span>
+                <div className="relative pb-10">
+                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a0a0a] border-2 border-[#b32424] flex items-center justify-center">
+                    <span className="text-[#b32424] text-xs font-mono font-bold">M3</span>
                   </div>
                   <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1">Month 3</div>
                   <h4 className="text-lg font-semibold mb-2">Repeat DEXA — see the real number</h4>
                   <p className="text-zinc-400 leading-relaxed">
                     A second scan shows exactly how your body composition changed — visceral fat down, lean mass up.
                     Not a guess. A measurement.
+                  </p>
+                </div>
+
+                <div className="relative">
+                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#b32424] flex items-center justify-center">
+                    <span className="text-[#0a0a0a] text-xs font-mono font-bold">Y1</span>
+                  </div>
+                  <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1">Year 1</div>
+                  <h4 className="text-lg font-semibold mb-2">Sustained, verified transformation</h4>
+                  <p className="text-zinc-400 leading-relaxed">
+                    Quarterly DEXA and lab checkpoints keep your protocol dialed in as your body changes — so results
+                    hold, not just happen once.
                   </p>
                 </div>
               </div>
@@ -231,7 +243,7 @@ export default function Shredded() {
 
             <div className="text-center mb-8">
               <div className="flex items-baseline justify-center gap-1 mb-1">
-                <span className="text-5xl sm:text-6xl font-bold">$600</span>
+                <span className="text-5xl sm:text-6xl font-bold">$250</span>
                 <span className="text-zinc-400 text-lg">/mo</span>
               </div>
               <div className="text-[#b32424] text-sm mt-2">First 25 members lock in this rate permanently.</div>
