@@ -13,14 +13,6 @@ export default function Shredded() {
       {/* Hero */}
       <main className="max-w-3xl mx-auto px-4 sm:px-8 pt-6 sm:pt-8 pb-16 sm:pb-24">
         <div className="text-center space-y-6">
-          {/* Credential badge */}
-          <div className="flex items-center justify-center gap-2 text-sm text-zinc-400">
-            <svg className="w-4 h-4 text-[#b32424] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-            </svg>
-            <span>Stanford &amp; Harvard-trained physician care</span>
-          </div>
-
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
             Are you <span className="text-[#b32424]">South Asian</span> and struggling
             <br className="hidden sm:block" />
@@ -114,9 +106,15 @@ export default function Shredded() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Direct Physician Access</h3>
               <p className="text-zinc-400 leading-relaxed">
-                A board-certified MD who can prescribe when appropriate — not a coach guessing at supplements. No PAs,
-                no handoffs.
+                A board-certified MD who can prescribe when appropriate — not a coach guessing at supplements. No
+                handoffs.
               </p>
+              <div className="flex items-center justify-center gap-2 text-sm text-zinc-400 mt-4">
+                <svg className="w-4 h-4 text-[#b32424] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+                <span>Stanford &amp; Harvard-trained physician care</span>
+              </div>
             </div>
           </div>
 
