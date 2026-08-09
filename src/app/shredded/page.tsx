@@ -233,7 +233,7 @@ export default function Shredded() {
       <section id="pricing" className="py-16 sm:py-24 bg-[#141414]">
         <div className="max-w-2xl mx-auto px-4 sm:px-8">
           <h2 className="text-2xl sm:text-3xl font-bold mb-10 text-center">
-            One plan. <span className="text-[#b32424]">Everything included.</span>
+            Fixed pricing. <span className="text-[#b32424]">Medications billed separately.</span>
           </h2>
 
           <div className="bg-[#0a0a0a] border-2 border-[#b32424] rounded-2xl p-8 sm:p-10 relative">
@@ -251,9 +251,9 @@ export default function Shredded() {
 
             <ul className="space-y-3 mb-8">
               {[
-                "Quarterly video visits with a board-certified MD — no PAs",
+                "Quarterly video visits with a board-certified MD",
                 "DEXA scan every quarter to track real body comp change",
-                "Labs included: fasting insulin, ApoB, hormones, full panel",
+                "Labs included: fasting insulin, ApoB, LDL/HDL, hormones",
                 "Medication management, including GLP-1s if appropriate",
                 "Async messaging — 72-hour response",
               ].map((item) => (
