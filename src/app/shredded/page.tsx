@@ -50,7 +50,7 @@ export default function Shredded() {
               eventProperties={{ location: 'hero', button: 'book_discovery', variant: 'shredded' }}
               className="bg-[#b32424] text-[#0a0a0a] px-8 py-4 rounded text-base font-medium hover:bg-[#8c1c1c] transition-colors"
             >
-              Get Your Body Comp Baseline
+              Get Shredded Now
             </TrackedLink>
             <div className="lg:hidden">
               <EmailCapture compact />
@@ -367,7 +367,7 @@ export default function Shredded() {
             eventProperties={{ location: 'bottom_cta', button: 'book_discovery', variant: 'shredded' }}
             className="inline-block bg-[#b32424] text-[#0a0a0a] px-10 py-4 rounded text-lg font-medium hover:bg-[#8c1c1c] transition-colors"
           >
-            Get Your Body Comp Baseline
+            Get Shredded Now
           </TrackedLink>
           <p className="text-zinc-500 text-sm mt-6">
             Currently accepting patients in California and Massachusetts
