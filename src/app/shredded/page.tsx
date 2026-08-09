@@ -81,24 +81,6 @@ export default function Shredded() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-10">
-            <div className="bg-[#0a0a0a] border border-zinc-800 rounded-xl p-6 text-center">
-              <div className="text-4xl font-bold text-[#b32424] mb-2">~8×</div>
-              <div className="text-white font-medium mb-1">Higher prediabetes rate at 45</div>
-              <div className="text-zinc-500 text-sm">South Asian men vs. White peers<sup className="text-[10px]">1</sup></div>
-              <div className="text-zinc-600 text-xs mt-2">30.7% vs. 3.9%</div>
-            </div>
-            <div className="bg-[#0a0a0a] border border-zinc-800 rounded-xl p-6 text-center">
-              <div className="text-4xl font-bold text-[#b32424] mb-2">Lower</div>
-              <div className="text-white font-medium mb-1">Visceral fat threshold</div>
-              <div className="text-zinc-500 text-sm">South Asians accumulate organ fat at lower BMI than other groups</div>
-            </div>
-            <div className="bg-[#0a0a0a] border border-zinc-800 rounded-xl p-6 text-center">
-              <div className="text-4xl font-bold text-[#b32424] mb-2">Insulin</div>
-              <div className="text-white font-medium mb-1">The hidden lever</div>
-              <div className="text-zinc-500 text-sm">Fasting insulin/HOMA-IR predict stubborn fat storage years before standard labs flag anything</div>
-            </div>
-          </div>
         </div>
       </section>
 
