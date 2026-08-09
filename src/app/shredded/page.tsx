@@ -7,7 +7,7 @@ export default function Shredded() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-[#0a0a0a] text-white font-[family-name:var(--font-jakarta)]">
       {/* Nav */}
-      <NavBar />
+      <NavBar links={[{ href: "#approach", label: "How It Works" }, { href: "#pricing", label: "Pricing" }]} />
 
       {/* Hero */}
       <main className="max-w-3xl mx-auto px-4 sm:px-8 pt-6 sm:pt-8 pb-16 sm:pb-24">

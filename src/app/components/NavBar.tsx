@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import TrackedLink from "./TrackedLink";
 
-const links = [
+const defaultLinks = [
   { href: "#approach", label: "How It Works" },
   { href: "#pricing", label: "Pricing" },
   { href: "#faq", label: "FAQ" },
@@ -17,7 +17,11 @@ function scrollToSection(id: string) {
   if (el) el.scrollIntoView({ behavior: 'smooth' });
 }
 
-export default function NavBar() {
+interface NavBarProps {
+  links?: { href: string; label: string }[];
+}
+
+export default function NavBar({ links = defaultLinks }: NavBarProps) {
   const [open, setOpen] = useState(false);
 
   return (
