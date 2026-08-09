@@ -66,24 +66,6 @@ export default function Shredded() {
         </div>
       </section>
 
-      {/* The Problem section */}
-      <section className="bg-[#141414] py-16 sm:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-              &ldquo;Skinny fat&rdquo; isn&apos;t <span className="text-[#b32424]">in your head</span>
-            </h2>
-            <p className="text-base text-zinc-400 leading-relaxed max-w-2xl mx-auto">
-              South Asian men store fat viscerally — around organs, not just under skin — and carry it at lower body weights
-              than other populations.<sup className="text-[10px]">1</sup> That means two guys who look the same on a scale
-              can have very different metabolic pictures underneath. Your abs staying hidden at a bodyfat % that would show
-              them on someone else isn&apos;t bad luck — it&apos;s biology most trainers were never taught.
-            </p>
-          </div>
-
-        </div>
-      </section>
-
       {/* Approach */}
       <section id="approach" className="py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
