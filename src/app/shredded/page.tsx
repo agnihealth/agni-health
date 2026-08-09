@@ -273,53 +273,6 @@ export default function Shredded() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section id="faq" className="py-16 sm:py-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 sm:mb-16">
-            Frequently asked <span className="text-[#b32424]">questions</span>
-          </h2>
-          <div className="space-y-6">
-            {[
-              {
-                q: "I already lift and diet — why would labs matter?",
-                a: "Training and nutrition are necessary but not sufficient if there's an underlying metabolic bottleneck. Insulin resistance, for example, actively promotes fat storage and blunts muscle gain — no amount of clean eating fully overrides it until it's addressed directly."
-              },
-              {
-                q: "Do you prescribe GLP-1 medications?",
-                a: "Yes — when clinically appropriate, typically for patients with confirmed insulin resistance or metabolic dysfunction, not as a shortcut. Dr. Japa reviews your labs to determine fit."
-              },
-              {
-                q: "Why a DEXA scan instead of just a scale or calipers?",
-                a: "DEXA gives precise visceral fat, subcutaneous fat, lean mass, and bone density — by region. It's the only way to actually confirm whether your protocol is changing body composition, not just body weight."
-              },
-              {
-                q: "Do you accept insurance?",
-                a: "We're a self-pay practice. Upon request, we provide a superbill for potential FSA/HSA reimbursement."
-              },
-              {
-                q: "Can I cancel anytime?",
-                a: "Yes. Billed monthly, cancel anytime effective end of the current billing period. No long-term commitment."
-              },
-              {
-                q: "What states are you licensed in?",
-                a: "Currently accepting patients in California and Massachusetts, with more states coming — join the waitlist if you're elsewhere."
-              },
-            ].map(({ q, a }) => (
-              <details key={q} className="group border border-zinc-800 rounded-xl p-6 bg-[#141414]">
-                <summary className="flex items-center justify-between cursor-pointer list-none font-medium text-white">
-                  {q}
-                  <svg className="w-5 h-5 text-[#b32424] group-open:rotate-180 transition-transform shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </summary>
-                <p className="text-zinc-400 text-sm leading-relaxed mt-4">{a}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section id="book" className="py-16 sm:py-24 bg-gradient-to-b from-[#0a0a0a] to-[#141414]">
         <div className="max-w-3xl mx-auto px-4 sm:px-8 text-center">
