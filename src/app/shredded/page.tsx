@@ -30,7 +30,7 @@ export default function Shredded() {
           {/* Hero image */}
           <div className="aspect-[4/3] rounded-2xl overflow-hidden relative max-w-lg mx-auto mt-8">
             <Image
-              src="/hero-shredded-v1.png"
+              src="/hero-shredded-v2.png"
               alt="Lean, muscular South Asian man in a home gym"
               fill
               className="object-cover"
