@@ -62,62 +62,6 @@ export default function Shredded() {
       {/* Approach */}
       <section id="approach" className="py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-              A body recomposition plan <span className="text-[#b32424]">built on your labs, not a template</span>
-            </h2>
-            <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-              Physician-led. Data-driven. No generic macros PDF.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-16 sm:mb-20">
-            <div className="p-8 rounded-xl bg-[#141414] border border-zinc-800 text-center">
-              <div className="w-12 h-12 rounded-lg bg-[#b32424]/10 flex items-center justify-center mb-6 mx-auto">
-                <svg className="w-6 h-6 text-[#b32424]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-3">DEXA-Verified Body Comp</h3>
-              <p className="text-zinc-400 leading-relaxed">
-                A DEXA scan shows exactly where your fat and muscle actually sit — visceral, subcutaneous, and lean mass
-                by region. No more guessing from a mirror or a scale.
-              </p>
-            </div>
-
-            <div className="p-8 rounded-xl bg-[#141414] border border-zinc-800 text-center">
-              <div className="w-12 h-12 rounded-lg bg-[#b32424]/10 flex items-center justify-center mb-6 mx-auto">
-                <svg className="w-6 h-6 text-[#b32424]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-3">Fix the Metabolic Bottleneck</h3>
-              <p className="text-zinc-400 leading-relaxed">
-                We test fasting insulin, HOMA-IR, ApoB, and thyroid/hormone panels — the levers that decide whether your
-                training and diet actually translate into visible results.
-              </p>
-            </div>
-
-            <div className="p-8 rounded-xl bg-[#141414] border border-zinc-800 text-center">
-              <div className="w-12 h-12 rounded-lg bg-[#b32424]/10 flex items-center justify-center mb-6 mx-auto">
-                <svg className="w-6 h-6 text-[#b32424]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-3">Direct Physician Access</h3>
-              <p className="text-zinc-400 leading-relaxed">
-                A board-certified MD who can prescribe when appropriate — not a coach guessing at supplements. No
-                handoffs.
-              </p>
-              <div className="flex items-center justify-center gap-2 text-sm text-zinc-400 mt-4">
-                <svg className="w-4 h-4 text-[#b32424] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                </svg>
-                <span>Stanford &amp; Harvard-trained physician care</span>
-              </div>
-            </div>
-          </div>
-
           {/* Timeline: how care unfolds */}
           <div className="mb-16 sm:mb-20">
             <h3 className="text-xl sm:text-2xl font-bold mb-4 text-center">
@@ -205,6 +149,62 @@ export default function Shredded() {
                     hold, not just happen once.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+              A body recomposition plan <span className="text-[#b32424]">built on your labs, not a template</span>
+            </h2>
+            <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
+              Physician-led. Data-driven. No generic macros PDF.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-16 sm:mb-20">
+            <div className="p-8 rounded-xl bg-[#141414] border border-zinc-800 text-center">
+              <div className="w-12 h-12 rounded-lg bg-[#b32424]/10 flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-6 h-6 text-[#b32424]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-3">DEXA-Verified Body Comp</h3>
+              <p className="text-zinc-400 leading-relaxed">
+                A DEXA scan shows exactly where your fat and muscle actually sit — visceral, subcutaneous, and lean mass
+                by region. No more guessing from a mirror or a scale.
+              </p>
+            </div>
+
+            <div className="p-8 rounded-xl bg-[#141414] border border-zinc-800 text-center">
+              <div className="w-12 h-12 rounded-lg bg-[#b32424]/10 flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-6 h-6 text-[#b32424]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Fix the Metabolic Bottleneck</h3>
+              <p className="text-zinc-400 leading-relaxed">
+                We test fasting insulin, HOMA-IR, ApoB, and thyroid/hormone panels — the levers that decide whether your
+                training and diet actually translate into visible results.
+              </p>
+            </div>
+
+            <div className="p-8 rounded-xl bg-[#141414] border border-zinc-800 text-center">
+              <div className="w-12 h-12 rounded-lg bg-[#b32424]/10 flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-6 h-6 text-[#b32424]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Direct Physician Access</h3>
+              <p className="text-zinc-400 leading-relaxed">
+                A board-certified MD who can prescribe when appropriate — not a coach guessing at supplements. No
+                handoffs.
+              </p>
+              <div className="flex items-center justify-center gap-2 text-sm text-zinc-400 mt-4">
+                <svg className="w-4 h-4 text-[#b32424] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+                <span>Stanford &amp; Harvard-trained physician care</span>
               </div>
             </div>
           </div>
