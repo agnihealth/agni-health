@@ -1,7 +1,34 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import NavBar from "../components/NavBar";
 import TrackedLink from "../components/TrackedLink";
+
+export const metadata: Metadata = {
+  title: "Get Shredded | Agni Health",
+  description: "Body recomposition built for South Asian biology. We test for the insulin resistance that's blocking your results — and fix it.",
+  openGraph: {
+    title: "Get Shredded | Agni Health",
+    description: "Body recomposition built for South Asian biology. We test for the insulin resistance that's blocking your results — and fix it.",
+    url: "https://agnihealth.co/shredded",
+    siteName: "Agni Health",
+    images: [
+      {
+        url: "/og-image-shredded.png",
+        width: 1200,
+        height: 630,
+        alt: "Agni Health — Get Shredded",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Get Shredded | Agni Health",
+    description: "Body recomposition built for South Asian biology. We test for the insulin resistance that's blocking your results — and fix it.",
+    images: ["/og-image-shredded.png"],
+  },
+};
 
 export default function Shredded() {
   return (
