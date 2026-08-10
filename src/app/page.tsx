@@ -349,7 +349,7 @@ export default function Home() {
                   "Quarterly 15-min video visits (board-certified MD)",
                   "Labs included (CBC, CMP, lipids, ApoB, fasting insulin)",
                   "DEXA scan included",
-                  "Medication management including GLP-1 if appropriate",
+                  "Medication management if clinically appropriate",
                   "Async physician messaging (48-hr response)",
                   "Ongoing labs review & care plan updates",
                 ].map((item) => (
@@ -388,7 +388,7 @@ export default function Home() {
                   "Monthly 15-min video visits (board-certified MD)",
                   "Quarterly labs included (CBC, CMP, lipids, ApoB, fasting insulin)",
                   "DEXA scan included",
-                  "Medication management including GLP-1 if appropriate",
+                  "Medication management if clinically appropriate",
                   "Async physician messaging (24-hr response)",
                   "CGM data review & clinical interpretation",
                 ].map((item) => (
@@ -446,7 +446,7 @@ export default function Home() {
           </div>
 
           <p className="text-zinc-500 text-sm text-center max-w-xl mx-auto">
-            Medications (including GLP-1s) are billed separately through your pharmacy if prescribed. FSA/HSA eligible.
+            Prescription medications are billed separately through your pharmacy if prescribed. FSA/HSA eligible.
           </p>
 
 
@@ -462,8 +462,8 @@ export default function Home() {
           <div className="space-y-6">
             {[
               {
-                q: "Do you prescribe GLP-1 medications like semaglutide?",
-                a: "Yes—when clinically appropriate. We prescribe FDA-approved GLP-1s and manage them as part of your care plan. Dr. Japa will review your history and labs to determine fit."
+                q: "Do you prescribe weight-loss medication?",
+                a: "Yes—when clinically appropriate. Dr. Japa reviews your history and labs to determine fit, then manages medication as part of your overall care plan."
               },
               {
                 q: "Do you accept insurance?",

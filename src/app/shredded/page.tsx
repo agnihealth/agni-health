@@ -64,7 +64,7 @@ export default function Shredded() {
           <p className="text-zinc-400 text-lg leading-relaxed max-w-lg mx-auto">
             You lift, you eat clean — and you&apos;re still stuck. South Asians are more{" "}
             <span className="text-[#b32424]">insulin resistant at the same BMI</span><sup>1</sup>. We&apos;ll fix that.
-            When appropriate, we&apos;ll prescribe <u className="text-white font-semibold">GLP-1s</u>.
+            When appropriate, we&apos;ll prescribe <u className="text-white font-semibold">medication</u>.
           </p>
 
           <div className="pt-4 flex flex-col items-center gap-4">
@@ -267,7 +267,7 @@ export default function Shredded() {
                 "Quarterly video visits with a board-certified MD",
                 "DEXA scan every quarter to track real body comp change",
                 "Labs included: fasting insulin, ApoB, LDL/HDL, hormones",
-                "Medication management, including GLP-1s if appropriate",
+                "Medication management if clinically appropriate",
                 "Async messaging — 72-hour response",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
@@ -293,7 +293,7 @@ export default function Shredded() {
           </div>
 
           <p className="text-zinc-500 text-sm text-center mt-8">
-            Medications (including GLP-1s) are billed separately through your pharmacy if prescribed. FSA/HSA eligible.
+            Prescription medications are billed separately through your pharmacy if prescribed. FSA/HSA eligible.
           </p>
         </div>
       </section>
