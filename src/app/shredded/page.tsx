@@ -216,6 +216,7 @@ export default function Shredded() {
 
           </div>
 
+          <div className="border-t border-zinc-800 pt-16 sm:pt-20 mt-4">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">
               A body recomposition plan <span className="text-[#b32424]">built on your labs, not a template</span>
@@ -225,8 +226,8 @@ export default function Shredded() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16 sm:mb-20">
-            <div className="p-8 rounded-xl bg-[#141414] border border-zinc-800 text-center">
+          <div className="grid md:grid-cols-3 gap-10 mb-16 sm:mb-20 max-w-4xl mx-auto">
+            <div className="text-center">
               <div className="w-12 h-12 rounded-lg bg-[#b32424]/10 flex items-center justify-center mb-6 mx-auto">
                 <svg className="w-6 h-6 text-[#b32424]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -239,7 +240,7 @@ export default function Shredded() {
               </p>
             </div>
 
-            <div className="p-8 rounded-xl bg-[#141414] border border-zinc-800 text-center">
+            <div className="text-center">
               <div className="w-12 h-12 rounded-lg bg-[#b32424]/10 flex items-center justify-center mb-6 mx-auto">
                 <svg className="w-6 h-6 text-[#b32424]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -252,7 +253,7 @@ export default function Shredded() {
               </p>
             </div>
 
-            <div className="p-8 rounded-xl bg-[#141414] border border-zinc-800 text-center">
+            <div className="text-center">
               <div className="w-12 h-12 rounded-lg bg-[#b32424]/10 flex items-center justify-center mb-6 mx-auto">
                 <svg className="w-6 h-6 text-[#b32424]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -270,6 +271,7 @@ export default function Shredded() {
                 <span>Stanford &amp; Harvard-trained physician care</span>
               </div>
             </div>
+          </div>
           </div>
 
           {/* Physician Quote */}
