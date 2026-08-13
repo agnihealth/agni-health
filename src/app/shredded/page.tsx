@@ -296,7 +296,7 @@ export default function Shredded() {
       <section id="pricing" className="py-16 sm:py-24 bg-[#141414]">
         <div className="max-w-2xl mx-auto px-4 sm:px-8">
           <h2 className="text-3xl sm:text-3xl font-bold mb-10 text-center">
-            Fixed pricing. <span className="text-[#b32424]">Medications through your insurance or pharmacy.</span>
+            Fixed pricing <span className="text-[#b32424]">(excluding medications)*</span>
           </h2>
 
           <div className="bg-[#0a0a0a] border-2 border-[#b32424] rounded-2xl p-8 sm:p-10 relative">
@@ -343,7 +343,7 @@ export default function Shredded() {
           </div>
 
           <p className="text-zinc-500 text-sm text-center mt-8">
-            Prescription medications, if prescribed, are filled through your pharmacy — your insurance may cover them, or you can pay out of pocket. FSA/HSA eligible.
+            *Prescription medications, if prescribed, are filled through your pharmacy — your insurance may cover them, or you can pay out of pocket. FSA/HSA eligible.
           </p>
         </div>
       </section>
