@@ -232,10 +232,6 @@ export default function Shredded() {
               </div>
             </div>
 
-            <p className="text-zinc-500 text-sm text-center max-w-xl mx-auto mt-8">
-              Keep training. Keep your coach if you have one. Dr. Japa layers on top — the piece neither
-              a workout plan nor a coach can provide.
-            </p>
           </div>
 
           <div className="text-center mb-12 sm:mb-16">
