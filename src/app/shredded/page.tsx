@@ -136,6 +136,14 @@ export default function Shredded() {
                     <p className="text-zinc-500 text-sm leading-relaxed">No labs — no way to know if insulin resistance is capping results</p>
                   </div>
 
+                  <div className="relative pb-8">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] flex items-center justify-center">
+                      <span className="text-zinc-700 text-xs font-bold tracking-widest">···</span>
+                    </div>
+                    <div className="text-zinc-700 text-[11px] font-medium tracking-wider uppercase mb-0.5">Months 6–9</div>
+                    <p className="text-zinc-600 text-sm leading-relaxed italic">Nothing changes. Still no data, still stuck.</p>
+                  </div>
+
                   <div className="relative">
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-zinc-700 border border-zinc-600" />
                     <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Year 1</div>
@@ -161,6 +169,14 @@ export default function Shredded() {
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border border-zinc-600" />
                     <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Month 3</div>
                     <p className="text-zinc-500 text-sm leading-relaxed">Still no labs or diagnosis — your coach can&apos;t see or treat a metabolic bottleneck</p>
+                  </div>
+
+                  <div className="relative pb-8">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] flex items-center justify-center">
+                      <span className="text-zinc-700 text-xs font-bold tracking-widest">···</span>
+                    </div>
+                    <div className="text-zinc-700 text-[11px] font-medium tracking-wider uppercase mb-0.5">Months 6–9</div>
+                    <p className="text-zinc-600 text-sm leading-relaxed italic">Same programming. Still no visibility into what&apos;s capping you.</p>
                   </div>
 
                   <div className="relative">
