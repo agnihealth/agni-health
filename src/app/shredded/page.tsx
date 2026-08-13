@@ -114,51 +114,89 @@ export default function Shredded() {
               <div className="sm:hidden w-px h-8 bg-zinc-700 mx-auto mt-2" />
             </div>
 
-            {/* Three parallel downward paths */}
-            <div className="grid sm:grid-cols-3 gap-6 sm:gap-4 max-w-5xl mx-auto items-start">
-              {/* Path 1: On your own */}
-              <div className="rounded-xl border border-zinc-800 bg-[#141414] p-5 opacity-80">
-                <div className="text-zinc-500 text-xs font-medium tracking-wider uppercase mb-3 text-center">Path A</div>
-                <h4 className="text-base font-semibold mb-4 text-center text-zinc-300">On your own</h4>
-                <ul className="space-y-3">
-                  <li className="text-zinc-500 text-sm leading-relaxed">Generic macros &amp; a workout split from the internet</li>
-                  <li className="text-zinc-500 text-sm leading-relaxed">No labs — you don&apos;t know if insulin resistance is capping your progress</li>
-                  <li className="text-zinc-500 text-sm leading-relaxed">Progress stalls, you can&apos;t tell why</li>
-                </ul>
-                <div className="mt-5 pt-4 border-t border-zinc-800 text-center">
-                  <span className="text-zinc-500 text-sm font-medium">Plateau, unexplained</span>
+            {/* Three parallel vertical timelines, same checkpoints, through Year 1 */}
+            <div className="grid sm:grid-cols-3 gap-6 sm:gap-5 max-w-5xl mx-auto items-stretch">
+              {/* Path A: On your own */}
+              <div className="rounded-xl border border-zinc-800 bg-[#141414] p-5 pb-6 opacity-75 flex flex-col">
+                <div className="text-zinc-500 text-xs font-medium tracking-wider uppercase mb-1 text-center">Path A</div>
+                <h4 className="text-base font-semibold mb-5 text-center text-zinc-300">On your own</h4>
+                <div className="relative pl-7 flex-1">
+                  <div className="absolute left-[9px] top-1 bottom-1 w-px bg-zinc-800" />
+
+                  <div className="relative pb-8">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border border-zinc-600" />
+                    <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Week 1</div>
+                    <p className="text-zinc-500 text-sm leading-relaxed">Generic macros &amp; a workout split from the internet</p>
+                  </div>
+
+                  <div className="relative pb-8">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border border-zinc-600" />
+                    <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Month 3</div>
+                    <p className="text-zinc-500 text-sm leading-relaxed">No labs — no way to know if insulin resistance is capping results</p>
+                  </div>
+
+                  <div className="relative">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-zinc-700 border border-zinc-600" />
+                    <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Year 1</div>
+                    <p className="text-zinc-400 text-sm leading-relaxed font-medium">Plateau. Same stuck point, no idea why.</p>
+                  </div>
                 </div>
               </div>
 
-              {/* Path 2: Fitness coach */}
-              <div className="rounded-xl border border-zinc-800 bg-[#141414] p-5 opacity-80">
-                <div className="text-zinc-500 text-xs font-medium tracking-wider uppercase mb-3 text-center">Path B</div>
-                <h4 className="text-base font-semibold mb-4 text-center text-zinc-300">A fitness coach</h4>
-                <ul className="space-y-3">
-                  <li className="text-zinc-500 text-sm leading-relaxed">Better programming and accountability on training + nutrition</li>
-                  <li className="text-zinc-500 text-sm leading-relaxed">Still no labs, no diagnosis — can&apos;t see or treat metabolic bottlenecks</li>
-                  <li className="text-zinc-500 text-sm leading-relaxed">Can&apos;t prescribe medication even when it&apos;s the missing piece</li>
-                </ul>
-                <div className="mt-5 pt-4 border-t border-zinc-800 text-center">
-                  <span className="text-zinc-500 text-sm font-medium">Some progress, hits a ceiling</span>
+              {/* Path B: Fitness coach */}
+              <div className="rounded-xl border border-zinc-800 bg-[#141414] p-5 pb-6 opacity-75 flex flex-col">
+                <div className="text-zinc-500 text-xs font-medium tracking-wider uppercase mb-1 text-center">Path B</div>
+                <h4 className="text-base font-semibold mb-5 text-center text-zinc-300">A fitness coach</h4>
+                <div className="relative pl-7 flex-1">
+                  <div className="absolute left-[9px] top-1 bottom-1 w-px bg-zinc-800" />
+
+                  <div className="relative pb-8">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border border-zinc-600" />
+                    <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Week 1</div>
+                    <p className="text-zinc-500 text-sm leading-relaxed">Real programming and accountability on training + nutrition</p>
+                  </div>
+
+                  <div className="relative pb-8">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border border-zinc-600" />
+                    <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Month 3</div>
+                    <p className="text-zinc-500 text-sm leading-relaxed">Still no labs or diagnosis — can&apos;t see or treat a metabolic bottleneck</p>
+                  </div>
+
+                  <div className="relative">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-zinc-700 border border-zinc-600" />
+                    <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Year 1</div>
+                    <p className="text-zinc-400 text-sm leading-relaxed font-medium">Some progress, then a ceiling coaching alone can&apos;t break.</p>
+                  </div>
                 </div>
               </div>
 
-              {/* Path 3: Dr. Japa */}
-              <div className="rounded-xl border-2 border-[#b32424] bg-[#141414] p-5 relative shadow-[0_0_30px_-10px_rgba(179,36,36,0.5)]">
+              {/* Path C: Dr. Japa */}
+              <div className="rounded-xl border-2 border-[#b32424] bg-[#141414] p-5 pb-6 relative shadow-[0_0_30px_-10px_rgba(179,36,36,0.5)] flex flex-col">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap">
                   <span className="bg-[#b32424] text-[#0a0a0a] text-xs font-semibold px-3 py-1 rounded-full">Recommended</span>
                 </div>
-                <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-3 text-center mt-2">Path C</div>
-                <h4 className="text-base font-semibold mb-4 text-center">Dr. Japa</h4>
-                <ul className="space-y-3">
-                  <li className="text-zinc-300 text-sm leading-relaxed">Labs + DEXA find the exact bottleneck — fasting insulin, HOMA-IR, ApoB, hormones</li>
-                  <li className="text-zinc-300 text-sm leading-relaxed">Board-certified MD prescribes medication when it&apos;s clinically appropriate</li>
-                  <li className="text-zinc-300 text-sm leading-relaxed">Quarterly DEXA proves what&apos;s working — visceral fat down, lean mass up</li>
-                  <li className="text-zinc-300 text-sm leading-relaxed">Direct async access to adjust the plan as your body responds</li>
-                </ul>
-                <div className="mt-5 pt-4 border-t border-zinc-800 text-center">
-                  <span className="text-[#b32424] text-sm font-semibold">Results that hold — measured, not guessed</span>
+                <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1 text-center mt-2">Path C</div>
+                <h4 className="text-base font-semibold mb-5 text-center">Dr. Japa</h4>
+                <div className="relative pl-7 flex-1">
+                  <div className="absolute left-[9px] top-1 bottom-1 w-px bg-zinc-700" />
+
+                  <div className="relative pb-8">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border-2 border-[#b32424]" />
+                    <div className="text-[#b32424] text-[11px] font-medium tracking-wider uppercase mb-0.5">Week 1–2</div>
+                    <p className="text-zinc-300 text-sm leading-relaxed">Labs + DEXA find the exact bottleneck — fasting insulin, HOMA-IR, ApoB, hormones</p>
+                  </div>
+
+                  <div className="relative pb-8">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border-2 border-[#b32424]" />
+                    <div className="text-[#b32424] text-[11px] font-medium tracking-wider uppercase mb-0.5">Month 3</div>
+                    <p className="text-zinc-300 text-sm leading-relaxed">MD-prescribed protocol + medication if appropriate. Repeat DEXA proves it&apos;s working.</p>
+                  </div>
+
+                  <div className="relative">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#b32424]" />
+                    <div className="text-[#b32424] text-[11px] font-medium tracking-wider uppercase mb-0.5">Year 1</div>
+                    <p className="text-white text-sm leading-relaxed font-semibold">Results that hold — quarterly DEXA and labs keep the protocol dialed in.</p>
+                  </div>
                 </div>
               </div>
             </div>
