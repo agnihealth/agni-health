@@ -90,7 +90,7 @@ export default function Shredded() {
             </h2>
             <p className="text-zinc-400 text-center max-w-xl mx-auto mb-12 sm:mb-16">
               Everyone starts with diet and exercise. Dr. Japa isn&apos;t a replacement for your training or your coach —
-              it&apos;s what you add on top to see what&apos;s actually holding your results back.
+              it&apos;s what you add on top to find what&apos;s actually holding your results back.
             </p>
 
             {/* Shared starting point */}
@@ -102,26 +102,26 @@ export default function Shredded() {
                   </svg>
                 </div>
                 <div className="text-zinc-200 font-semibold">You start lifting and eating clean</div>
-                <div className="text-zinc-500 text-sm mt-1">Everyone takes this step, on your own or with a coach.</div>
+                <div className="text-zinc-500 text-sm mt-1">Everyone takes this step. Then it&apos;s a question of who else is on your team.</div>
               </div>
-              {/* Fork lines down into 2 base columns */}
+              {/* Fork lines down into 3 columns */}
               <div className="hidden sm:block relative h-10 mt-2">
                 <svg className="w-full h-full" viewBox="0 0 300 40" preserveAspectRatio="none">
-                  <path d="M150 0 L150 12 L75 12 L75 40" stroke="#3f3f46" strokeWidth="1.5" fill="none" />
-                  <path d="M150 0 L150 12 L225 12 L225 40" stroke="#3f3f46" strokeWidth="1.5" fill="none" />
+                  <path d="M150 0 L150 12 L25 12 L25 40" stroke="#3f3f46" strokeWidth="1.5" fill="none" />
+                  <path d="M150 0 L150 40" stroke="#3f3f46" strokeWidth="1.5" fill="none" />
+                  <path d="M150 0 L150 12 L275 12 L275 40" stroke="#3f3f46" strokeWidth="1.5" fill="none" />
                 </svg>
               </div>
               <div className="sm:hidden w-px h-8 bg-zinc-700 mx-auto mt-2" />
             </div>
 
-            {/* Two base paths, each showing a "without" vs "+ Dr. Japa" outcome */}
-            <div className="grid sm:grid-cols-2 gap-6 sm:gap-5 max-w-4xl mx-auto">
+            {/* Three columns: A (solo), B (coach), C (Dr. Japa added on top of A or B) */}
+            <div className="grid sm:grid-cols-3 gap-6 sm:gap-5 max-w-6xl mx-auto items-stretch">
               {/* Path A: On your own */}
-              <div className="rounded-xl border border-zinc-800 bg-[#141414] p-5 pb-6 flex flex-col">
+              <div className="rounded-xl border border-zinc-800 bg-[#141414] p-5 pb-6 opacity-75 flex flex-col">
                 <div className="text-zinc-500 text-xs font-medium tracking-wider uppercase mb-1 text-center">Path A</div>
-                <h4 className="text-base font-semibold mb-5 text-center text-zinc-300">On your own</h4>
-
-                <div className="relative pl-7">
+                <h4 className="text-base font-semibold mb-5 text-center text-zinc-300">Solo</h4>
+                <div className="relative pl-7 flex-1">
                   <div className="absolute left-[9px] top-1 bottom-1 w-px bg-zinc-800" />
 
                   <div className="relative pb-8">
@@ -138,32 +138,17 @@ export default function Shredded() {
 
                   <div className="relative">
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-zinc-700 border border-zinc-600" />
-                    <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Year 1, alone</div>
+                    <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Year 1</div>
                     <p className="text-zinc-400 text-sm leading-relaxed font-medium">Plateau. Same stuck point, no idea why.</p>
                   </div>
-                </div>
-
-                {/* + Dr. Japa connector */}
-                <div className="flex items-center gap-3 my-5">
-                  <div className="flex-1 h-px bg-zinc-800" />
-                  <span className="text-[#b32424] text-xs font-bold tracking-wider uppercase whitespace-nowrap">+ Dr. Japa</span>
-                  <div className="flex-1 h-px bg-zinc-800" />
-                </div>
-
-                <div className="rounded-lg border border-[#b32424]/40 bg-[#b32424]/5 p-4">
-                  <div className="text-[#b32424] text-[11px] font-medium tracking-wider uppercase mb-1">Year 1, with Dr. Japa added</div>
-                  <p className="text-zinc-200 text-sm leading-relaxed">
-                    Labs and DEXA find why the plateau happened, medication if appropriate breaks it, and quarterly scans prove it&apos;s working.
-                  </p>
                 </div>
               </div>
 
               {/* Path B: Fitness coach */}
-              <div className="rounded-xl border border-zinc-800 bg-[#141414] p-5 pb-6 flex flex-col">
+              <div className="rounded-xl border border-zinc-800 bg-[#141414] p-5 pb-6 opacity-75 flex flex-col">
                 <div className="text-zinc-500 text-xs font-medium tracking-wider uppercase mb-1 text-center">Path B</div>
-                <h4 className="text-base font-semibold mb-5 text-center text-zinc-300">With a fitness coach</h4>
-
-                <div className="relative pl-7">
+                <h4 className="text-base font-semibold mb-5 text-center text-zinc-300">Fitness coach</h4>
+                <div className="relative pl-7 flex-1">
                   <div className="absolute left-[9px] top-1 bottom-1 w-px bg-zinc-800" />
 
                   <div className="relative pb-8">
@@ -180,79 +165,52 @@ export default function Shredded() {
 
                   <div className="relative">
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-zinc-700 border border-zinc-600" />
-                    <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Year 1, coach only</div>
+                    <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Year 1</div>
                     <p className="text-zinc-400 text-sm leading-relaxed font-medium">Some progress, then a ceiling coaching alone can&apos;t break.</p>
                   </div>
                 </div>
-
-                {/* + Dr. Japa connector */}
-                <div className="flex items-center gap-3 my-5">
-                  <div className="flex-1 h-px bg-zinc-800" />
-                  <span className="text-[#b32424] text-xs font-bold tracking-wider uppercase whitespace-nowrap">+ Dr. Japa</span>
-                  <div className="flex-1 h-px bg-zinc-800" />
-                </div>
-
-                <div className="rounded-lg border border-[#b32424]/40 bg-[#b32424]/5 p-4">
-                  <div className="text-[#b32424] text-[11px] font-medium tracking-wider uppercase mb-1">Year 1, with Dr. Japa added</div>
-                  <p className="text-zinc-200 text-sm leading-relaxed">
-                    Your coach keeps handling training and nutrition. Dr. Japa handles what a coach legally can&apos;t — labs, diagnosis, and medication when appropriate.
-                  </p>
-                </div>
               </div>
-            </div>
 
-            {/* What Dr. Japa adds, regardless of which base path you're on */}
-            <div className="max-w-2xl mx-auto mt-8">
-              <div className="rounded-xl border-2 border-[#b32424] bg-[#141414] p-6 relative shadow-[0_0_30px_-10px_rgba(179,36,36,0.5)]">
+              {/* Path C: Dr. Japa, added on top of Path A or Path B */}
+              <div className="rounded-xl border-2 border-[#b32424] bg-[#141414] p-5 pb-6 relative shadow-[0_0_30px_-10px_rgba(179,36,36,0.5)] flex flex-col">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap">
-                  <span className="bg-[#b32424] text-[#0a0a0a] text-xs font-semibold px-3 py-1 rounded-full">Additive, not a replacement</span>
+                  <span className="bg-[#b32424] text-[#0a0a0a] text-xs font-semibold px-3 py-1 rounded-full">Recommended</span>
                 </div>
-                <h4 className="text-base font-semibold mb-4 text-center mt-2">What Dr. Japa adds to either path</h4>
-                <ul className="grid sm:grid-cols-2 gap-3 mb-6">
-                  <li className="text-zinc-300 text-sm leading-relaxed flex gap-2">
-                    <span className="text-[#b32424] shrink-0">+</span> Labs + DEXA find the exact bottleneck — fasting insulin, HOMA-IR, ApoB, hormones
-                  </li>
-                  <li className="text-zinc-300 text-sm leading-relaxed flex gap-2">
-                    <span className="text-[#b32424] shrink-0">+</span> Board-certified MD prescribes medication when it&apos;s clinically appropriate
-                  </li>
-                  <li className="text-zinc-300 text-sm leading-relaxed flex gap-2">
-                    <span className="text-[#b32424] shrink-0">+</span> Quarterly DEXA proves what&apos;s working — visceral fat down, lean mass up
-                  </li>
-                  <li className="text-zinc-300 text-sm leading-relaxed flex gap-2">
-                    <span className="text-[#b32424] shrink-0">+</span> Direct async access to adjust the plan as your body responds
-                  </li>
-                </ul>
+                <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1 text-center mt-2">Path C</div>
+                <h4 className="text-base font-semibold mb-1 text-center">Dr. Japa</h4>
+                <p className="text-zinc-500 text-xs text-center mb-5">+ Path A or Path B — not instead of</p>
 
-                {/* Checkpoint cadence: labs + DEXA gain tracked through the year */}
-                <div className="border-t border-zinc-800 pt-5">
-                  <div className="text-zinc-500 text-xs font-medium tracking-wider uppercase text-center mb-4">
-                    Labs &amp; DEXA gain, checked on a schedule — not left to guesswork
+                <div className="relative pl-7 flex-1">
+                  <div className="absolute left-[9px] top-1 bottom-1 w-px bg-zinc-700" />
+
+                  <div className="relative pb-6">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border-2 border-[#b32424]" />
+                    <div className="text-[#b32424] text-[11px] font-medium tracking-wider uppercase mb-0.5">Week 1–2</div>
+                    <p className="text-zinc-300 text-sm leading-relaxed">Labs + DEXA baseline while you keep training solo or with your coach</p>
                   </div>
-                  <div className="grid grid-cols-4 gap-2 sm:gap-3">
-                    <div className="text-center">
-                      <div className="w-9 h-9 mx-auto rounded-full bg-[#b32424]/10 border border-[#b32424]/40 flex items-center justify-center mb-2">
-                        <span className="text-[#b32424] text-[11px] font-mono font-bold">3mo</span>
-                      </div>
-                      <p className="text-zinc-400 text-xs leading-snug">Baseline recheck</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="w-9 h-9 mx-auto rounded-full bg-[#b32424]/10 border border-[#b32424]/40 flex items-center justify-center mb-2">
-                        <span className="text-[#b32424] text-[11px] font-mono font-bold">6mo</span>
-                      </div>
-                      <p className="text-zinc-400 text-xs leading-snug">Labs + DEXA gain measured, protocol adjusted</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="w-9 h-9 mx-auto rounded-full bg-[#b32424]/10 border border-[#b32424]/40 flex items-center justify-center mb-2">
-                        <span className="text-[#b32424] text-[11px] font-mono font-bold">9mo</span>
-                      </div>
-                      <p className="text-zinc-400 text-xs leading-snug">Labs + DEXA gain measured again, dialed in further</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="w-9 h-9 mx-auto rounded-full bg-[#b32424] flex items-center justify-center mb-2">
-                        <span className="text-[#0a0a0a] text-[11px] font-mono font-bold">12mo</span>
-                      </div>
-                      <p className="text-zinc-300 text-xs leading-snug font-medium">A full year of proof, not guesses</p>
-                    </div>
+
+                  <div className="relative pb-6">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border-2 border-[#b32424]" />
+                    <div className="text-[#b32424] text-[11px] font-medium tracking-wider uppercase mb-0.5">Month 3</div>
+                    <p className="text-zinc-300 text-sm leading-relaxed">Protocol + medication if appropriate. First DEXA recheck.</p>
+                  </div>
+
+                  <div className="relative pb-6">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border-2 border-[#b32424]" />
+                    <div className="text-[#b32424] text-[11px] font-medium tracking-wider uppercase mb-0.5">Month 6</div>
+                    <p className="text-zinc-300 text-sm leading-relaxed">Labs + DEXA gain measured again — protocol adjusted from real data</p>
+                  </div>
+
+                  <div className="relative pb-6">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border-2 border-[#b32424]" />
+                    <div className="text-[#b32424] text-[11px] font-medium tracking-wider uppercase mb-0.5">Month 9</div>
+                    <p className="text-zinc-300 text-sm leading-relaxed">Labs + DEXA gain measured a third time — dialed in further</p>
+                  </div>
+
+                  <div className="relative">
+                    <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#b32424]" />
+                    <div className="text-[#b32424] text-[11px] font-medium tracking-wider uppercase mb-0.5">Year 1</div>
+                    <p className="text-white text-sm leading-relaxed font-semibold">A full year of measured gain — not guesses. Whatever base path you chose, this is what breaks the ceiling.</p>
                   </div>
                 </div>
               </div>
