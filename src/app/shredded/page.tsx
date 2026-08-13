@@ -208,7 +208,7 @@ export default function Shredded() {
                   <span className="bg-[#b32424] text-[#0a0a0a] text-xs font-semibold px-3 py-1 rounded-full">Additive, not a replacement</span>
                 </div>
                 <h4 className="text-base font-semibold mb-4 text-center mt-2">What Dr. Japa adds to either path</h4>
-                <ul className="grid sm:grid-cols-2 gap-3">
+                <ul className="grid sm:grid-cols-2 gap-3 mb-6">
                   <li className="text-zinc-300 text-sm leading-relaxed flex gap-2">
                     <span className="text-[#b32424] shrink-0">+</span> Labs + DEXA find the exact bottleneck — fasting insulin, HOMA-IR, ApoB, hormones
                   </li>
@@ -222,6 +222,39 @@ export default function Shredded() {
                     <span className="text-[#b32424] shrink-0">+</span> Direct async access to adjust the plan as your body responds
                   </li>
                 </ul>
+
+                {/* Checkpoint cadence: labs + DEXA gain tracked through the year */}
+                <div className="border-t border-zinc-800 pt-5">
+                  <div className="text-zinc-500 text-xs font-medium tracking-wider uppercase text-center mb-4">
+                    Labs &amp; DEXA gain, checked on a schedule — not left to guesswork
+                  </div>
+                  <div className="grid grid-cols-4 gap-2 sm:gap-3">
+                    <div className="text-center">
+                      <div className="w-9 h-9 mx-auto rounded-full bg-[#b32424]/10 border border-[#b32424]/40 flex items-center justify-center mb-2">
+                        <span className="text-[#b32424] text-[11px] font-mono font-bold">3mo</span>
+                      </div>
+                      <p className="text-zinc-400 text-xs leading-snug">Baseline recheck</p>
+                    </div>
+                    <div className="text-center">
+                      <div className="w-9 h-9 mx-auto rounded-full bg-[#b32424]/10 border border-[#b32424]/40 flex items-center justify-center mb-2">
+                        <span className="text-[#b32424] text-[11px] font-mono font-bold">6mo</span>
+                      </div>
+                      <p className="text-zinc-400 text-xs leading-snug">Labs + DEXA gain measured, protocol adjusted</p>
+                    </div>
+                    <div className="text-center">
+                      <div className="w-9 h-9 mx-auto rounded-full bg-[#b32424]/10 border border-[#b32424]/40 flex items-center justify-center mb-2">
+                        <span className="text-[#b32424] text-[11px] font-mono font-bold">9mo</span>
+                      </div>
+                      <p className="text-zinc-400 text-xs leading-snug">Labs + DEXA gain measured again, dialed in further</p>
+                    </div>
+                    <div className="text-center">
+                      <div className="w-9 h-9 mx-auto rounded-full bg-[#b32424] flex items-center justify-center mb-2">
+                        <span className="text-[#0a0a0a] text-[11px] font-mono font-bold">12mo</span>
+                      </div>
+                      <p className="text-zinc-300 text-xs leading-snug font-medium">A full year of proof, not guesses</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
