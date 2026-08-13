@@ -121,28 +121,30 @@ export default function Shredded() {
               <div className="rounded-xl border border-zinc-800 bg-[#141414] p-5 pb-6 opacity-75 flex flex-col">
                 <div className="text-zinc-500 text-xs font-medium tracking-wider uppercase mb-1 text-center">Path A</div>
                 <h4 className="text-base font-semibold mb-5 text-center text-zinc-300">Solo</h4>
-                <div className="relative pl-7 flex-1">
+                <div className="relative pl-7 flex-1 grid grid-rows-5 gap-0">
                   <div className="absolute left-[9px] top-1 bottom-1 w-px bg-zinc-800" />
 
-                  <div className="relative pb-8">
+                  <div className="relative">
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border border-zinc-600" />
                     <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Week 1</div>
                     <p className="text-zinc-500 text-sm leading-relaxed">Generic macros &amp; a workout split from the internet</p>
                   </div>
 
-                  <div className="relative pb-8">
+                  <div className="relative">
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border border-zinc-600" />
                     <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Month 3</div>
                     <p className="text-zinc-500 text-sm leading-relaxed">No labs — no way to know if insulin resistance is capping results</p>
                   </div>
 
-                  <div className="relative pb-8">
+                  <div className="relative">
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] flex items-center justify-center">
                       <span className="text-zinc-700 text-xs font-bold tracking-widest">···</span>
                     </div>
                     <div className="text-zinc-700 text-[11px] font-medium tracking-wider uppercase mb-0.5">Months 6–9</div>
                     <p className="text-zinc-600 text-sm leading-relaxed italic">Nothing changes. Still no data, still stuck.</p>
                   </div>
+
+                  <div />
 
                   <div className="relative">
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-zinc-700 border border-zinc-600" />
@@ -156,28 +158,30 @@ export default function Shredded() {
               <div className="rounded-xl border border-zinc-800 bg-[#141414] p-5 pb-6 opacity-75 flex flex-col">
                 <div className="text-zinc-500 text-xs font-medium tracking-wider uppercase mb-1 text-center">Path B</div>
                 <h4 className="text-base font-semibold mb-5 text-center text-zinc-300">Fitness coach</h4>
-                <div className="relative pl-7 flex-1">
+                <div className="relative pl-7 flex-1 grid grid-rows-5 gap-0">
                   <div className="absolute left-[9px] top-1 bottom-1 w-px bg-zinc-800" />
 
-                  <div className="relative pb-8">
+                  <div className="relative">
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border border-zinc-600" />
                     <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Week 1</div>
                     <p className="text-zinc-500 text-sm leading-relaxed">Real programming and accountability on training + nutrition</p>
                   </div>
 
-                  <div className="relative pb-8">
+                  <div className="relative">
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border border-zinc-600" />
                     <div className="text-zinc-600 text-[11px] font-medium tracking-wider uppercase mb-0.5">Month 3</div>
                     <p className="text-zinc-500 text-sm leading-relaxed">Still no labs or diagnosis — your coach can&apos;t see or treat a metabolic bottleneck</p>
                   </div>
 
-                  <div className="relative pb-8">
+                  <div className="relative">
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] flex items-center justify-center">
                       <span className="text-zinc-700 text-xs font-bold tracking-widest">···</span>
                     </div>
                     <div className="text-zinc-700 text-[11px] font-medium tracking-wider uppercase mb-0.5">Months 6–9</div>
                     <p className="text-zinc-600 text-sm leading-relaxed italic">Same programming. Still no visibility into what&apos;s capping you.</p>
                   </div>
+
+                  <div />
 
                   <div className="relative">
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-zinc-700 border border-zinc-600" />
@@ -196,28 +200,28 @@ export default function Shredded() {
                 <h4 className="text-base font-semibold mb-1 text-center">Dr. Japa</h4>
                 <p className="text-zinc-500 text-xs text-center mb-5">+ Path A or Path B — not instead of</p>
 
-                <div className="relative pl-7 flex-1">
+                <div className="relative pl-7 flex-1 grid grid-rows-5 gap-0">
                   <div className="absolute left-[9px] top-1 bottom-1 w-px bg-zinc-700" />
 
-                  <div className="relative pb-6">
+                  <div className="relative">
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border-2 border-[#b32424]" />
                     <div className="text-[#b32424] text-[11px] font-medium tracking-wider uppercase mb-0.5">Week 1–2</div>
                     <p className="text-zinc-300 text-sm leading-relaxed">Labs + DEXA baseline while you keep training solo or with your coach</p>
                   </div>
 
-                  <div className="relative pb-6">
+                  <div className="relative">
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border-2 border-[#b32424]" />
                     <div className="text-[#b32424] text-[11px] font-medium tracking-wider uppercase mb-0.5">Month 3</div>
                     <p className="text-zinc-300 text-sm leading-relaxed">Protocol + medication if appropriate. First DEXA recheck.</p>
                   </div>
 
-                  <div className="relative pb-6">
+                  <div className="relative">
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border-2 border-[#b32424]" />
                     <div className="text-[#b32424] text-[11px] font-medium tracking-wider uppercase mb-0.5">Month 6</div>
                     <p className="text-zinc-300 text-sm leading-relaxed">Labs + DEXA gain measured again — protocol adjusted from real data</p>
                   </div>
 
-                  <div className="relative pb-6">
+                  <div className="relative">
                     <div className="absolute left-[-28px] top-0 w-[19px] h-[19px] rounded-full bg-[#0a0a0a] border-2 border-[#b32424]" />
                     <div className="text-[#b32424] text-[11px] font-medium tracking-wider uppercase mb-0.5">Month 9</div>
                     <p className="text-zinc-300 text-sm leading-relaxed">Labs + DEXA gain measured a third time — dialed in further</p>
