@@ -83,89 +83,90 @@ export default function Shredded() {
       {/* Approach */}
       <section id="approach" className="py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          {/* Timeline: how care unfolds */}
+          {/* Timeline: diverging paths */}
           <div className="mb-16 sm:mb-20">
             <h2 className="text-3xl sm:text-3xl font-bold mb-4 text-center">
               Your <span className="text-[#b32424]">Year 1</span> path
             </h2>
             <p className="text-zinc-400 text-center max-w-xl mx-auto mb-12 sm:mb-16">
-              One path. No decision fatigue.
+              Everyone starts with diet and exercise. What happens next is the difference.
             </p>
 
-            <div className="max-w-2xl mx-auto">
-              <div className="relative pl-10 sm:pl-12">
-                {/* Vertical line */}
-                <div className="absolute left-[15px] sm:left-[19px] top-2 bottom-2 w-px bg-zinc-800" />
-
-                <div className="relative pb-10">
-                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a0a0a] border-2 border-[#b32424] flex items-center justify-center">
-                    <span className="text-[#b32424] text-xs font-mono font-bold">W1</span>
-                  </div>
-                  <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1">Week 1</div>
-                  <h4 className="text-lg font-semibold mb-2">Baseline consultation</h4>
-<p className="text-zinc-400 leading-relaxed">
-                    15-minute video call with Dr. Japa on your training history and where you&apos;re stuck.
-                  </p>
+            {/* Shared starting point */}
+            <div className="max-w-md mx-auto text-center mb-8">
+              <div className="inline-flex flex-col items-center">
+                <div className="w-14 h-14 rounded-full bg-[#141414] border-2 border-zinc-600 flex items-center justify-center mb-3">
+                  <svg className="w-6 h-6 text-zinc-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
                 </div>
+                <div className="text-zinc-200 font-semibold">You start lifting and eating clean</div>
+                <div className="text-zinc-500 text-sm mt-1">Everyone takes this step. Then you pick a path.</div>
+              </div>
+              {/* Fork lines down into 3 columns */}
+              <div className="hidden sm:block relative h-10 mt-2">
+                <svg className="w-full h-full" viewBox="0 0 300 40" preserveAspectRatio="none">
+                  <path d="M150 0 L150 12 L25 12 L25 40" stroke="#3f3f46" strokeWidth="1.5" fill="none" />
+                  <path d="M150 0 L150 40" stroke="#3f3f46" strokeWidth="1.5" fill="none" />
+                  <path d="M150 0 L150 12 L275 12 L275 40" stroke="#3f3f46" strokeWidth="1.5" fill="none" />
+                </svg>
+              </div>
+              <div className="sm:hidden w-px h-8 bg-zinc-700 mx-auto mt-2" />
+            </div>
 
-                <div className="relative pb-10">
-                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a0a0a] border-2 border-[#b32424] flex items-center justify-center">
-                    <span className="text-[#b32424] text-xs font-mono font-bold">W2</span>
-                  </div>
-                  <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1">Week 2</div>
-                  <h4 className="text-lg font-semibold mb-2">Labs + DEXA scan</h4>
-                  <p className="text-zinc-400 leading-relaxed">
-                    Fasting insulin, HOMA-IR, ApoB, hormones, and a full body composition scan.
-                  </p>
+            {/* Three parallel downward paths */}
+            <div className="grid sm:grid-cols-3 gap-6 sm:gap-4 max-w-5xl mx-auto items-start">
+              {/* Path 1: On your own */}
+              <div className="rounded-xl border border-zinc-800 bg-[#141414] p-5 opacity-80">
+                <div className="text-zinc-500 text-xs font-medium tracking-wider uppercase mb-3 text-center">Path A</div>
+                <h4 className="text-base font-semibold mb-4 text-center text-zinc-300">On your own</h4>
+                <ul className="space-y-3">
+                  <li className="text-zinc-500 text-sm leading-relaxed">Generic macros &amp; a workout split from the internet</li>
+                  <li className="text-zinc-500 text-sm leading-relaxed">No labs — you don&apos;t know if insulin resistance is capping your progress</li>
+                  <li className="text-zinc-500 text-sm leading-relaxed">Progress stalls, you can&apos;t tell why</li>
+                </ul>
+                <div className="mt-5 pt-4 border-t border-zinc-800 text-center">
+                  <span className="text-zinc-500 text-sm font-medium">Plateau, unexplained</span>
                 </div>
+              </div>
 
-                <div className="relative pb-10">
-                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a0a0a] border-2 border-[#b32424] flex items-center justify-center">
-                    <span className="text-[#b32424] text-xs font-mono font-bold">W3</span>
-                  </div>
-                  <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1">Week 3</div>
-                  <h4 className="text-lg font-semibold mb-2">Your protocol</h4>
-                  <p className="text-zinc-400 leading-relaxed">
-                    A plan built around your bottleneck — nutrition, training, medication if appropriate.
-                  </p>
+              {/* Path 2: Fitness coach */}
+              <div className="rounded-xl border border-zinc-800 bg-[#141414] p-5 opacity-80">
+                <div className="text-zinc-500 text-xs font-medium tracking-wider uppercase mb-3 text-center">Path B</div>
+                <h4 className="text-base font-semibold mb-4 text-center text-zinc-300">A fitness coach</h4>
+                <ul className="space-y-3">
+                  <li className="text-zinc-500 text-sm leading-relaxed">Better programming and accountability on training + nutrition</li>
+                  <li className="text-zinc-500 text-sm leading-relaxed">Still no labs, no diagnosis — can&apos;t see or treat metabolic bottlenecks</li>
+                  <li className="text-zinc-500 text-sm leading-relaxed">Can&apos;t prescribe medication even when it&apos;s the missing piece</li>
+                </ul>
+                <div className="mt-5 pt-4 border-t border-zinc-800 text-center">
+                  <span className="text-zinc-500 text-sm font-medium">Some progress, hits a ceiling</span>
                 </div>
+              </div>
 
-                <div className="relative pb-10">
-                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a0a0a] border-2 border-[#b32424] flex items-center justify-center">
-                    <svg className="w-4 h-4 text-[#b32424]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-4l-4 4v-4z" />
-                    </svg>
-                  </div>
-                  <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1">Ongoing</div>
-                  <h4 className="text-lg font-semibold mb-2">Async support</h4>
-                  <p className="text-zinc-400 leading-relaxed">
-                    Message Dr. Japa directly as your body responds. No waiting for the next slot.
-                  </p>
+              {/* Path 3: Dr. Japa */}
+              <div className="rounded-xl border-2 border-[#b32424] bg-[#141414] p-5 relative shadow-[0_0_30px_-10px_rgba(179,36,36,0.5)]">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                  <span className="bg-[#b32424] text-[#0a0a0a] text-xs font-semibold px-3 py-1 rounded-full">Recommended</span>
                 </div>
-
-                <div className="relative pb-10">
-                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#0a0a0a] border-2 border-[#b32424] flex items-center justify-center">
-                    <span className="text-[#b32424] text-xs font-mono font-bold">M3</span>
-                  </div>
-                  <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1">Month 3</div>
-                  <h4 className="text-lg font-semibold mb-2">Repeat DEXA</h4>
-                  <p className="text-zinc-400 leading-relaxed">
-                    A second scan: visceral fat down, lean mass up. A measurement, not a guess.
-                  </p>
-                </div>
-
-                <div className="relative">
-                  <div className="absolute left-[-40px] sm:left-[-48px] top-0 w-8 h-8 rounded-full bg-[#b32424] flex items-center justify-center">
-                    <span className="text-[#0a0a0a] text-xs font-mono font-bold">Y1</span>
-                  </div>
-                  <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1">Year 1</div>
-                  <h4 className="text-lg font-semibold mb-2">Results that hold</h4>
-                  <p className="text-zinc-400 leading-relaxed">
-                    Quarterly DEXA and lab checkpoints keep your protocol dialed in.
-                  </p>
+                <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-3 text-center mt-2">Path C</div>
+                <h4 className="text-base font-semibold mb-4 text-center">Dr. Japa</h4>
+                <ul className="space-y-3">
+                  <li className="text-zinc-300 text-sm leading-relaxed">Labs + DEXA find the exact bottleneck — fasting insulin, HOMA-IR, ApoB, hormones</li>
+                  <li className="text-zinc-300 text-sm leading-relaxed">Board-certified MD prescribes medication when it&apos;s clinically appropriate</li>
+                  <li className="text-zinc-300 text-sm leading-relaxed">Quarterly DEXA proves what&apos;s working — visceral fat down, lean mass up</li>
+                  <li className="text-zinc-300 text-sm leading-relaxed">Direct async access to adjust the plan as your body responds</li>
+                </ul>
+                <div className="mt-5 pt-4 border-t border-zinc-800 text-center">
+                  <span className="text-[#b32424] text-sm font-semibold">Results that hold — measured, not guessed</span>
                 </div>
               </div>
             </div>
+
+            <p className="text-zinc-500 text-sm text-center max-w-xl mx-auto mt-8">
+              Diet and exercise are necessary either way. The difference is whether anyone can actually see —
+              and treat — what&apos;s holding your results back.
+            </p>
           </div>
 
           <div className="text-center mb-12 sm:mb-16">
