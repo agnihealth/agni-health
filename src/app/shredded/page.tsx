@@ -93,28 +93,6 @@ export default function Shredded() {
               it&apos;s what you add on top to find what&apos;s actually holding your results back.
             </p>
 
-            {/* Shared starting point */}
-            <div className="max-w-md mx-auto text-center mb-8">
-              <div className="inline-flex flex-col items-center">
-                <div className="w-14 h-14 rounded-full bg-[#141414] border-2 border-zinc-600 flex items-center justify-center mb-3">
-                  <svg className="w-6 h-6 text-zinc-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <div className="text-zinc-200 font-semibold">You start lifting and eating clean</div>
-                <div className="text-zinc-500 text-sm mt-1">Everyone takes this step. Then it&apos;s a question of who else is on your team.</div>
-              </div>
-              {/* Fork lines down into 3 columns */}
-              <div className="hidden sm:block relative h-10 mt-2">
-                <svg className="w-full h-full" viewBox="0 0 300 40" preserveAspectRatio="none">
-                  <path d="M150 0 L150 12 L25 12 L25 40" stroke="#3f3f46" strokeWidth="1.5" fill="none" />
-                  <path d="M150 0 L150 40" stroke="#3f3f46" strokeWidth="1.5" fill="none" />
-                  <path d="M150 0 L150 12 L275 12 L275 40" stroke="#3f3f46" strokeWidth="1.5" fill="none" />
-                </svg>
-              </div>
-              <div className="sm:hidden w-px h-8 bg-zinc-700 mx-auto mt-2" />
-            </div>
-
             {/* Three columns: A (solo), B (coach), C (Dr. Japa added on top of A or B) */}
             <div className="grid sm:grid-cols-3 gap-6 sm:gap-5 max-w-6xl mx-auto items-stretch">
               {/* Path A: On your own */}
