@@ -176,7 +176,7 @@ export default function Shredded() {
                 </div>
                 <div className="text-[#b32424] text-xs font-medium tracking-wider uppercase mb-1 text-center mt-2">Path C</div>
                 <h4 className="text-base font-semibold mb-1 text-center">Dr. Japa</h4>
-                <p className="text-zinc-500 text-xs text-center mb-5">+ Path A or Path B — not instead of</p>
+                <p className="text-zinc-500 text-xs text-center mb-5">In addition to Path A or B</p>
 
                 <div className="relative pl-7 flex-1 grid grid-rows-5 gap-0">
                   <div className="absolute left-[9px] top-1 bottom-1 w-px bg-zinc-700" />
